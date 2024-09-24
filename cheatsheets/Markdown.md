@@ -1,13 +1,12 @@
 # Headings
 
-## Heading 2
-
-this is how you do headings
+This is how you do headings
 
 ```markdown
 # Heading 1
 ## Heading 2
 ```
+## Paragraphs
 
 ```
 Paragraphs use 1 blank line between
@@ -15,14 +14,67 @@ Paragraphs use 1 blank line between
 Like this
 ```
 
+## Linebreaks
+
 ```
 Meanwhile linebreaks leave  
 two spaces after  
 the previous line
 ```
 
-**Bold** lettering is done with two asterisks
+## Bold & Italics
+
+**Bold** lettering is done with two asterisks  
 
 ```
 **Like this**
+```
+
+*Italics*  use 1 asterisk
+
+```
+*like this*
+```
+
+Having 3 ***combines*** the two
+
+```
+***Meow***
+```
+
+## Blockquotes
+
+>Block quotes use the > symbol
+>
+>with a > blank lines for paragraphs
+>
+>>and a nested paragraph made by doubling the > into >>
+
+```
+>like this
+>
+>and this
+>
+>>finally this too
+```
+
+># Blockquotes can combine other elements with experimentation required
+
+```
+>Known ones can include:
+># Headings
+>- Lists
+>>More experimentation required
+```
+
+
+
+## BlueprintUE
+
+Use blueprintUE for grabbing blueprints into the dev log
+
+<iframe src="https://blueprintue.com/render/kpgq8a0s/" scrolling="no" allowfullscreen></iframe>
+
+```
+<iframe src="https://blueprintue.com/render/kpgq8a0s/" scrolling="no" allowfullscreen></iframe>
 ```
