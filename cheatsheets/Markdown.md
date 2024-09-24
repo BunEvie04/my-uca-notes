@@ -67,6 +67,24 @@ Having 3 ***combines*** the two
 >>More experimentation required
 ```
 
+## Lists
+
+Lists are done with ordered and unordered  
+1. Ordered is done with numbers followed by periods
+- Unordered can utilise numerous symbols to activate, but dashes are simplest
+
+```
+1. Example 1
+- Example 2
+```
+
+Having numbers with periods after an unordered list should be followed by a backslash
+- 00\.
+
+```
+- 00\.
+```
+
 
 
 ## BlueprintUE
