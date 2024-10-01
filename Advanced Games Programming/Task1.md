@@ -61,3 +61,6 @@ Shield: 100
 Helmet: 80
 Potion: 50
 ```
+
+## Next steps
+For the next stage I wanted the user to be able to add their own inputs into each of the catagories, with the system outputting a new list with their addition sorted within. 
