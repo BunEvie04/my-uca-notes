@@ -41,3 +41,8 @@ The overal plan for the prototype is to get from point A (at the bottom of a hil
 There will be a fur coated animal which covers one to four tiles total, with it having options between different patches of tall grass to eat at, with gaps between resting.  
 While this creature is resting, the player can then harvest the remaining growing crops to then place in a pit, for the animal to fall and creaete a path to the exit.
 
+## Research
+
+This section will cover the research made for the features present within the prototype. Primarily it will cover my findings on ai pathways and how I can implement it into the game.
+
+> how would i first implement ai within ue5 cpp?
