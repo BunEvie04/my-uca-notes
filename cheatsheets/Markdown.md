@@ -85,6 +85,15 @@ Having numbers with periods after an unordered list should be followed by a back
 - 00\.
 ```
 
+---
+Horizontal line
+
+---
+```
+---
+```
+
+
 
 
 ## BlueprintUE

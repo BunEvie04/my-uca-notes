@@ -2,7 +2,6 @@
 #include <vector>
 #include <algorithm>
 #include <string>
-#include <bits/stdc++.h>
 
 class Item
 {
@@ -30,7 +29,7 @@ void SortByName(std::vector<Item>& items, bool ascending = true)
     if (ascending)
     {
         //loops until the end of the list has been reached
-        for(int i = 0; i < n; i++)
+        for (int i = 0; i < n; i++)
         {
             //places the list items
             for (int j = 0; j < n - i - 1; j++)
@@ -40,17 +39,17 @@ void SortByName(std::vector<Item>& items, bool ascending = true)
             }
         }
     }
-    
+
     else
     {
-        
+
     }
-    
-    
+
+
     //sort function automatically fits the list items using the given type
     /*std::sort(items.begin(), items.end(), [](const Item& a, const Item& b)
     {
-        return a.name < b.name;    
+        return a.name < b.name;
     });
     */
 }
@@ -59,42 +58,59 @@ void SortByName(std::vector<Item>& items, bool ascending = true)
 void SortByValue(std::vector<Item>& items, bool ascending = true)
 {
     std::sort(items.begin(), items.end(), [](const Item& a, const Item& b)
-    {
-        return a.value > b.value;
-    });
+        {
+            return a.value > b.value;
+        });
 }
 
 int main()
 {
-    std::vector<Item> items = {
-        Item("Sword", 150),
-        Item("Potion", 50),
-        Item("Shield", 100),
-        Item("Bow", 120),
-        Item("Helmet", 80)
-    };
 
-    std::cout << "Original Inventory:" << std::endl;
-    DisplayInventory(items);
+    char* pcontinue = new char;
+    *pcontinue = 'y';
 
-    std::cout << "\nSorted by Name (Ascending):" << std::endl;
-    SortByName(items, true); // Sort by name in ascending order
-    DisplayInventory(items);
+    for (; *pcontinue == 'y';) {
 
-    
-    std::cout << "\nSorted by Value (Descending):" << std::endl;
-    SortByValue(items, true); // Sort by value in descending order
-    DisplayInventory(items);
-    
-    std::string newname
-    int newvalue
-    
-    std::cout << "Enter another item:" <<std::endl;
-    std::cin >> newname;
-    std::cout << "Enter the price" << std::endl;
-    std::cin >> newvalue;
-    
-    items.push_back(Item(newName, newPrice));
+
+        std::vector<Item> items = {
+            Item("Sword", 150),
+            Item("Potion", 50),
+            Item("Shield", 100),
+            Item("Bow", 120),
+            Item("Helmet", 80)
+        };
+
+        std::cout << "Original Inventory:" << std::endl;
+        DisplayInventory(items);
+
+        std::cout << "\nSorted by Name (Ascending):" << std::endl;
+        SortByName(items, true); // Sort by name in ascending order
+        DisplayInventory(items);
+
+
+        std::cout << "\nSorted by Value (Descending):" << std::endl;
+        SortByValue(items, true); // Sort by value in descending order
+        DisplayInventory(items);
+
+        std::string newname;
+        int newvalue;
+
+        std::cout << "Enter another item:" << std::endl;
+        std::cin >> newname;
+        std::cout << "Enter the price" << std::endl;
+        std::cin >> newvalue;
+
+        items.push_back(Item(newname, newvalue));
+
+        std::cout << "\nUpdated Items:" << std::endl;
+        for (const auto& item : items) {
+            std::cout << "Item: " << item.name << ", Value: " << item.value << std::endl;
+        }
+
+        std::cout << "continue?(y/n)";
+        std::cin >> pcontinue;
+
+    }
 
     return 0;
 }
