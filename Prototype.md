@@ -46,3 +46,8 @@ While this creature is resting, the player can then harvest the remaining growin
 This section will cover the research made for the features present within the prototype. Primarily it will cover my findings on ai pathways and how I can implement it into the game.
 
 > how would i first implement ai within ue5 cpp?
+>
+> Iamge of mesh nav
+>
+> Talk about the issue with wall
+> 
