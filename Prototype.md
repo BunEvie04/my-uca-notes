@@ -46,8 +46,15 @@ While this creature is resting, the player can then harvest the remaining growin
 This section will cover the research made for the features present within the prototype. Primarily it will cover my findings on ai pathways and how I can implement it into the game.
 
 > how would i first implement ai within ue5 cpp?
+
+To start with the ai I used a 
+
 >
 > Iamge of mesh nav
 >
 > Talk about the issue with wall
 > 
+> Implemented a free asset pack named "variety animal pack" to temporarily act as the ai animal
+> The animation came as animation sequences so I am having to put them together using state machines
+
+![foxasset]](image.png)
