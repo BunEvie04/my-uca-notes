@@ -46,8 +46,17 @@ While this creature is resting, the player can then harvest the remaining growin
 This section will cover the research made for the features present within the prototype. Primarily it will cover my findings on ai pathways and how I can implement it into the game.
 
 > how would i first implement ai within ue5 cpp?
+>
 
-To start with the ai I used a 
+## Workings
+
+To start with the ai I used a character blueprint class, with an ai controller attatched to it. I wanted to start this within blueprints so I can lay the groundwork before using c++ since this is the first proper time using ai within UE5. After the character was created and placed into the level, a navigation mesh was placed down across the entire stage along with basic blueprints for the character to move to random points on the level.
+
+A behaviour tree was implemented with a blackboard planned to give the animal ai different actions/states, for now while things are being set up basic tasks named "Idle", "Searching", and "Eating" have been made. These will be expanded upon once I finish initialising the ai character with animations.
+Speaking about the ai character, a free animal asset pack labelled "AnimalVarietyPack" was added into the project so that I could temporarily make the animal look like an animal. This came with the downsides of having the animations be animation sequences, alongside having to work out how to implement them into the states. Once this is in place the behaviour tree can be expanded upon to give the ai the actions it needs to function within the ideas of the game.
+
+As I am slightly unfamiliar with animation sequences I experimented with animation blueprints to bring the sequences together, however I am currently unsure of the reasoning behind what to do.
+
 
 >
 > Iamge of mesh nav
@@ -56,5 +65,3 @@ To start with the ai I used a
 > 
 > Implemented a free asset pack named "variety animal pack" to temporarily act as the ai animal
 > The animation came as animation sequences so I am having to put them together using state machines
-
-![foxasset]](image.png)
