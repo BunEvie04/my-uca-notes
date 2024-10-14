@@ -57,7 +57,8 @@ Speaking about the ai character, a free animal asset pack labelled "AnimalVariet
 
 As I am slightly unfamiliar with animation sequences I experimented with animation blueprints to bring the sequences together, however I am currently unsure of the reasoning behind what to do.
 
-
+Updates: I am slowly understanding how they work, after failing over and over I followed a guide which proved unhelpful and then stripped it all up to get to the basics of moveing to a desired location. This works and lays the groundwork which I can develop off of. This is also bringing me up to date with why the previous ones didn't work, as when I switched the 'move to' from a predone vector to the grass object the animal actor refused to move, so my thoughts are to translate the object's location into a readable vector for the behaviour tree. The end goal of this commit is to do this and upload onto the github website.
+The level has been arranged to something more similar to the puzzle that's going to be used in the prototype, with a gap in the middle for the animal (when finished) to fall down to provide passage for the player to access the other side. 
 >
 > Iamge of mesh nav
 >
