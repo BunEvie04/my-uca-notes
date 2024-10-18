@@ -57,8 +57,19 @@ Speaking about the ai character, a free animal asset pack labelled "AnimalVariet
 
 As I am slightly unfamiliar with animation sequences I experimented with animation blueprints to bring the sequences together, however I am currently unsure of the reasoning behind what to do.
 
-Updates: I am slowly understanding how they work, after failing over and over I followed a guide which proved unhelpful and then stripped it all up to get to the basics of moveing to a desired location. This works and lays the groundwork which I can develop off of. This is also bringing me up to date with why the previous ones didn't work, as when I switched the 'move to' from a predone vector to the grass object the animal actor refused to move, so my thoughts are to translate the object's location into a readable vector for the behaviour tree. The end goal of this commit is to do this and upload onto the github website.
+I am slowly understanding how they work, after failing over and over I followed a guide which proved unhelpful and then stripped it all up to get to the basics of moveing to a desired location. This works and lays the groundwork which I can develop off of. This is also bringing me up to date with why the previous ones didn't work, as when I switched the 'move to' from a predone vector to the grass object the animal actor refused to move, so my thoughts are to translate the object's location into a readable vector for the behaviour tree. The end goal of this commit is to do this and upload onto the github website.
 The level has been arranged to something more similar to the puzzle that's going to be used in the prototype, with a gap in the middle for the animal (when finished) to fall down to provide passage for the player to access the other side. 
+
+### Recent Updates - 18/10
+* The animal now moves according to the behaviour tree, so it currently moves towards the grass actor.
+* Grass actor detects when its collision touches the animal and moves to another spot, creating the food collection cycle
+Next steps based on this would be to add more onto the animals tree for a rest cycle and prowling/searching.
+Giving the animal more believability would be nice as an extra step, such as turning manually and animations on its movements
+Alongside this I would need to add an item pickup to allow the player to pickup the grass to have the animal seek it out after being placed.
+
+The main issue of why the unique tasks made were not working have been found to be because the node used to initiate them was "Event Receive Execute" instead of "Event Receive Excecute AI", this has been fixed so the behaviour trees can be simplified.
+
+
 >
 > Iamge of mesh nav
 >
