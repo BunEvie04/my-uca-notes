@@ -69,11 +69,25 @@ Alongside this I would need to add an item pickup to allow the player to pickup 
 
 The main issue of why the unique tasks made were not working have been found to be because the node used to initiate them was "Event Receive Execute" instead of "Event Receive Excecute AI", this has been fixed so the behaviour trees can be simplified.
 
+### Recent Updates - 26/10
+The behaviour tree has been edited with branches for:
+* Looking at the object
+* Moving towards the object and plays animation for eating
+* Moving towards the pit as a last resort (a placeholder while the function is being worked out)
 
->
+Adding a grab system for the item, but theres an issue with the item not spawning with the players at their location.
+
+Overall the recent additions added to the behaviour trees, with there now being a wider range of options connected to the main sequences. The fox animal now has a rotation tool towards a selected area that needs fixing as it doesn't go towards the item smoothly as a rotation. Alongside this there is a constant issue with the new grab feature, where the actor that is being picked up is returned back to where it was destroyed. 
+
+Moving on I need to fix the issues with the grab feature and simplify the foxes behaviour so it becomes easier to read and edit.
+The navigation mesh needs to be better implemented so the object doesn't spawn within the walls.
+I also could add an inventory system for the picked up item alongside a win condition for when the player reaches the other side.
+Once these have been implemented I will be able to create the protoprototype for other users to experiment with.
+
 > Iamge of mesh nav
 >
 > Talk about the issue with wall
 > 
 > Implemented a free asset pack named "variety animal pack" to temporarily act as the ai animal
 > The animation came as animation sequences so I am having to put them together using state machines
+![alt text](image.png)
