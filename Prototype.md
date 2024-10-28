@@ -84,6 +84,20 @@ The navigation mesh needs to be better implemented so the object doesn't spawn w
 I also could add an inventory system for the picked up item alongside a win condition for when the player reaches the other side.
 Once these have been implemented I will be able to create the protoprototype for other users to experiment with.
 
+### Animal searching/Grass location change tests
+* Moved twice then grass spawned right next to animal, preventing it from being overlapped again
+* Didn't appear to move when overlapped with animal
+* Had a perfect change of location up to 5 times before staying in the same spot
+* Grass object moved inside a wall.
+
+Next steps are to add gravity and make the grass spawn in front of player rather than inside.
+Edit the ai to only go in the pit if the grass is there
+Add celebratory text
+Extras...
+Create playable build.
+
+
+
 > Iamge of mesh nav
 >
 > Talk about the issue with wall
