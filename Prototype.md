@@ -90,6 +90,13 @@ Once these have been implemented I will be able to create the protoprototype for
 * Had a perfect change of location up to 5 times before staying in the same spot
 * Grass object moved inside a wall.
 
+> Was given advice and shown how to add a function library for the "getrandomlocationinnavigableradius" labelled as the random location function
+> Used a "nearly equal" to compare the transformed location and the original, so it can try and recorrect the move.
+> I tried adding a secondary smaller collision box for primarily the animal but it only works half the time
+* Animal now moves towards it, but the issues of a close move still occurs
+> Solution found was to loop the random location finder and setter until the grass block leaves the animals collision.
+* Grass block checks for the animal, if its still collided it performs another random move
+
 Next steps are to add gravity and make the grass spawn in front of player rather than inside.
 Edit the ai to only go in the pit if the grass is there
 Add celebratory text
