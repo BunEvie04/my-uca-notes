@@ -103,7 +103,21 @@ Add celebratory text
 Extras...
 Create playable build.
 
+### 31/10
+Currently trying to fix the grass block and its collision, as in order to fall when dropped I made it a physical object. This caused an infinite loop when the animal interacted with it, which I theorise is to be caused by the animal not being able to fully complete the goal of reaching the origin of the grass block. To solve this I fiddled with the collision types in the project editor, adding a "grass" type that can be transferred to other items of similar needs.
+>Image of error screen
+The only other issues occurring with this now is the cube appearance stays in place while the object moves. I can tell based on how the animal moves towards empty spaces each time the behaviour tree loops, while the block appears to remain in the same location. I tried adding a shpere mesh to see if this would move whilst the others stayed in the same location, which is exactly what happened. When comparing the differences I noticed it could be due to the simulate physics being ticked, which when unticked allowed the box to move but stopped the box from falling.
+>Image of new grass hierachy
+This has been solved by changing the heirachy to have the mesh become the root node with the collision box attached to that, now when the grass block moves, everything is grabbed with it with an extra detail of it growing out of the ground
+>Image of before and after growing
+The placement of the block had to be fixed again so its placed at a distance, so a "getforwardvector" was used and added to the players location to get the placement location.
 
+The next step that needs to be implemented before the prototype level is fully playable is to alter the animal behaviour to recognise when the grass block is in the bit and proceed to follow it in. As an extra challenge.
+
+>Current thoughts:
+>> Add behaviours for the animal to detect where the object is
+>> Resting nature to be added
+>> Split ideas of either getting the animal to naturally fall down or a behaviour to only do so when the block is noted to be down there.
 
 > Iamge of mesh nav
 >
