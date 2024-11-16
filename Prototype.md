@@ -119,6 +119,24 @@ The next step that needs to be implemented before the prototype level is fully p
 >> Resting nature to be added
 >> Split ideas of either getting the animal to naturally fall down or a behaviour to only do so when the block is noted to be down there.
 
+# What to include in dev log:
+* Editing where the grass spawns
+* Adding the roaming bahaviours
+* Attempting to solve the sleepwalking
+* Giving the animal branching on the Initial behaviours
+* Getting assistance on fixing the sleepwalking and merging the two changes together
+* Editing the numbers for energy
+* Adding in the proper pit solution for the animal controller bp
+* Finishing the gameplay loop
+
+# Extra steps:
+* Title, pause and win screen
+* User testing
+* Polishing
+* Unique player character
+
+
+
 > Iamge of mesh nav
 >
 > Talk about the issue with wall
