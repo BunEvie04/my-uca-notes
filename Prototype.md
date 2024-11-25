@@ -119,6 +119,21 @@ The next step that needs to be implemented before the prototype level is fully p
 >> Resting nature to be added
 >> Split ideas of either getting the animal to naturally fall down or a behaviour to only do so when the block is noted to be down there.
 
+### 3/11
+ This is a small update for me to alter where the grass spawns, as the grass block needed a bit of extra tweeking to get it to respawn where is fully needed.
+
+### 5/11
+The behaviour of roaming was implemented. 
+This would get the animal to move to a random location inbetween the food seeking
+Using the same getrandomlocationinnavigablearea worked as there wasn't a real need for the animal to go to a specific location, I just wanted to have the animal behave in more manners than just eat.
+
+I also added a second secondary behaviour that can alternate with the walking on a selector branch of the tree, this would be the sleeping behaviour where the animal lays down. This would activate when a new float "energy" depletes past a certain point, being depleted through actions like roaming. decoratiors.......
+
+This created an issue where upon activating the sleep function, instead of moving to the eating immediately, the animal would start the lying animation and then move as part of the roaming, getting stuck in the process.
+
+### 
+
+
 # What to include in dev log:
 * Editing where the grass spawns
 * Adding the roaming bahaviours
