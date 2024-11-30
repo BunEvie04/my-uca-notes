@@ -1,4 +1,22 @@
 # Branching Dialogue
+
+Looked at example of how to set up C# trees from the presentation.
+
+
+Research the best way to set out the question data.
+
+Created big list of the nodes with questions.
+
+Experimented the best way of connecting the nodes together.
+Had some issue with changing the example tree code from the presentation into working for our purpose as our one, was a multi node layers. 
+Had some issues with encapsulation, and getting the function to call the root node, by root being built at the start. Could then access the root and start the node traversal.
+Some issues with the online compiler, but it seemed to work fine.
+NEW
+November 12, 2024
+
+
+
+### Full Code
 ```
 using System;
 using System.Collections.Generic;
