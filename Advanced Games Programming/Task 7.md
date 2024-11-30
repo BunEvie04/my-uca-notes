@@ -1,7 +1,13 @@
 # Character Creator
-This task asked for the implementation of a character creation system using factory patterns and decorators.  
-To start it is important to define certain stats of each class, using switches to set these class differences. 
-```
+This task asked for the implementation of a character creation system using factory patterns and decorators. The first stwps where to plan out what the expectations and end results would be.
+In this case, it was asked to contain:
+* Characters would hold at least one item
+* Factory or alternative patterns to create the different classes for characters
+* Decorator patterns being used to modify the stats when items are applied
+* Editable stats for the characters that items can interact with
+
+To start it is important to define certain stats of each class, using switches to set these class differences. This is done first as the classes and stats need to be declared for the decorators to have value.
+``` cpp
 public:
     static Character* CreateCharacter(const std::string& name, CharacterClass charClass)
     {
@@ -62,7 +68,7 @@ Creating a decorator class to have the items within, as this would allow the sta
 A virtual function was thought to be used with this but it was decided to revert back to the decorator as a subclass of the character as this will allow the decorator to add/functions to the character.
 
 With this new setup, a decorator base with an ability attached to it. A child decorator for sword was added which passed “slash” as the ability. Following this, a shield decorator could be added for further testing of the decorator function. This would then, in theory, give the player a block ability.
-```
+``` cpp
 class SwordDecorator : public CharacterDecorator
 {
    public:
@@ -82,12 +88,28 @@ class SwordDecorator : public CharacterDecorator
 Created examples of the different characters with items for testing to ensure it all works as necessary.   
 The shield stats didn't work as intended until reimplementation, but this was fixed up so the stats and ability worked as intended.
 
+Currently the player can see each step of the character creation, including seeing the warrior's stats get changed and abilities being added on.
+``` Output
+Name: GuyDude, Class: 0
+Strength: 10, Agility: 5, Endurance: 5, Intelligence: 3, Willpower: 5, Speed: 5, Luck: 5
+Name: GuyDude, Class: 0
+Strength: 10, Agility: 5, Endurance: 10, Intelligence: 3, Willpower: 5, Speed: 5, Luck: 5
+Ability: Block
+Name: GuyDude, Class: 0
+Strength: 15, Agility: 5, Endurance: 10, Intelligence: 3, Willpower: 5, Speed: 5, Luck: 5
+Ability: Slash
+Name: GuyDude, Class: 0
+Strength: 15, Agility: 5, Endurance: 10, Intelligence: 3, Willpower: 5, Speed: 5, Luck: 5
+Ability: Slash
+Ability: Block
+```
+
 Following this, the option for the player to select their class. This allows all classes to be seen and takes in the player input.
 After this the idea of an item selection  to show off the decorators was planned to be implemented, with the basic options of before combined with extras like the "hermes boots", which adds a dash ability and increases the speed of the player. The end goal of this implementation is for the player to have control over the character and the attatched items.
 
 
 Full code below with output:
-```
+``` cpp
 #include <iostream>
 #include <string>
 
