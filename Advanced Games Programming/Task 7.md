@@ -65,7 +65,7 @@ public:
 ```
 
 Creating a decorator class to have the items within, as this would allow the stats items and stats called in from one place for efficiency. 
-A virtual function was thought to be used with this but it was decided to revert back to the decorator as a subclass of the character as this will allow the decorator to add/functions to the character.
+A virtual function was thought to be used with this but it was decided to revert back to the decorator as a subclass of the character as this will allow the decorator to add/functions to the character. This was mainly due to the level of research necessary to understand this method, and it was deemed better to use what was better known.
 
 With this new setup, a decorator base with an ability attached to it. A child decorator for sword was added which passed “slash” as the ability. Following this, a shield decorator could be added for further testing of the decorator function. This would then, in theory, give the player a block ability.
 ``` cpp
@@ -107,8 +107,10 @@ Ability: Block
 Following this, the option for the player to select their class. This allows all classes to be seen and takes in the player input.
 After this the idea of an item selection  to show off the decorators was planned to be implemented, with the basic options of before combined with extras like the "hermes boots", which adds a dash ability and increases the speed of the player. The end goal of this implementation is for the player to have control over the character and the attatched items.
 
+### Reflection
+Overall I feel that this project was useful for increasing my understanding for decorators in c++. Before this, I had an idea of how switch cases can be implemented and used to alter the variables but had little knowledge of how to use decorators alongside to achieve a similar effect. The only other time I have applied decorators in my knowledge is within my final major prototype behaviour tree, but this was implemented within blueprints, which is a lot more visual and easier to recognise. After this however, I feel more comfortable using this tool as I have this point to reference as to how it can be applied and used.
 
-Full code below with output:
+### Full code below with output:
 ``` cpp
 #include <iostream>
 #include <string>
