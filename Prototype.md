@@ -52,19 +52,14 @@ Later in development a new level had to be made for the prototype as the default
 This section will cover the research made for the features present within the prototype. Primarily it will cover my findings on ai pathways and how I can implement it into the game.
 
 
-As behaviour trees are something I have little information on, I gathered research on how to implement them within the project as the main mechanic. I started by experimenting with the basic nodes and seeing how it interacts with the animal, then recieved helpful insight from my peers and lecturer on more advanced features. Using the Unreal Engine documentation page on behaviour trees was useful as a base to set everything up well for the implementation within the project. 
+As behaviour trees are something I have little information on, I gathered research on how to implement them within the project as the main mechanic. I started by experimenting with the basic nodes and seeing how it interacts with the animal, then recieved helpful insight from my peers and lecturer on more advanced features. Using the Unreal Engine documentation page on behaviour trees was useful as a base to set everything up well for the implementation within the project, as it had step by step instructions with images on how to do so.
 
 
-The video below was used partway through the project to fill in the gaps of knowledge where things were not going well.
+The video below was used partway through the project to fill in the gaps of knowledge where things were not going well. In conjunction with the documentation above, my knowledge of behaviour trees grew to the point where I felt more comfortable in implementing it as the main feature of the project.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/QJuaB2V79mU?si=VSsZL8-AGoeETXgN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>    
-
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/QJuaB2V79mU?si=swfMoPyF1oD5Vahd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 Other forms of research came in looking up certain nodes within blueprints, as I know how to implement most of the mechanics it just misses that one important node/element that makes it work efficiently. Relying on Unreal Engine documentation and AI hints allowed me to find what I miss.
-
-As I am slightly unfamiliar with animation sequences I experimented with animation blueprints to bring the sequences together, however I am currently unsure of the reasoning behind what to do.////
-Expand upon this^^
 
 
 ## Workings
