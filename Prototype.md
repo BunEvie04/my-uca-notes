@@ -4,17 +4,17 @@
 
 Puzzle platformer relying on AI behaviour and interaction within the world. With different pickupable items being able to affect the world and the creatures within. Some levels may ask the player to use the creatures habits to make a path forward, like removing the food so they eat at the unwalkable area full of bushes. Or the player could use fire from a torch item to scare/guide them away from the objective.
 
-- cite and talk about monster hunter world
+Monster Hunter (Capcom, 2004-current), specifically Monster Hunter World (Capcom, 2019) is an action role-playing game that has a strong emphasis on building a world of unique animals of varying sizes. This installment into the series in particular has a heavy focus on immersing the player into the environment, which is done through the range of animals with behaviours that fit into the areas they inhabit. This has inspired me to make this style of game, which revolves around the player being able to see and interact/exploit the animals in order to get the win condition.
+- cite monster hunter world///////
 
 ## Engine
 
 UE5 
-(reason)
 
 ## Language
 
 C++
-(reason)
+Blueprints
 
 ## Possible mechanics to focus on
 - AI implementation through both docile and aggressive creatures
@@ -43,17 +43,19 @@ The overal plan for the prototype is to get from point A (at the bottom of a hil
 There will be a fur coated animal which covers one to four tiles total, with it having options between different patches of tall grass to eat at, with gaps between resting.  
 While this creature is resting, the player can then harvest the remaining growing crops to then place in a pit, for the animal to fall and creaete a path to the exit.
 
+Captain Toad's Treasure Tracker (Nintendo, 2014) was a good game for me to look at when it came to the level design, as this game contains enemies that fit on a smaller scaled, simplistic level. Therefore some information can be transfered onto how I should divide the world into base areas and how the main puzzle should be set up to reach the end goal. Some levels in the game rely on blocks being moved into the right location to gain access to another part of the stage, so a similar idea can be implemented into my prototype with the animal acting as the stepping stone.
+
 Later in development a new level had to be made for the prototype as the default didn't work correctly with the navigation mesh. An empty map was made with simple platforms to provide the same function as the plans.
 
-- mention and cite captain toad 
+- mention and cite captain toad //////
 
 ## Research
 
 This section will cover the research made for the features present within the prototype. Primarily it will cover my findings on ai pathways and how I can implement it into the game.
 
-
 As behaviour trees are something I have little information on, I gathered research on how to implement them within the project as the main mechanic. I started by experimenting with the basic nodes and seeing how it interacts with the animal, then recieved helpful insight from my peers and lecturer on more advanced features. Using the Unreal Engine documentation page on behaviour trees was useful as a base to set everything up well for the implementation within the project, as it had step by step instructions with images on how to do so.
 
+https://dev.epicgames.com/documentation/en-us/unreal-engine/behavior-tree-in-unreal-engine---quick-start-guide
 
 The video below was used partway through the project to fill in the gaps of knowledge where things were not going well. In conjunction with the documentation above, my knowledge of behaviour trees grew to the point where I felt more comfortable in implementing it as the main feature of the project.
 
@@ -101,18 +103,20 @@ I am slowly understanding how behaviour tree tasks work, I tried to follow the U
   * MoveTo
     * A simple move to which only works if the prior tasks return successful
 
-![Behaviour Tree](https://github.com/user-attachments/assets/f169507e-45f7-48f8-a432-2495e3e02030)
+<img width="1070" alt="{Final Behaviour Tree}" src="https://github.com/user-attachments/assets/092c4a22-5987-484c-a518-79fcd07a000c">
 
-
-* A behaviour tree was implemented with a blackboard planned to give the animal ai different actions/states
-  * Basic tasks named "Idle", "Searching", and "Eating" have been made
-  * More tasks have been added to expand what the animal can do
 
 ### Grass Actor
 
 This is an actor that will be interacted with by both the player and the animal ai. The player will be able to pick it up (by destroying the actor and storing it as a variable) and place it anywhere within the level (using spawn actor of class) using the "E" key.
 
-The Animal ai will interact with the grass by chasing after it, causing the actor to move to another location when both it and the animal's collision box overlap.
+The Animal ai will interact with the grass by chasing after it, causing the actor to move to another location when both it and the animal's collision box overlap. Upon moving, it had trouple not moving directly back to the location so an inclusion of overlap functions were used. Alongside this, a mechanic for the grass to grow when moved was added to make it seem more a part of the world.
+
+<iframe src="https://blueprintue.com/render/0k-wxu6f/" scrolling="no" allowfullscreen></iframe>
+
+<iframe src="https://blueprintue.com/render/p6cb3krn/" scrolling="no" allowfullscreen></iframe>  
+
+
 
 * A simple actor class to be interacted with
   * Slightly translucent to seem more like the desired outcome
@@ -125,11 +129,51 @@ The Animal ai will interact with the grass by chasing after it, causing the acto
 There wasn't much changed to the player character, but since they aren't the main focus it was intentional.
 The only additions made towards the player was in terms of movement, as the jump mechanic was removed to prevent the player from cheezing the level by jumping to the exit.
 
-## Testing
+
+## Extra Items
+
+## Used Widgets
+
+* Start Screen
+  * Plays when opened
+  * Lists controls
+  * Clickable play button
+* Description Overlay
+  * Appears when holding "Q"
+  * Gives description in game on objective
 
 
+## Testing and Feedback
 
-## Feedback
+At certain intervals of the development process, I had numerous individuals try the different builds of the game, below are videos of two people testing the first build of the game. This build was found to not work as intended but was tested anyway for the other features to be shown off to the public. In addition to this, the videos show off a different level from the final designs, as some of the required features like the nav mesh did not work correctly in this initial level (ie. the nav mesh would shift to a side of the level when played, compared to in editor)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/C_oBPP1LZJY?si=wdt-JGFCIlhTKCf9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>  
+
+Feedback from person 1
+* Kept falling into the hole and got softlocked
+* The fox did not act as intended
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/xLCZX4QSgKA?si=D3wUm7Qu4W_Ou2m3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+Feedback from person 2
+*  The behaviour of the animal was rather inconsistent
+*  There was a good foundation with a lot of potential
+
+From this, I worked on how the the animal behaved in both the editor and the project build. I found out that only certain custom tasks in the behaviour tree functioned correctly and played in teh final build. It was odd as all online answers were unable to solve this issue, including asking on web forums like reddit and the unreal engine help site. Chatgpt was asked as well, which answered with solutions that did not solve the issue at hand. This promted me to try the angle of recreating the custom tasks again but breaking them down into multiple smaller tasks, which worked and enabled me to create another build with a working animal behaviour tree.
+
+Alongside this, I also added a collision box that will move any actor back onto the stage, so that they don't get softlocked again.
+
+The next bits of feedback were from a group testing setting, so I have grouped them up for simplicity:
+* The fox's hitbox was too large and hit like a truck, but it made sense once I realised what I needed to do
+  * The animal's hitbox had been tweeked to not move the player too much
+* I had no idea of what I was doing, I accidentally crashed the game
+  * A menu has been added at the start of the game with listed controls
+  * A help screen found by pressing "Q" can inform any confused players.
+* The grass I threw off came back but the fox was softlocked.
+  * A fix for this to reset the animal has been added
+  * A decorator was added that aborts the move to task if it lasts enough time without success
+
+These rounds of testing proved useful as most of these issues I had missed prior to making these builds.
 
 ## Declared Assets
 * Chat GPT
@@ -137,114 +181,12 @@ The only additions made towards the player was in terms of movement, as the jump
 * AnimalVarietyPack
   * Free asset pack
 
+## Reflection
+
+
 
 ## Bibliography
 Monster hunter world
 Captain Toad
 https://dev.epicgames.com/documentation/en-us/unreal-engine/behavior-tree-in-unreal-engine---quick-start-guide
 (Work on this)
-
-
-
- This works and lays the groundwork which I can develop off of. This is also bringing me up to date with why the previous ones didn't work, as when I switched the 'move to' from a predone vector to the grass object the animal actor refused to move, so my thoughts are to translate the object's location into a readable vector for the behaviour tree. The end goal of this commit is to do this and upload onto the github website.
-The level has been arranged to something more similar to the puzzle that's going to be used in the prototype, with a gap in the middle for the animal (when finished) to fall down to provide passage for the player to access the other side. 
-
-* The animal now moves according to the behaviour tree, so it currently moves towards the grass actor.
-* Grass actor detects when its collision touches the animal and moves to another spot, creating the food collection cycle
-Next steps based on this would be to add more onto the animals tree for a rest cycle and prowling/searching.
-Giving the animal more believability would be nice as an extra step, such as turning manually and animations on its movements
-Alongside this I would need to add an item pickup to allow the player to pickup the grass to have the animal seek it out after being placed.
-
-The main issue of why the unique tasks made were not working have been found to be because the node used to initiate them was "Event Receive Execute" instead of "Event Receive Excecute AI", this has been fixed so the behaviour trees can be simplified.
-
-
-The behaviour tree has been edited with branches for:
-* Looking at the object
-* Moving towards the object and plays animation for eating
-* Moving towards the pit as a last resort (a placeholder while the function is being worked out)
-
-Adding a grab system for the item, but theres an issue with the item not spawning with the players at their location.
-
-Overall the recent additions added to the behaviour trees, with there now being a wider range of options connected to the main sequences. The fox animal now has a rotation tool towards a selected area that needs fixing as it doesn't go towards the item smoothly as a rotation. Alongside this there is a constant issue with the new grab feature, where the actor that is being picked up is returned back to where it was destroyed. 
-
-Moving on I need to fix the issues with the grab feature and simplify the foxes behaviour so it becomes easier to read and edit.
-The navigation mesh needs to be better implemented so the object doesn't spawn within the walls.
-I also could add an inventory system for the picked up item alongside a win condition for when the player reaches the other side.
-Once these have been implemented I will be able to create the protoprototype for other users to experiment with.
-
-### Animal searching/Grass location change tests
-* Moved twice then grass spawned right next to animal, preventing it from being overlapped again
-* Didn't appear to move when overlapped with animal
-* Had a perfect change of location up to 5 times before staying in the same spot
-* Grass object moved inside a wall.
-
-> Was given advice and shown how to add a function library for the "getrandomlocationinnavigableradius" labelled as the random location function
-> Used a "nearly equal" to compare the transformed location and the original, so it can try and recorrect the move.
-> I tried adding a secondary smaller collision box for primarily the animal but it only works half the time
-* Animal now moves towards it, but the issues of a close move still occurs
-> Solution found was to loop the random location finder and setter until the grass block leaves the animals collision.
-* Grass block checks for the animal, if its still collided it performs another random move
-
-Next steps are to add gravity and make the grass spawn in front of player rather than inside.
-Edit the ai to only go in the pit if the grass is there
-Add celebratory text
-Extras...
-Create playable build.
-
-
-Currently trying to fix the grass block and its collision, as in order to fall when dropped I made it a physical object. This caused an infinite loop when the animal interacted with it, which I theorise is to be caused by the animal not being able to fully complete the goal of reaching the origin of the grass block. To solve this I fiddled with the collision types in the project editor, adding a "grass" type that can be transferred to other items of similar needs.
->Image of error screen
-The only other issues occurring with this now is the cube appearance stays in place while the object moves. I can tell based on how the animal moves towards empty spaces each time the behaviour tree loops, while the block appears to remain in the same location. I tried adding a shpere mesh to see if this would move whilst the others stayed in the same location, which is exactly what happened. When comparing the differences I noticed it could be due to the simulate physics being ticked, which when unticked allowed the box to move but stopped the box from falling.
->Image of new grass hierachy
-This has been solved by changing the heirachy to have the mesh become the root node with the collision box attached to that, now when the grass block moves, everything is grabbed with it with an extra detail of it growing out of the ground
->Image of before and after growing
-The placement of the block had to be fixed again so its placed at a distance, so a "getforwardvector" was used and added to the players location to get the placement location.
-
-The next step that needs to be implemented before the prototype level is fully playable is to alter the animal behaviour to recognise when the grass block is in the bit and proceed to follow it in. As an extra challenge.
-
->Current thoughts:
->> Add behaviours for the animal to detect where the object is
->> Resting nature to be added
->> Split ideas of either getting the animal to naturally fall down or a behaviour to only do so when the block is noted to be down there.
-
-
- This is a small update for me to alter where the grass spawns, as the grass block needed a bit of extra tweeking to get it to respawn where is fully needed.
-
-
-The behaviour of roaming was implemented. 
-This would get the animal to move to a random location inbetween the food seeking
-Using the same getrandomlocationinnavigablearea worked as there wasn't a real need for the animal to go to a specific location, I just wanted to have the animal behave in more manners than just eat.
-
-I also added a second secondary behaviour that can alternate with the walking on a selector branch of the tree, this would be the sleeping behaviour where the animal lays down. This would activate when a new float "energy" depletes past a certain point, being depleted through actions like roaming. decoratiors.......
-
-This created an issue where upon activating the sleep function, instead of moving to the eating immediately, the animal would start the lying animation and then move as part of the roaming, getting stuck in the process.
-
-
-
-Found a fix for the "sleep walking". There was an option in the behaviour tree decorators that would automatically fail a branch if the selector value became false midway through. I changed the notify observer in the decorator from "on value change" to "on result change" which resolved this issue. With this change it will only select one selector composite node, even if the energy value changes within.
-
-I also 
-
-###
-
-
-# What to include in dev log:
-* Images
-* Videos
-* Links to resources
-
-# Extra steps:
-* Title, pause and win screen
-* User testing
-* Polishing
-* Unique player character
-
-
-
-> Iamge of mesh nav
->
-> Talk about the issue with wall
-> 
-> Implemented a free asset pack named "variety animal pack" to temporarily act as the ai animal
-> The animation came as animation sequences so I am having to put them together using state machines
-![alt text](image.png)
