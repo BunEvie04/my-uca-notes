@@ -5,7 +5,6 @@
 Puzzle platformer relying on AI behaviour and interaction within the world. With different pickupable items being able to affect the world and the creatures within. Some levels may ask the player to use the creatures habits to make a path forward, like removing the food so they eat at the unwalkable area full of bushes. Or the player could use fire from a torch item to scare/guide them away from the objective.
 
 Monster Hunter (Capcom, 2004-current), specifically Monster Hunter World (Capcom, 2019) is an action role-playing game that has a strong emphasis on building a world of unique animals of varying sizes. This installment into the series in particular has a heavy focus on immersing the player into the environment, which is done through the range of animals with behaviours that fit into the areas they inhabit. This has inspired me to make this style of game, which revolves around the player being able to see and interact/exploit the animals in order to get the win condition.
-- cite monster hunter world///////
 
 ## Engine
 
@@ -75,6 +74,7 @@ Other forms of research came in looking up certain nodes within blueprints, as I
 To start with the ai I used a character blueprint class, with an ai controller attatched to it. I wanted to start this within blueprints so I can lay the groundwork before using c++ since this is the first proper time using ai within UE5. After the character was created and placed into the level, a navigation mesh was placed down across the entire stage along with basic blueprints for the character to move to random points on the level.
 Within the animal's AI Controller, it sets up the Behaviour Tree alongside some of the variables that are contained within the blackboard component. Such as the Grass block location and if its valid or not, all set up with the event tick. The AI controller doesn't hold much more information as most of the animal's behaviours come from the behaviour tree custom tasks.
 
+![Fox Asset](https://github.com/user-attachments/assets/fe4909a7-8108-4dbd-82f2-5a3727758d69)
 
 
 <iframe src="https://blueprintue.com/render/4gyp1uwq/" scrolling="no" allowfullscreen></iframe>
@@ -97,7 +97,12 @@ I am slowly understanding how behaviour tree tasks work, I tried to follow the U
   * Roaming
     * Causes the animal to move to a random location in the nav mesh
     * Decreases the energy variable by a set amount
-      
+
+<iframe src="https://blueprintue.com/render/z16skiv-/" scrolling="no" allowfullscreen></iframe>
+
+<iframe src="https://blueprintue.com/render/yc3lh-en/" scrolling="no" allowfullscreen></iframe>
+
+
 * Active
   * CanReach
     * A revision of a previous task
@@ -108,11 +113,19 @@ I am slowly understanding how behaviour tree tasks work, I tried to follow the U
     * If the grass is not in the pit it continues the gameplay loop
   * MoveTo
     * A simple move to which only works if the prior tasks return successful
+      
+  <iframe src="https://blueprintue.com/render/m5iox_m0/" scrolling="no" allowfullscreen></iframe> 
+
+  <iframe src="https://blueprintue.com/render/op832tcg/" scrolling="no" allowfullscreen></iframe>
+
 
 <img width="1070" alt="{Final Behaviour Tree}" src="https://github.com/user-attachments/assets/092c4a22-5987-484c-a518-79fcd07a000c">
 
 
 ### Grass Actor
+
+![iGrass Viewport](https://github.com/user-attachments/assets/bcd1a327-698c-4672-ba27-579f1fcb6c49)
+
 
 This is an actor that will be interacted with by both the player and the animal ai. The player will be able to pick it up (by destroying the actor and storing it as a variable) and place it anywhere within the level (using spawn actor of class) using the "E" key.
 
@@ -121,7 +134,6 @@ The Animal ai will interact with the grass by chasing after it, causing the acto
 <iframe src="https://blueprintue.com/render/0k-wxu6f/" scrolling="no" allowfullscreen></iframe>
 
 <iframe src="https://blueprintue.com/render/p6cb3krn/" scrolling="no" allowfullscreen></iframe>  
-
 
 
 * A simple actor class to be interacted with
@@ -147,9 +159,14 @@ The only additions made towards the player was in terms of movement, as the jump
   * Plays when opened
   * Lists controls
   * Clickable play button
+![TitleScreen](https://github.com/user-attachments/assets/538a39ce-60c3-4d2e-836a-b75676ef62a4)
+
+
 * Description Overlay
   * Appears when holding "Q"
   * Gives description in game on objective
+![GameDescription](https://github.com/user-attachments/assets/f65ebbae-74be-469b-9842-4a876c05494a)
+
 
 
 ## Testing and Feedback
