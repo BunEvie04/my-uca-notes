@@ -79,6 +79,163 @@ Potion: 50
 ### Next steps
 For the next stage I wanted the user to be able to add their own inputs into each of the catagories, with the system outputting a new list with their addition sorted within. 
 
+
+### Full Code
+```
+#include <iostream>
+#include <vector>
+#include <algorithm>
+#include <string>
+
+class Item
+{
+public:
+    std::string name;
+    int value;
+
+    Item(std::string n, int v) : name(n), value(v) {}
+    
+};
+
+// Function to display the inventory
+void DisplayInventory(const std::vector<Item>& items)
+{
+    for (const auto& item : items)
+    {
+        std::cout << item.name << ": " << item.value << std::endl;
+    }
+}
+
+// Function to sort items by name (alphabetically)
+void SortByName(std::vector<Item>& items, bool ascending = true)
+{
+    //defines n as the number of items within the list
+    int n = items.size();
+    if (ascending)
+    {
+        //loops until the end of the list has been reached
+        for (int i = 0; i < n; i++)
+        {
+            //places the list items
+            for (int j = 0; j < n - i - 1; j++)
+            {
+                //compares the adjacent items
+                if (items[j].name > items[j + 1].name) std::swap(items[j], items[j + 1]);
+            }
+        }
+    }
+
+    else
+    {
+        //Descending
+        for (int i = 0; i < n; i++)
+        {
+            //places the list items
+            for (int j = 0; j < n - i - 1; j++)
+            {
+                //compares the adjacent items
+                if (items[j].name < items[j + 1].name) std::swap(items[j], items[j + 1]);
+            }
+        }
+    }
+
+
+    //sort function automatically fits the list items using the given type
+    /*std::sort(items.begin(), items.end(), [](const Item& a, const Item& b)
+    {
+        return a.name < b.name;
+    });
+    */
+}
+
+// Function to sort items by value (ascending/descending)
+void SortByValue(std::vector<Item>& items, bool ascending = true)
+{
+    if (ascending)
+    {
+        std::sort(items.begin(), items.end(), [](const Item& a, const Item& b)
+        {
+            return a.value > b.value;
+        });
+    }
+    
+    else
+    {
+        std::sort(items.begin(), items.end(), [](const Item& a, const Item& b)
+        {
+            return a.value < b.value;
+        });
+    }
+
+}
+
+int main()
+{
+
+    char* pcontinue = new char;
+    *pcontinue = 'y';
+
+    for (; *pcontinue == 'y';) {
+
+
+        std::vector<Item> items = {
+            Item("Sword", 150),
+            Item("Potion", 50),
+            Item("Shield", 100),
+            Item("Bow", 120),
+            Item("Helmet", 80)
+        };
+
+        std::cout << "Original Inventory:" << std::endl;
+        DisplayInventory(items);
+
+        //std::cin >>  >> std::endl;
+        
+        
+        std::cout << "\nSorted by Name (Ascending):" << std::endl;
+        SortByName(items, true); // Sort by name in ascending order
+        DisplayInventory(items);
+        
+        std::cout << "\nSorted by Name (Descending):" << std::endl;
+        SortByName(items, false); // Sort by name in ascending order
+        DisplayInventory(items);
+
+        std::cout << "\nSorted by Value (Ascending):" << std::endl;
+        SortByValue(items, false); // Sort by value in descending order
+        DisplayInventory(items);
+        
+        std::cout << "\nSorted by Value (Descending):" << std::endl;
+        SortByValue(items, true); // Sort by value in descending order
+        DisplayInventory(items);
+
+        std::string newname;
+        int newvalue;
+
+        //Below is unused enter new item code
+        /*std::cout << "Enter another item:" << std::endl;
+        std::cin >> newname;
+        std::cout << "Enter the price" << std::endl;
+        std::cin >> newvalue;
+
+        items.push_back(Item(newname, newvalue));
+
+        std::cout << "\nUpdated Items:" << std::endl;
+        for (const auto& item : items) {
+            std::cout << "Item: " << item.name << ", Value: " << item.value << std::endl;
+        }*/
+        
+        //Attempts at chossing what to sort
+        
+
+        std::cout << "continue?(y/n)";
+        std::cin >> pcontinue;
+
+    }
+
+    return 0;
+}
+```
+
 ## Bibliography
 
 Ravikiran, A. S. (2021) What is sorting in C++: Bubble Sort, Insertion Sort & more. At: https://www.simplilearn.com/tutorials/cpp-tutorial/sorting-in-cpp (Accessed  05/12/2024).
