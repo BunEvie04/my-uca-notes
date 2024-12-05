@@ -112,10 +112,10 @@ I am slowly understanding how behaviour tree tasks work, I tried to follow the U
     * If the grass is not in the pit it continues the gameplay loop
   * MoveTo
     * A simple move to which only works if the prior tasks return successful
-      
-  <iframe src="https://blueprintue.com/render/m5iox_m0/" scrolling="no" allowfullscreen></iframe> 
 
-  <iframe src="https://blueprintue.com/render/op832tcg/" scrolling="no" allowfullscreen></iframe>
+<iframe src="https://blueprintue.com/render/m5iox_m0/" scrolling="no" allowfullscreen></iframe> 
+
+<iframe src="https://blueprintue.com/render/op832tcg/" scrolling="no" allowfullscreen></iframe>
 
 
 <img width="1070" alt="{Final Behaviour Tree}" src="https://github.com/user-attachments/assets/092c4a22-5987-484c-a518-79fcd07a000c">
@@ -157,13 +157,15 @@ The only additions made towards the player was in terms of movement, as the jump
 * Start Screen
   * Plays when opened
   * Lists controls
-  * Clickable play button
+  * Clickable play button  
+
 ![TitleScreen](https://github.com/user-attachments/assets/538a39ce-60c3-4d2e-836a-b75676ef62a4)
 
 
 * Description Overlay
   * Appears when holding "Q"
-  * Gives description in game on objective
+  * Gives description in game on objective  
+
 ![GameDescription](https://github.com/user-attachments/assets/f65ebbae-74be-469b-9842-4a876c05494a)
 
 
