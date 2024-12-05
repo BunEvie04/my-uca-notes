@@ -113,6 +113,7 @@ I am slowly understanding how behaviour tree tasks work, I tried to follow the U
   * MoveTo
     * A simple move to which only works if the prior tasks return successful
 
+
 <iframe src="https://blueprintue.com/render/m5iox_m0/" scrolling="no" allowfullscreen></iframe> 
 
 <iframe src="https://blueprintue.com/render/op832tcg/" scrolling="no" allowfullscreen></iframe>
@@ -159,12 +160,14 @@ The only additions made towards the player was in terms of movement, as the jump
   * Lists controls
   * Clickable play button  
 
+
 ![TitleScreen](https://github.com/user-attachments/assets/538a39ce-60c3-4d2e-836a-b75676ef62a4)
 
 
 * Description Overlay
   * Appears when holding "Q"
   * Gives description in game on objective  
+
 
 ![GameDescription](https://github.com/user-attachments/assets/f65ebbae-74be-469b-9842-4a876c05494a)
 
