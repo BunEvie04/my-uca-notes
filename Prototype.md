@@ -1,5 +1,8 @@
 # Prototype Ideas
 
+![image](https://github.com/user-attachments/assets/33474a06-6900-4fe4-9801-d97edc0b4dba)
+
+
 ## Game ideas
 
 Puzzle platformer relying on AI behaviour and interaction within the world. With different pickupable items being able to affect the world and the creatures within. Some levels may ask the player to use the creatures habits to make a path forward, like removing the food so they eat at the unwalkable area full of bushes. Or the player could use fire from a torch item to scare/guide them away from the objective.
