@@ -1,8 +1,5 @@
 # Prototype Ideas
 
-![image](https://github.com/user-attachments/assets/33474a06-6900-4fe4-9801-d97edc0b4dba)
-
-
 ## Game ideas
 
 Puzzle platformer relying on AI behaviour and interaction within the world. With different pickupable items being able to affect the world and the creatures within. Some levels may ask the player to use the creatures habits to make a path forward, like removing the food so they eat at the unwalkable area full of bushes. Or the player could use fire from a torch item to scare/guide them away from the objective.
@@ -78,7 +75,7 @@ Other forms of research came in looking up certain nodes within blueprints, as I
 To start with the ai I used a character blueprint class, with an ai controller attatched to it. I wanted to start this within blueprints so I can lay the groundwork before using c++ since this is the first proper time using ai within UE5. After the character was created and placed into the level, a navigation mesh was placed down across the entire stage along with basic blueprints for the character to move to random points on the level.
 Within the animal's AI Controller, it sets up the Behaviour Tree alongside some of the variables that are contained within the blackboard component. Such as the Grass block location and if its valid or not, all set up with the event tick. The AI controller doesn't hold much more information as most of the animal's behaviours come from the behaviour tree custom tasks.
 
-![iFox Asset](https://github.com/user-attachments/assets/50785e79-5bc4-498d-a3b2-225901fe9794)
+
 
 <iframe src="https://blueprintue.com/render/4gyp1uwq/" scrolling="no" allowfullscreen></iframe>
 
