@@ -211,6 +211,13 @@ These rounds of testing proved useful as most of these issues I had missed prior
 * AnimalVarietyPack
   * Free asset pack
 
+## Main build
+
+The final build has been uploaded onto itch.io, with the link to the project below
+
+https://bunevie.itch.io/animalpuzzleprototype
+
+
 ## Reflection
 
 This prototype project has been 10 weeks worth of progress. As such, it would hope to hold work expected to be seen of similar in the same amount of time. I feel like the end result meets these expectations alongside performing the basic role it was meant to do; it is a prototype of a game and uses an animal as the main puzzle to get to the win condition. In this regard, I feel as if I had learnt a great deal of knowledge into how ai can be used within games and its implementation. I have also learnt a lot as to how teams within the games industry perform due, in part, to how this project was set up with bi-weekly stand-up meetings to talk about the project. Factors like this aid in the development process and give that understanding of the games industry. I only hope to be able to deliver a fully fleshed out game in return from this prototype.
