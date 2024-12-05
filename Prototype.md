@@ -45,9 +45,13 @@ While this creature is resting, the player can then harvest the remaining growin
 
 Captain Toad's Treasure Tracker (Nintendo, 2014) was a good game for me to look at when it came to the level design, as this game contains enemies that fit on a smaller scaled, simplistic level. Therefore some information can be transfered onto how I should divide the world into base areas and how the main puzzle should be set up to reach the end goal. Some levels in the game rely on blocks being moved into the right location to gain access to another part of the stage, so a similar idea can be implemented into my prototype with the animal acting as the stepping stone.
 
+![iCaptain Toad Level](https://github.com/user-attachments/assets/e2a03f01-79cc-42e5-9131-dd7a9b38bfb4)
+
+
 Later in development a new level had to be made for the prototype as the default didn't work correctly with the navigation mesh. An empty map was made with simple platforms to provide the same function as the plans.
 
-- mention and cite captain toad //////
+![Level Layout](https://github.com/user-attachments/assets/c5e23918-4284-4df4-aa0a-b9744992e698)
+
 
 ## Research
 
@@ -71,7 +75,9 @@ Other forms of research came in looking up certain nodes within blueprints, as I
 To start with the ai I used a character blueprint class, with an ai controller attatched to it. I wanted to start this within blueprints so I can lay the groundwork before using c++ since this is the first proper time using ai within UE5. After the character was created and placed into the level, a navigation mesh was placed down across the entire stage along with basic blueprints for the character to move to random points on the level.
 Within the animal's AI Controller, it sets up the Behaviour Tree alongside some of the variables that are contained within the blackboard component. Such as the Grass block location and if its valid or not, all set up with the event tick. The AI controller doesn't hold much more information as most of the animal's behaviours come from the behaviour tree custom tasks.
 
-> BP Input Here
+![iFox Asset](https://github.com/user-attachments/assets/50785e79-5bc4-498d-a3b2-225901fe9794)
+
+<iframe src="https://blueprintue.com/render/4gyp1uwq/" scrolling="no" allowfullscreen></iframe>
 
 * A free animal asset pack labelled "AnimalVarietyPack" was added into the project
   * Allows me to temporarily make the animal look like an animal
@@ -190,7 +196,14 @@ This prototype project has been 10 weeks worth of progress. As such, it would ho
 
 
 ## Bibliography
-Monster hunter world
-Captain Toad
-https://dev.epicgames.com/documentation/en-us/unreal-engine/behavior-tree-in-unreal-engine---quick-start-guide
-(Work on this)
+
+Capcom (2018) Monster Hunter World. (s.l.): (s.n.).
+
+Nintendo (2014) Captain Toad: Treasure Tracker. (s.l.): (s.n.).
+
+Games, E. (s.d.) Behavior Tree Quick Start Guide. At: https://dev.epicgames.com/documentation/en-us/unreal-engine/behavior-tree-in-unreal-engine---quick-start-guide (Accessed  05/12/2024a).
+
+Games, G. (s.d.) How to Make a Simple Behavior Tree in Unreal Engine 5 - Advanced AI. At: https://www.youtube.com/embed/QJuaB2V79mU?si=swfMoPyF1oD5Vahd (Accessed  05/12/2024b).
+
+
+
