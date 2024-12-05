@@ -25,7 +25,6 @@ Blueprints
     - Keys used to open doors
     - Grass that can placed in front of the player
     - Torches that can create fire on certain tiles/anywhere
-    - 
 - Different movement types to enable world traversal
     - Climbing
     - Jumps (possibly more than one)
