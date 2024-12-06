@@ -217,6 +217,12 @@ The final build has been uploaded onto itch.io, with the link to the project bel
 
 https://bunevie.itch.io/animalpuzzleprototype
 
+## Video Demonstration
+
+I have recorded a video on youtube going over some of the main features in a short playthrough
+
+https://youtu.be/l7Iq0lCPmbI
+
 
 ## Reflection
 
