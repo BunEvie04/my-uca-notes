@@ -22,7 +22,61 @@ https://blog.klipse.tech/dop/2022/06/22/principles-of-dop.html
 
 
 ### Workings
+The fisrt step onto changin this into data oriented design is to change how the inputs are placed into the program. Compared to before, there are now vector arrays connected that display only the data associated, in this case being the positions and velocities.
+``` cpp
+public:
+    // Arrays grouped together
+    std::vector<float> positionsX;
+    std::vector<float> positionsY;
+    std::vector<float> positionsZ;
+    std::vector<float> velocitiesX;
+    std::vector<float> velocitiesY;
+    std::vector<float> velocitiesZ;
+```
 
+The entities can then be created, they can be introduced in a similar array style so it is all put out in one go.
+``` cpp
+    // Adding entities
+    void AddEntity(float posX, float posY, float posZ, float velX, float velY, float velZ)
+    {
+        positionsX.push_back(posX);
+        positionsY.push_back(posY);
+        positionsZ.push_back(posZ);
+        velocitiesX.push_back(velX);
+        velocitiesY.push_back(velY);
+        velocitiesZ.push_back(velZ);
+    }
+```
+
+This way, when the system requires the entity to have an attached position to place it on the map, it can be done simply by combining the two. This allows all of the entities to be updated simultaniously.
+``` cpp
+    void UpdatePositions(float deltaTime)
+    {
+        size_t entityCount = positionsX.size();
+
+        // Batch processing using loop unrolling for performance
+        for (size_t i = 0; i < entityCount; ++i)
+        {
+            positionsX[i] += velocitiesX[i] * deltaTime;
+            positionsY[i] += velocitiesY[i] * deltaTime;
+            positionsZ[i] += velocitiesZ[i] * deltaTime;
+        }
+    }
+```
+
+All before being printed off simultaniously, in a highly efficient manner due to all of the information being light and in batches.
+``` cpp
+    // Print the positions of all entities
+    void PrintPositions()
+    {
+        size_t entityCount = positionsX.size();
+
+        for (size_t i = 0; i < entityCount; ++i)
+        {
+            std::cout << "Entity " << i + 1 << " Position: X=" << positionsX[i]
+                      << ", Y=" << positionsY[i] << ", Z=" << positionsZ[i] << std::endl;
+        }
+```
 
 
 ### Reflection
@@ -63,7 +117,7 @@ struct EntityData
 class MovementSystem
 {
 public:
-    // Vector arrays for batched data storage
+    // Arrays grouped together
     std::vector<float> positionsX;
     std::vector<float> positionsY;
     std::vector<float> positionsZ;
@@ -71,7 +125,7 @@ public:
     std::vector<float> velocitiesY;
     std::vector<float> velocitiesZ;
 
-    // Add an entity to the system
+    // Adding entities
     void AddEntity(float posX, float posY, float posZ, float velX, float velY, float velZ)
     {
         positionsX.push_back(posX);
@@ -82,7 +136,7 @@ public:
         velocitiesZ.push_back(velZ);
     }
 
-    // Update the positions of all entities based on their velocities
+    // Updating the positions
     void UpdatePositions(float deltaTime)
     {
         size_t entityCount = positionsX.size();
@@ -111,7 +165,7 @@ public:
 
 int main()
 {
-    // Initialize the MovementSystem
+    // Movement system
     MovementSystem movementSystem;
 
     // Add entities to the system
