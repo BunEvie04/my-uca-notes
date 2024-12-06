@@ -407,7 +407,12 @@ This sprint is the final sprint with the main focus on tying up all of the loose
 ![Sprint8Image](https://github.com/user-attachments/assets/42d53adb-213e-49a3-b2d3-9640913b7424)
 
 
-## Reflection
+### Trello Board
+
+https://trello.com/b/mgQd6XV9/cool-maths-game
+
+
+### Reflection
 
 This task has been a great deal of insight into what goes into the head of people within the industry when it comes time to plan out a project that utilises sprints. It gives a good hint into what it will be like working as part of a smaller team of developers with different tools and skillsets, as the plans would have to stretch us out in a healthy manner to increase efficiency and avoid burnout. Trello was a wonderful tool to work with as it provided a base to plan out each sprint with cards that could be moved with ease in case a task could not be completed or had to be pushed to an earlier/later point within the development process.
 
