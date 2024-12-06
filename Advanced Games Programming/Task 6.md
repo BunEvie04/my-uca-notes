@@ -76,6 +76,7 @@ All before being printed off simultaniously, in a highly efficient manner due to
             std::cout << "Entity " << i + 1 << " Position: X=" << positionsX[i]
                       << ", Y=" << positionsY[i] << ", Z=" << positionsZ[i] << std::endl;
         }
+    }
 ```
 
 
@@ -93,7 +94,7 @@ Sharvit, Y. (2022) Principles of Data-Oriented Programming. At: https://blog.kli
 
 
 
-### Full Code below
+### Full Code
 ```cpp
 #include <iostream>
 #include <vector>
