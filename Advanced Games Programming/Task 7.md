@@ -1,4 +1,4 @@
-# Character Creator
+## Week 7 - Character Creator
 This task asked for the implementation of a character creation system using factory patterns and decorators. The first stwps where to plan out what the expectations and end results would be.
 In this case, it was asked to contain:
 * Characters would hold at least one item
