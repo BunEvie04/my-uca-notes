@@ -1,6 +1,6 @@
-# Task 1
+## Task 1 - Inventory Sorting System
 
-## Research 
+### Research 
 
 To start with the task, it is important to know what sorting method isand how to implement it into the project. This website was used for this purpose as it broke them down with examples to make it clearer.
 
@@ -13,7 +13,7 @@ The video below was used as a reference when considering alternate methods for t
 
 
 
-## Inventory sorting
+### Inventory sorting
 This task gives a list of items along with a starting point for me to convert into an ordered list. The original items are below contained within the main()
 ```cpp
 std::vector<Item> items = {
@@ -25,7 +25,7 @@ std::vector<Item> items = {
     };
 ```
 The list is defined in the public
-```cpp
+``` cpp
 public:
     std::string name;
     int value;
@@ -35,7 +35,7 @@ public:
 ```
 
 This is completed through a bubble sort. By defining the integers n (for the size of the list), i, and j, the loops can filter out the placements for each item in the array.
-```cpp
+``` cpp
     //defines n as the number of items within the list
     int n = items.size();
     if (ascending)
@@ -53,21 +53,16 @@ This is completed through a bubble sort. By defining the integers n (for the siz
     }
 ```
 ### Alternative methods
-Alternative methods may include using the ***sort*** function to automatically list them in order using the given parameters.
+Alternative methods may include using the ***sort*** function to automatically list them in order using the given parameters. This also shows the next step of sorting by the values of the items in the list, which use int v. For this, I changed the parts containing *name* and replaced it with *value*.
 
-```cpp
+``` cpp
 std::sort(items.begin(), items.end(), [](const Item& a, 
 const Item& b)
 {
     return a.name < b.name;    
 });
 ```
-
-### Sorting by value
-The next step I want to try is to sort by the values of the items in the list, which use int v. For this, I changed the parts containing *name* and replaced it with *value*.
-Before:
-
-```
+``` cpp
 Sorted by Value (Descending):
 Sword: 150
 Bow: 120
@@ -76,12 +71,79 @@ Helmet: 80
 Potion: 50
 ```
 
-### Next steps
-For the next stage I wanted the user to be able to add their own inputs into each of the catagories, with the system outputting a new list with their addition sorted within. 
+By changing the outputs from true to false and by reversing the greater than into less than within the "else" part of the functions, it is possible to see the opposites of each list, allowing the user to see more sorting methods for the systems.
+``` cpp
+        //Descending
+        for (int i = 0; i < n; i++)
+        {
+            //places the list items
+            for (int j = 0; j < n - i - 1; j++)
+            {
+                //compares the adjacent items
+                if (items[j].name < items[j + 1].name) std::swap(items[j], items[j + 1]);
+            }
+        }
+    
+```
 
+### Next steps
+For the next stage I wanted the user to be able to select what they want the order to be, as currently it is all displayed in full. This can be done through asking the user to select between the names and value, and then between ascending and descending. This would filter out the results to get the sorting the player requires.
+
+``` cpp
+if (Type == "Name"||Type == "name")
+{
+        if (Sort == "Ascending"||Sort == "ascending")
+        {
+                std::cout << "\nSorted by Name (Ascending):" << std::endl;
+                SortByName(items, true); // Sort by name in ascending order
+                DisplayInventory(items);
+        }
+        else
+        {
+                std::cout << "\nSorted by Name (Descending):" << std::endl;
+                SortByName(items, false); // Sort by name in ascending order
+                DisplayInventory(items);
+        }
+}
+else
+{
+        if (Sort == "Ascending"||Sort == "ascending")
+        {
+                std::cout << "\nSorted by Value (Ascending):" << std::endl;
+                SortByValue(items, false); // Sort by value in descending order
+                DisplayInventory(items);
+        }
+        else
+        {
+                std::cout << "\nSorted by Value (Descending):" << std::endl;
+                SortByValue(items, true); // Sort by value in descending order
+                DisplayInventory(items);
+        };
+};
+```
+```
+Would you like the sort to be on names, or on values?
+value
+Ascending or Descending order?
+descending
+
+Sorted by Value (Descending):
+Sword: 150
+Bow: 120
+Shield: 100
+Helmet: 80
+Potion: 50
+continue?(y/n)
+```
+
+### Bibliography
+
+Ravikiran, A. S. (2021) What is sorting in C++: Bubble Sort, Insertion Sort & more. At: https://www.simplilearn.com/tutorials/cpp-tutorial/sorting-in-cpp (Accessed  05/12/2024).
+
+The Cherno (s.d.) Sorting in C++. At: https://youtu.be/x0uUKWJzSO4?si=G2y8Capf5eodJ5QN (Accessed  05/12/2024).
 
 ### Full Code
-```
+``` cpp
 #include <iostream>
 #include <vector>
 #include <algorithm>
@@ -189,24 +251,36 @@ int main()
         std::cout << "Original Inventory:" << std::endl;
         DisplayInventory(items);
 
-        //std::cin >>  >> std::endl;
-        
-        
-        std::cout << "\nSorted by Name (Ascending):" << std::endl;
-        SortByName(items, true); // Sort by name in ascending order
-        DisplayInventory(items);
-        
-        std::cout << "\nSorted by Name (Descending):" << std::endl;
-        SortByName(items, false); // Sort by name in ascending order
-        DisplayInventory(items);
-
-        std::cout << "\nSorted by Value (Ascending):" << std::endl;
-        SortByValue(items, false); // Sort by value in descending order
-        DisplayInventory(items);
-        
-        std::cout << "\nSorted by Value (Descending):" << std::endl;
-        SortByValue(items, true); // Sort by value in descending order
-        DisplayInventory(items);
+        if (Type == "Name"||Type == "name")
+        {
+            if (Sort == "Ascending"||Sort == "ascending")
+            {
+                std::cout << "\nSorted by Name (Ascending):" << std::endl;
+                SortByName(items, true); // Sort by name in ascending order
+                DisplayInventory(items);
+            }
+            else
+            {
+                std::cout << "\nSorted by Name (Descending):" << std::endl;
+                SortByName(items, false); // Sort by name in ascending order
+                DisplayInventory(items);
+            }
+        }
+        else
+        {
+            if (Sort == "Ascending"||Sort == "ascending")
+            {
+                std::cout << "\nSorted by Value (Ascending):" << std::endl;
+                SortByValue(items, false); // Sort by value in descending order
+                DisplayInventory(items);
+            }
+            else
+            {
+                std::cout << "\nSorted by Value (Descending):" << std::endl;
+                SortByValue(items, true); // Sort by value in descending order
+                DisplayInventory(items);
+            };
+        };
 
         std::string newname;
         int newvalue;
@@ -235,10 +309,3 @@ int main()
     return 0;
 }
 ```
-
-## Bibliography
-
-Ravikiran, A. S. (2021) What is sorting in C++: Bubble Sort, Insertion Sort & more. At: https://www.simplilearn.com/tutorials/cpp-tutorial/sorting-in-cpp (Accessed  05/12/2024).
-
-The Cherno (s.d.) Sorting in C++. At: https://youtu.be/x0uUKWJzSO4?si=G2y8Capf5eodJ5QN (Accessed  05/12/2024).
-
