@@ -1,4 +1,12 @@
-# Health potion tasks
+## Task 3 - Health potion tasks
+### Research
+For this pair-programming task, we split the research up between us. Most of the research was spend on lists and how to push and pull items from a list. Alongside that, we found it vital to add a small bit of flow-charting to figure out how to get the sorting and healing.
+
+https://www.w3schools.com/cpp/cpp_list.asp
+
+
+### Workings
+This project was worked on using pair-programming, so I had a partner helping me with the research and finding the solution to this task.
 
 We broke down the problem and likened it to other computational problems, where you use coins to get to a certain amount. 
 We deduced that it would start with the potion with the highest volume and then use as many as it could before the amount left was less than that, and then go to the next smallest.
@@ -8,7 +16,62 @@ As we were not completely familiar with vectors in C++, we wanted to look at the
 Created a while loop to add potion health value to the current health
 It went on for ever as we had not properly set up the while loop to end,
  
+``` cpp
+int size = potions.size();
+Potion lastIndex = potions[size - 1];
+int lowestHeal = lastIndex.healingValue;
+            
+            
+            while (player.currentHealth <= player.maxHealth - lowestHeal)
+            {
+                std::cout << healthNeeded << std::endl;
+                while (healthNeeded >= potions[potionindex].healingValue)
+                {
+                    totalPotions++;
+                    healthNeeded = healthNeeded - potions[potionindex].healingValue;
+                    player.currentHealth = player.currentHealth + potions[potionindex].healingValue;
+                    
+                }
+                potionindex++;
+             }
 ```
+Unfortunately if the answer gets to more than 90 (less than the 10 potion amount) it would get stuck.
+We then instead calculated the lowest healing potion ( making it so its scalable for any types of potions.
+Used that to make the while loop to go down to until there were no potions left to get it to exactly 100.
+Then output the amount of health if it didn’t go to 100.
+
+This worked, and the end result outputs until no more potions can be used, outputting the result, an example of this being the Rogue and Cleric, who would be left on 95 health due to potions only healing as low as 10 health.
+```
+Healing Cleric: Current Health = 85, Max Health = 100
+15
+15
+15
+Total number of potions for Cleric is 1
+Not enough potions to fully heal Cleric!
+Current health is: 95
+```
+Compared to the other two that heal to the solid 100. As a result of this, however, it was decided to add text to inform the player in both cases
+```
+Healing Knight: Current Health = 70, Max Health = 100
+30
+30
+10
+Total number of potions for Knight is 2
+Knight is fully healed!
+```
+
+### Reflection
+As this was my first time truly working with someone in pair-programming, I got to experience another part that is seen within the industry. Alongside this, the project explained how to use lists to order items and how to add and remove objects from them, which can come in use within my projects in the future.
+
+
+
+### Bibliography
+
+C++ list (s.d.) At: https://www.w3schools.com/cpp/cpp_list.asp (Accessed  06/12/2024).
+
+
+### Full Code
+``` cpp
 #include <iostream>
 #include <vector>
 #include <algorithm>
@@ -123,7 +186,3 @@ int main()
     return 0;
 }
 ```
-unfortunately if the answer gets to more than 90 (less than the 10 potion amount) it would get stuck.
-We then instead calculated the lowest healing potion ( making it so its scalable for any types of potions.
-Used that to make the while loop to go down to until there were no potions left to get it to exactly 100.
-Then output the amount of health if it didn’t go to 100.
