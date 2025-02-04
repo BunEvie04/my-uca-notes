@@ -29,7 +29,48 @@ As well as that, looking at examples of interactions with animals irl can give i
 * Being threatened can cause violent retaliation in animals
   * (Lethal Company) Baboon Hawks maintain distance constantly with the player(s) 
 and attack dependant on if the player remains close for too long/holding weapons/more people
-  * Feeling threatened can also cause other animals to flee instead
+* Feeling threatened can also cause other animals to flee instead
 
 From this I can create new mechanic ideas that have potential to fit into the game:
-* 
+* Different creatures with some behaviours that are unique and some shared
+* Hidden meters for features like being threatened by other entities/player
+* Utilisation of fire can be used to scare animals/coherce them into/away from locations
+* Moving around/avoiding certain animals to reach locations
+  * Animal could be hostile(?) and player needs to avoid being caught
+  * Animal might be a passive roadblock
+* Other item types besides grass that create different outcomes with the environment
+  * Meat only lures carnivorous animals for example
+
+## Key Points
+This section focuses on the important parts that will be added into the main game, through feedback or other research, and will help build stronger foundations
+
+### Free Assets
+ 
+Key in making everything look more polished without taking the important time away from development. If time permits then I can go back and create key assets for an extra flair.
+
+### Pathfinding
+
+Research into pathfinding will be needed as the animal in the prototype moved only in a straight line, and pathfinding will allow better gameplay and prevent anything from getting stuck.
+
+### Better Hitboxes
+
+Working on a better hitbox on the animal would be great as it would previously push the player on its way to its destination, this would partially fix the issue. However a fix on the stepping mechanic would be needed as its currently connected to the animal itself.
+
+### C++ Conversion
+
+If time permits and I should feel inclined, working on swapping some bp out for c++ would work, as it improves my knowledge on the subject and increases performance.
+
+### Styling and Level Design
+
+The current plan is to focus on an isometric style of game which will be easier to view and allows for simpler level design, as slopes, plains and pits will be enough for a first level. 
+
+Development of the first level will become crucial for the first few weeks as it allows the game to become testable as a baseline for the true game. The level should be simple with the pickup and place grass mechanic from the prototype present. Other simpler mechanics can be added to improve the lack of gameplay that was in the prototype.
+
+## Roadmap
+
+This section will focus on the plan of events that should line up with the trello board 
+https://trello.com/b/aw9D4OtI/fmp-animal-game
+
+* Build the first level geometry using simple shapes like
+
+## Next steps
