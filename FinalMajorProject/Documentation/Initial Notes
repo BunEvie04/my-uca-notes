@@ -14,4 +14,22 @@ Based on the feedback given on the prototype project and its development journal
 
 ## Ideas:
 Using the prototype, compare to similar games and research mechanics that could fit into the game, ensuring that the main idea of a puzzle game primarily utilizing the animal behaviour remains intact.
+* Monster hunter
+  * Monsters are used for combat, which there will be no combat present in the game
+  * Interactions with items still occur however that influence the behaviour:
+    * Torch pods create fire on the ground where they land that monsters shy away from
+    * Other ammo when fired lure monsters to areas
+    * Drugged meat can be placed that inflicts status effects including drowsiness, paralysis and poison
+    * Environmental objects can be triggered to hide the player/interup the monster
+* Captain Toad
+  * Enemies block off areas which the player has to maneuver around/kill to progress
 
+As well as that, looking at examples of interactions with animals irl can give insight into mechanics
+* Some animals hunt and harm other beings due to needing to eat
+* Being threatened can cause violent retaliation in animals
+  * (Lethal Company) Baboon Hawks maintain distance constantly with the player(s) 
+and attack dependant on if the player remains close for too long/holding weapons/more people
+  * Feeling threatened can also cause other animals to flee instead
+
+From this I can create new mechanic ideas that have potential to fit into the game:
+* 
