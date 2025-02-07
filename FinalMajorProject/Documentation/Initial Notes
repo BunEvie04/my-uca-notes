@@ -87,4 +87,9 @@ Started research into pathfinding using the epic tutorial on the basic work
 
 Starting with the blockout for hte work
 
+### 7/2
+* Found out using navmodifier volume with object avioudance works to prevent the animal from taking certain paths, this may work for now but another solution may need to be found later in development that uses less processing power
+* Figuring out how to address the pit shenanigans in the main game
 
+The map will be based on a hill setting, with a basic introductory puzzle using the mechanic introduced in the prototype.
+After that will be another mechanic with an item that will distract an animal for a time, allowing the player to get past for more puzzle ideas
