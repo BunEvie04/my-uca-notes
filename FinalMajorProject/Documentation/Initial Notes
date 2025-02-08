@@ -111,3 +111,4 @@ After that will be another mechanic with an item that will distract an animal fo
 
 Making the pit fall more consistent with a collision box that makes a platform when the animal collides with it in the pit. This is done by making the collision of the new box change when it collides with the animal, so it then prevents the player from falling through.
 
+Next steps would be to add the encyclopedia to the game to explain the mechanic of an animal once the player is in sight of one.
