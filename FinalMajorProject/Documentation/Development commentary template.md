@@ -1,9 +1,35 @@
 # Development Commentary Template
 
+```
+Key Requirements
+Project Commentary of 3,500 words (LO1 & LO2)
+Provide a project commentary detailing the process of developing the project. The project commentary is a piece of technical and academic writing.
+
+Project Outcome (LO3)
+Provide a build of your project (e.g., .exe, .apk) that can be run on a local machine if appropriate. The build should be made available via itch.io. Ensure the build includes all necessary files and instructions for execution.
+
+In some situations a video demonstration alone or website link maybe applicable. You must consult with your supervisor to ensure you meet the criteria for your chosen project.
+
+Source Code (LO3)
+Provide a online repository containing all source code for the developed project. the version provided must be inline with the project outcome.
+
+Project Schedule (LO4)
+Provide a up to date schedule of works using an software package that utilises an industry standard methodology such as agile, kanban, waterfall, RAD, etc.
+
+[Requirement 4] ([Associated Learning Outcomes])
+```
+
 ## Project Outline
 > - Provide a concise description of the project, including its core concept and purpose.  
 > - Outline the initial goals or objectives you aim to achieve.  
 > - Identify any anticipated challenges or potential issues that may arise during development.
+
+This is a project that uses behaviour trees alongside alternative mechanics that creates a simple puzzle game with a primary focus on exploiting animal creature behaviours in order for the player to reach the destination.
+
+The desired result is for at least a set of levels that showcase and develop the mechanics built up previously. The player would hope to learn the mechanics behind the animals alongside how items affect them in their routines.
+
+Some difficulties that I may have with this project can be found within the design elements around the stages, as most of my ideas are around the mechanics themselves with the level design coming into play to fit in with the features. Alongside this I worry on if I will have enough time to fully flesh out the animals to a standard I would be perfectly happy with, as I want as much as possible to be perfect which cuts into the time left of the project. This, however, I will have to work on with methods such as trello boards and timelines to keep myself on track.
+
 
 ## Research
 
@@ -11,10 +37,16 @@
 > - Identify relevant sources for the project, including articles, documentation, talks, and games.  
 > - Detail how these sources have informed your practical work and influenced your approach.
 
+* Trello boards are used with the agile working methodology to boost the working efficiency of the project. As a solo developer it is key to not lose track of how the project is developing, so making use of short sprints with the trello boards keeping track of what has been done/needs doing is key to making sure everything is progressing smoothly. 
+
 ### Game Sources  
 > - Conduct research on games that are relevant to your project. Provide a brief description of each game and the insights it offers.  
 > - Analyse the game's approach, cross-referencing it with other sources such as articles or talks to support your analysis.  
 > - Explain how these insights apply to your project and influence your decision-making process.
+
+* Monster Hunter World (Capcom 2018)
+  * This game became an inspiration with how the monsters behave in the environment with and without the players influence
+  * 
 
 ### Academic Sources  
 > - Research academic papers, books, or articles that provide theoretical guidance for your project. Include a brief summary of each source.  
@@ -46,6 +78,8 @@
 > - Provide details on how these issues were diagnosed and resolved.  
 > - If any difficulties remain unresolved, explain the impact on the project and any mitigation strategies used to minimise their effect.  
 > - Reflect on what you would do differently in future projects to avoid similar issues.
+>> can this be included in the process subtitle??
+
 
 ## Outcomes
 
