@@ -46,39 +46,157 @@ Some difficulties that I may have with this project can be found within the desi
 
 * Monster Hunter World (Capcom 2018)
   * This game became an inspiration with how the monsters behave in the environment with and without the players influence
-  * 
+  * It allows the environment to be interactable with many options for the player to exploit monsters
 
 ### Academic Sources  
 > - Research academic papers, books, or articles that provide theoretical guidance for your project. Include a brief summary of each source.  
 > - Describe how the academic research applies to your project and shapes your design and development decisions.
 
+* Refer back to written essay with taken notes and important reflections on the topic of animal behaviours in video games
+* Academic sources and pages can be found there, will be relinked and talked about in brief
+
 ### Documentation Sources  
 > - Investigate relevant documentation, tutorials, or instructional videos that provide technical insights into your tasks. Summarise the content and its relevance to your project.  
 > - Explain how this technical knowledge supports your project work and guides your decision-making process.
 
-## Implementation
+#### Implementation
 
-### Process
+##### Process
 > - Provide a step-by-step breakdown of your development process, including key milestones and decisions made throughout the project.  
 > - Highlight any tools, frameworks, or techniques used, and explain how they contributed to the implementation.  
 > - Include screenshots, diagrams, or code snippets where relevant to showcase your progress.
 
-### New Approaches  
+#### Feedback
+
+```
+I would have expected a little more features for a prototype. While everything is functional, it is quiet bare bones.
+```
+```
+There some tasks where it was lacking research, when tackling any problem, its important to research and understand the problem you are trying to solve.
+```
+
+#### Improvements
+Based on the feedback given on the prototype project and its development journal, it is clear that the final project needs to have more research put into each mechanic alongside haveing more substance insirted for the players enjoyment.
+
+#### Ideas:
+Using the prototype, compare to similar games and research mechanics that could fit into the game, ensuring that the main idea of a puzzle game primarily utilizing the animal behaviour remains intact.
+* Monster hunter
+  * Monsters are used for combat, which there will be no combat present in the game
+  * Interactions with items still occur however that influence the behaviour:
+    * Torch pods create fire on the ground where they land that monsters shy away from
+    * Other ammo when fired lure monsters to areas
+    * Drugged meat can be placed that inflicts status effects including drowsiness, paralysis and poison
+    * Environmental objects can be triggered to hide the player/interup the monster
+* Captain Toad
+  * Enemies block off areas which the player has to maneuver around/kill to progress
+
+As well as that, looking at examples of interactions with animals irl can give insight into mechanics
+* Some animals hunt and harm other beings due to needing to eat
+* Being threatened can cause violent retaliation in animals
+  * (Lethal Company) Baboon Hawks maintain distance constantly with the player(s) 
+and attack dependant on if the player remains close for too long/holding weapons/more people
+* Feeling threatened can also cause other animals to flee instead
+
+From this I can create new mechanic ideas that have potential to fit into the game:
+* Different creatures with some behaviours that are unique and some shared
+* Hidden meters for features like being threatened by other entities/player
+* Utilisation of fire can be used to scare animals/coherce them into/away from locations
+* Moving around/avoiding certain animals to reach locations
+  * Animal could be hostile(?) and player needs to avoid being caught
+  * Animal might be a passive roadblock
+* Other item types besides grass that create different outcomes with the environment
+  * Meat only lures carnivorous animals for example
+
+* Natural item that player has to pick up, takes animals some time to eat
+ * Can ask player to collect item from area
+ * Player places for animal to eat in location, can be then used as platform
+
+
+
+#### Key Points
+This section focuses on the important parts that will be added into the main game, through feedback or other research, and will help build stronger foundations
+
+##### Free Assets
+ 
+Key in making everything look more polished without taking the important time away from development. If time permits then I can go back and create key assets for an extra flair.
+
+##### Pathfinding
+
+Research into pathfinding will be needed as the animal in the prototype moved only in a straight line, and pathfinding will allow better gameplay and prevent anything from getting stuck.
+
+##### Better Hitboxes
+
+Working on a better hitbox on the animal would be great as it would previously push the player on its way to its destination, this would partially fix the issue. However a fix on the stepping mechanic would be needed as its currently connected to the animal itself.
+
+##### C++ Conversion
+
+If time permits and I should feel inclined, working on swapping some bp out for c++ would work, as it improves my knowledge on the subject and increases performance.
+
+##### Styling and Level Design
+
+The current plan is to focus on an isometric style of game which will be easier to view and allows for simpler level design, as slopes, plains and pits will be enough for a first level. 
+
+Development of the first level will become crucial for the first few weeks as it allows the game to become testable as a baseline for the true game. The level should be simple with the pickup and place grass mechanic from the prototype present. Other simpler mechanics can be added to improve the lack of gameplay that was in the prototype.
+
+#### Roadmap
+
+This section will focus on the plan of events that should line up with the trello board 
+https://trello.com/b/aw9D4OtI/fmp-animal-game
+
+* Build the first level geometry using simple shapes
+* Add in basic pathfinding to replace ai movement
+* 
+
+#### wk1 
+##### 6/2
+
+Started research into pathfinding using the epic tutorial on the basic work
+
+Starting with the blockout for hte work
+
+##### 7/2
+* Found out using navmodifier volume with object avioudance works to prevent the animal from taking certain paths, this may work for now but another solution may need to be found later in development that uses less processing power
+* Figuring out how to address the pit shenanigans in the main game
+
+The map will be based on a hill setting, with a basic introductory puzzle using the mechanic introduced in the prototype.
+After that will be another mechanic with an item that will distract an animal for a time, allowing the player to get past for more puzzle ideas
+
+
+##### 8/2
+
+3 first level mechanics
+* Direct grass movement
+ * Prototype mechanic
+ * Reserved for the first animal
+* Fire avoidance
+ * Placeable for most animals
+ * Fire close by moves animals away from area
+* Big food
+ * Stops to eat
+ * Looks for more before idling
+
+Making the pit fall more consistent with a collision box that makes a platform when the animal collides with it in the pit. This is done by making the collision of the new box change when it collides with the animal, so it then prevents the player from falling through.
+
+Next steps would be to add the encyclopedia to the game to explain the mechanic of an animal once the player is in sight of one.
+
+##### New Approaches  
 > - Detail any innovative or new approaches you explored during the project.  
 > - Explain why these approaches were chosen and how they differ from standard practices.  
 > - Evaluate the success of these approaches, including any challenges faced and lessons learned.
 
-### Testing
+##### Testing
 > - Document the user testing conducted, specifying the type of tests used (e.g., automated testing, guided user testing, blind testing).  
 > - Present feedback or issues identified during testing, using graphs, tables, or visual aids to summarise results.  
 > - Describe how these issues were addressed. If any issues were not resolved, provide a clear justification for leaving them unaddressed.
 
-### Technical Difficulties
+##### Technical Difficulties
 > - Identify any technical difficulties encountered during the implementation phase.  
 > - Provide details on how these issues were diagnosed and resolved.  
 > - If any difficulties remain unresolved, explain the impact on the project and any mitigation strategies used to minimise their effect.  
 > - Reflect on what you would do differently in future projects to avoid similar issues.
 >> can this be included in the process subtitle??
+
+* Git LFS overusing its data quota, preventing me from accessing the project until it gets fixed
 
 
 ## Outcomes
@@ -115,6 +233,9 @@ Some difficulties that I may have with this project can be found within the desi
 > - Discuss challenges you faced, whether technical, creative, or time-related, and evaluate their impact on the final product.  
 > - Reflect on any mistakes or missteps and what you learned from them.
 
+* Understanding more about how Github works with Git LFS
+  * Portions of the working timeline have been cut due to having an inaccessable project
+
 ### Next Time
 > - Outline what you would do differently if you were to undertake a similar project again.  
 > - Suggest improvements to your workflow, research methods, or implementation process based on your reflections.  
@@ -125,8 +246,15 @@ Some difficulties that I may have with this project can be found within the desi
 > - Ensure all references are formatted according to the [university's citation method](https://mylibrary.uca.ac.uk/referencing).  
 > - Organise your references in alphabetical order. Alternatively, you may separate them by type (e.g., academic sources, games, videos), but consistency is key.
 
+To be updated properly later:
+* Monster Hunter World
+ * Capcom 2018
+* Captain Toad
+
 ## Declared Assets
 > - Provide a detailed list of any third-party assets used in the project.  
 > - This includes asset packs, music, sound effects, 3D models, textures, scripts, or code from external sources.  
 > - Declare any use of AI tools (e.g., ChatGPT, GitHub Copilot, Meshy) or pre-existing code. Specify the purpose of these assets/tools and how they were integrated into your work.  
 > - Ensure you clearly distinguish between your original work and any external contributions to maintain academic integrity.
+
+* Animal Variety Pack
