@@ -59,9 +59,9 @@ Some difficulties that I may have with this project can be found within the desi
 > - Investigate relevant documentation, tutorials, or instructional videos that provide technical insights into your tasks. Summarise the content and its relevance to your project.  
 > - Explain how this technical knowledge supports your project work and guides your decision-making process.
 
-#### Implementation
+## Implementation
 
-##### Process
+#### Process
 > - Provide a step-by-step breakdown of your development process, including key milestones and decisions made throughout the project.  
 > - Highlight any tools, frameworks, or techniques used, and explain how they contributed to the implementation.  
 > - Include screenshots, diagrams, or code snippets where relevant to showcase your progress.
