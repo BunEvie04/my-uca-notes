@@ -120,6 +120,8 @@ This section focuses on the important parts that will be added into the main gam
  
 Key in making everything look more polished without taking the important time away from development. If time permits then I can go back and create key assets for an extra flair.
 
+https://www.fab.com/listings/e883b476-660a-43f3-99e8-11cfddb5cfa4 - Cat asset
+
 ##### Pathfinding
 
 Research into pathfinding will be needed as the animal in the prototype moved only in a straight line, and pathfinding will allow better gameplay and prevent anything from getting stuck.
@@ -145,14 +147,13 @@ https://trello.com/b/aw9D4OtI/fmp-animal-game
 
 * Build the first level geometry using simple shapes
 * Add in basic pathfinding to replace ai movement
-* 
 
 #### wk1 
 ##### 6/2
 
 Started research into pathfinding using the epic tutorial on the basic work
 
-Starting with the blockout for hte work
+Starting with the blockout for the work
 
 ##### 7/2
 * Found out using navmodifier volume with object avioudance works to prevent the animal from taking certain paths, this may work for now but another solution may need to be found later in development that uses less processing power
@@ -178,6 +179,14 @@ After that will be another mechanic with an item that will distract an animal fo
 Making the pit fall more consistent with a collision box that makes a platform when the animal collides with it in the pit. This is done by making the collision of the new box change when it collides with the animal, so it then prevents the player from falling through.
 
 Next steps would be to add the encyclopedia to the game to explain the mechanic of an animal once the player is in sight of one.
+
+##### 21/2
+
+Everything was fixed with gitlfs so now work into the new systems can begin
+anymal has been made, being a cat model stand-in. 
+Up next is editing ui to be multipage with inventory built into the first one.
+adding more behaviours for second animal to align with fruit
+
 
 ##### New Approaches  
 > - Detail any innovative or new approaches you explored during the project.  
