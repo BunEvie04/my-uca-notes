@@ -86,7 +86,7 @@ https://trello.com/b/aw9D4OtI/fmp-animal-game
 
 Started research into pathfinding using the epic tutorial on the basic work
 
-Starting with the blockout for hte work
+Starting with the blockout for the work
 
 ### 7/2
 * Found out using navmodifier volume with object avioudance works to prevent the animal from taking certain paths, this may work for now but another solution may need to be found later in development that uses less processing power

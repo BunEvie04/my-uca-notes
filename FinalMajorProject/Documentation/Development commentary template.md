@@ -188,6 +188,11 @@ Up next is editing ui to be multipage with inventory built into the first one.
 adding more behaviours for second animal to align with fruit
 
 
+22/2
+
+Third person character can now pick up multiple items one at a time, working towards multiple later if needed but allows different items to be used within the level. When same time item pickup is needed an inventory will be added to the book as its first page.
+
+
 ##### New Approaches  
 > - Detail any innovative or new approaches you explored during the project.  
 > - Explain why these approaches were chosen and how they differ from standard practices.  
