@@ -59,6 +59,9 @@ Some difficulties that I may have with this project can be found within the desi
 > - Investigate relevant documentation, tutorials, or instructional videos that provide technical insights into your tasks. Summarise the content and its relevance to your project.  
 > - Explain how this technical knowledge supports your project work and guides your decision-making process.
 
+https://www.youtube.com/watch?v=9JOstDKNHJg&t=120s
+https://www.youtube.com/watch?v=Ff67XtqgSxc
+
 ## Implementation
 
 #### Process
