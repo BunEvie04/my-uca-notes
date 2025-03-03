@@ -135,7 +135,7 @@ Working on a better hitbox on the animal would be great as it would previously p
 
 ##### C++ Conversion
 
-If time permits and I should feel inclined, working on swapping some bp out for c++ would work, as it improves my knowledge on the subject and increases performance.
+If felt appropriate, working on swapping some bp out for c++ would work, as it improves my knowledge on the subject and increases performance.
 
 ##### Styling and Level Design
 
@@ -194,6 +194,48 @@ adding more behaviours for second animal to align with fruit
 22/2
 
 Third person character can now pick up multiple items one at a time, working towards multiple later if needed but allows different items to be used within the level. When same time item pickup is needed an inventory will be added to the book as its first page.
+
+
+Week of the 24th
+
+This week focused on some visual features including the UI for menus, changing user settings, basic saving, and building the level mechanics for the first stage.
+
+The help menu from the prototype was repurposed into the pause menu, which contained useful buttons like:
+* Resume
+  * Un-pauses the game
+* Save
+  * Saves the variables related to the current game state in its own spot
+  * Currently only saves the player position for now
+* Restart from Point
+  * Returns all variables saved in savegame back into the game
+* Restart Level
+  * Restarts the level from scratch
+  * Currently incompatible with savegame
+* Title Screen
+  * Returns the player to the title screen
+* Quit Game
+  * Closes the game
+* Settings
+  * Opens the settings menu
+
+(Screenshot here)
+
+
+Alongside the pause screen, a settings menu was added to allow the player to customise their experience to match their system and preferences. There are working drop-down boxes that display and select the players desired window and resolution combined with sliders for audio management on music and sound effects. Currently the graphical settings work as intended but without any audio added into the project I cannot be too sure if the audio sliders are fully functioning.
+
+(Gifs of combobox and sliders)
+
+
+The cat (a stand-in name for the second ai animal) was further developed in its behaviour. It is similar to the prototype in how it patrols and moves towards food but differs in how it goes about each task. As a second attempt on the behaviour tree it became more streamlined and readable so more events could be added if needed.  
+A pawnsensing component has been added, which means the cat will roam until it sees the necessary item within its eyesight. Once this occurs it will change behaviour to move towards it and stay there (mimicking eating). This is planned to be the ai base that will be the source of most of the puzzles in future levels.
+
+
+This first level being blocked out will be made to showcase the very basic mechanic of placing items and working with the animals. Split into two very short sections, the first utilises the prototype animal due to its simple nature in the pit falling mechanic seen previously in the prototype. The second area will contain a larger space with trees to spawn food items the player can use to lure the cat out of the goal area.
+
+Reference for future efforts:
+* Addition of spawners working and dropping fruit
+* Working behaviour trees to activate when needed
+
 
 
 ##### New Approaches  
