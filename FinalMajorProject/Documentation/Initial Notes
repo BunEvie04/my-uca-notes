@@ -140,8 +140,39 @@ The utilisation of structs with an actor component and its functions was not ide
 <iframe src="https://blueprintue.com/render/-1-692e-/" scrolling="no" allowfullscreen></iframe>
 <iframe src="https://blueprintue.com/render/gsthoosb/" scrolling="no" allowfullscreen></iframe>
 
+The tree would be the spawner, and through an event binding can spawn actors that are linked to each instance of the spawner, so that it detects when that specific actor is destroyed will call a custom event to decrease the counter.
+
+<iframe src="https://blueprintue.com/render/0el36ahk/" scrolling="no" allowfullscreen></iframe>
 
 
+From here the apple items spawn, and upon collecting one, another with spawn as the collecting of the item is it being destroyed with a variable being made in its place. Some next steps I would edit the grabbing items to add to a list or array to be placed into an inventory. The player would be able to select what they'd like to place of the items collected.  
+This would need a change to the Third Person Character blueprint so that pickup and place would be different keys. This would allow the player to pickup multiple items to fill their inventory.
+
+Input actions were made for increased readability, as now inputs have actual names.
+
+## Collection of small notes
+* Spawning doesn't grow the apples
+> The timeline used for the custom growth event was wrong, it has been edited and now the apples grow in when spawning.
+
+* The animal needs to be able to recognise the apple children/duplicates
+  * Getting all actors of the class then selecting a get class node
+> The answer was just to add a 'Get Class' node off of the pawnsensing that would result a true to the branch if the class was of 'BP Apple'
 
 
+* The inventory would need implementing
+  * Change in what occurs when player pics an item
+    * Maybe doesn't store it, just moves it elsewhere temporarily
+    > Uses a 
+    * Prevents the tree from spawning more in to not skip puzzles with numbers
+  * Adds to arr or something similar to be included in the ui element and picked out whenever
+    * Selection method perhaps needed in this event
+* Full saving needs implementation
+  * Currently only saves the current level and is not replicable when reloaded
+>research structs and object pools for storing and distributing apples
+>interact with object pool when destroying objects
 
+
+## Future ideas
+
+* Allowing the player to change input mapping in the settings
+  * Research required for this!!
