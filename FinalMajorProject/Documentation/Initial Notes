@@ -134,7 +134,11 @@ Errors:
 * Spawns 2 in one instance
  * adding a delay before the spawning solves this issue
 
+The utilisation of structs with an actor component and its functions was not ideal for the purposes that I required, and a much simpler method was found within the actor that will be performing the spawning procedure. 
 
+<iframe src="https://blueprintue.com/render/1pams7wn/" scrolling="no" allowfullscreen></iframe>
+<iframe src="https://blueprintue.com/render/-1-692e-/" scrolling="no" allowfullscreen></iframe>
+<iframe src="https://blueprintue.com/render/gsthoosb/" scrolling="no" allowfullscreen></iframe>
 
 
 
