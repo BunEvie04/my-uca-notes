@@ -64,7 +64,7 @@ https://www.youtube.com/watch?v=Ff67XtqgSxc
 
 ## Implementation
 
-#### Process
+### Process
 > - Provide a step-by-step breakdown of your development process, including key milestones and decisions made throughout the project.  
 > - Highlight any tools, frameworks, or techniques used, and explain how they contributed to the implementation.  
 > - Include screenshots, diagrams, or code snippets where relevant to showcase your progress.
@@ -81,7 +81,10 @@ There some tasks where it was lacking research, when tackling any problem, its i
 #### Improvements
 Based on the feedback given on the prototype project and its development journal, it is clear that the final project needs to have more research put into each mechanic alongside haveing more substance insirted for the players enjoyment.
 
-#### Ideas:
+#### Idea Generation:
+> This section will focus on the ideas that will be added into the game, with new ideas being expanded upon within their relevant sections
+
+
 Using the prototype, compare to similar games and research mechanics that could fit into the game, ensuring that the main idea of a puzzle game primarily utilizing the animal behaviour remains intact.
 * Monster hunter
   * Monsters are used for combat, which there will be no combat present in the game
@@ -115,16 +118,14 @@ From this I can create new mechanic ideas that have potential to fit into the ga
  * Player places for animal to eat in location, can be then used as platform
 
 
-
-#### Key Points
-This section focuses on the important parts that will be added into the main game, through feedback or other research, and will help build stronger foundations
-
-##### Free Assets
+#### Assets
  
 Key in making everything look more polished without taking the important time away from development. If time permits then I can go back and create key assets for an extra flair.
 
 https://www.fab.com/listings/e883b476-660a-43f3-99e8-11cfddb5cfa4 - Cat asset
 
+
+#### Research points
 ##### Pathfinding
 
 Research into pathfinding will be needed as the animal in the prototype moved only in a straight line, and pathfinding will allow better gameplay and prevent anything from getting stuck.
@@ -137,28 +138,28 @@ Working on a better hitbox on the animal would be great as it would previously p
 
 If felt appropriate, working on swapping some bp out for c++ would work, as it improves my knowledge on the subject and increases performance.
 
-##### Styling and Level Design
+#### Styling and Level Design
 
 The current plan is to focus on an isometric style of game which will be easier to view and allows for simpler level design, as slopes, plains and pits will be enough for a first level. 
 
 Development of the first level will become crucial for the first few weeks as it allows the game to become testable as a baseline for the true game. The level should be simple with the pickup and place grass mechanic from the prototype present. Other simpler mechanics can be added to improve the lack of gameplay that was in the prototype.
 
-#### Roadmap
+#### Timeline of Events
 
 This section will focus on the plan of events that should line up with the trello board 
 https://trello.com/b/aw9D4OtI/fmp-animal-game
 
 * Build the first level geometry using simple shapes
 * Add in basic pathfinding to replace ai movement
+ 
+>6/2
 
-#### wk1 
-##### 6/2
 
 Started research into pathfinding using the epic tutorial on the basic work
 
 Starting with the blockout for the work
 
-##### 7/2
+>7/2
 * Found out using navmodifier volume with object avioudance works to prevent the animal from taking certain paths, this may work for now but another solution may need to be found later in development that uses less processing power
 * Figuring out how to address the pit shenanigans in the main game
 
@@ -166,7 +167,8 @@ The map will be based on a hill setting, with a basic introductory puzzle using 
 After that will be another mechanic with an item that will distract an animal for a time, allowing the player to get past for more puzzle ideas
 
 
-##### 8/2
+
+>8/2
 
 3 first level mechanics
 * Direct grass movement
@@ -183,7 +185,7 @@ Making the pit fall more consistent with a collision box that makes a platform w
 
 Next steps would be to add the encyclopedia to the game to explain the mechanic of an animal once the player is in sight of one.
 
-##### 21/2
+>21/2
 
 Everything was fixed with gitlfs so now work into the new systems can begin
 anymal has been made, being a cat model stand-in. 
@@ -191,12 +193,12 @@ Up next is editing ui to be multipage with inventory built into the first one.
 adding more behaviours for second animal to align with fruit
 
 
-22/2
+>22/2
 
 Third person character can now pick up multiple items one at a time, working towards multiple later if needed but allows different items to be used within the level. When same time item pickup is needed an inventory will be added to the book as its first page.
 
 
-Week of the 24th
+>Week of the 24th (week3???)
 
 This week focused on some visual features including the UI for menus, changing user settings, basic saving, and building the level mechanics for the first stage.
 
@@ -236,19 +238,53 @@ Reference for future efforts:
 * Addition of spawners working and dropping fruit
 * Working behaviour trees to activate when needed
 
+>To be dated but other additions/workflow
+>>Week 4
+* Title menu
+  * The title menu was updated slightly to have options for: a new game, load game, settings menu, exit button, and the option for the prototype
+* Apple mechanics
+  * The basic apple is similar to the grass block from the prototype but is planned to be able to be spawned in by a tree actor, alongside growing when spawned and shrinking when being eaten
+  * This week was spent on getting the apple to detect when the cat is nearby alongside the destruction events for it.
+* More map detail
+
+>>Week5
+
+* Spawning functions for apples
+  * The next step for the apples would be to add the tree actor itself with an event to spawn the apples at a selected amount. This could be simply done through a spawn actor node but for the purposes of what I required, it was not the most efficient solution.
+  * My first thoughts was to create an actor component that could be attached to the tree actors. Functions were added to get an array of the number of trees present in the level, alongside another to get each a location offset for where to spawn the apples. A great deal of time was spent on this, including the development and research into structs to try and get this process to work, as each tree that was in the level would have a maximum of (at the time) two apples that would spawn nearby. 
+  * That plan proved futile as I had discovered that using a linked custom event connected to the spawn actor within the tree actor blueprint automatically attaches the two together, allowing each trees counter to decrease independantly when its own apple is removed from play.
+
+* Missteps with ActorComponent, Functions and Structs
+* The right answer
+
+>>Week6
+
+* Spawner function for inventory work
 
 
-##### New Approaches  
+* Future in the week:
+  * Object pool
+    * Integer for the amount of apples currently in the level, with the eating of the apple increasing the value and the lowering of it for spawning it
+    * Picking the item up would be neutral as it would add one before removing one, and vice versa for dropping it.
+    * Testing will need to be done to check this would work properly
+  * Proper level finishes
+    * Finishing the level design and implementing developed mechanics
+    * Creating a build that can be user tested.
+
+
+
+
+### New Approaches  
 > - Detail any innovative or new approaches you explored during the project.  
 > - Explain why these approaches were chosen and how they differ from standard practices.  
 > - Evaluate the success of these approaches, including any challenges faced and lessons learned.
 
-##### Testing
+### Testing
 > - Document the user testing conducted, specifying the type of tests used (e.g., automated testing, guided user testing, blind testing).  
 > - Present feedback or issues identified during testing, using graphs, tables, or visual aids to summarise results.  
 > - Describe how these issues were addressed. If any issues were not resolved, provide a clear justification for leaving them unaddressed.
 
-##### Technical Difficulties
+### Technical Difficulties
 > - Identify any technical difficulties encountered during the implementation phase.  
 > - Provide details on how these issues were diagnosed and resolved.  
 > - If any difficulties remain unresolved, explain the impact on the project and any mitigation strategies used to minimise their effect.  
@@ -256,6 +292,9 @@ Reference for future efforts:
 >> can this be included in the process subtitle??
 
 * Git LFS overusing its data quota, preventing me from accessing the project until it gets fixed
+  * This was caused by the file structure and setup of Git LFS being incorrect, this was changed by organising the files and folders in the project into 'Dynamic' and 'Static'. From there the git ignore file was altered to only use LFS on the larger files/one of the folders.
+* This created another issue when cloning the project on another device; where some of the blueprint files would not appear within the UE5 editor
+  * A solution was to directly place the missing files into their respective locations, gathering the new files from an older commit where they appeared still.
 
 
 ## Outcomes
@@ -294,6 +333,8 @@ Reference for future efforts:
 
 * Understanding more about how Github works with Git LFS
   * Portions of the working timeline have been cut due to having an inaccessable project
+* Working with item management for puzzles
+  * Linking each instance of a spawning actor with a set amount of sub actors (tree instances spawning a set amount of apples each)
 
 ### Next Time
 > - Outline what you would do differently if you were to undertake a similar project again.  
@@ -317,3 +358,13 @@ To be updated properly later:
 > - Ensure you clearly distinguish between your original work and any external contributions to maintain academic integrity.
 
 * Animal Variety Pack
+
+
+
+
+
+
+# Next steps for the dev commentary
+* Inclusion of images, gifs and videos
+* Fill in research sections
+* User testing
