@@ -270,7 +270,8 @@ Reference for future efforts:
   * Proper level finishes
     * Finishing the level design and implementing developed mechanics
     * Creating a build that can be user tested.
-
+  * Bug fixes
+    * Animal destroys the object from a distance
 
 
 
