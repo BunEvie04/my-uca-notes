@@ -267,12 +267,12 @@ Reference for future efforts:
     * Integer for the amount of apples currently in the level, with the eating of the apple increasing the value and the lowering of it for spawning it
     * Picking the item up would be neutral as it would add one before removing one, and vice versa for dropping it.
     * Testing will need to be done to check this would work properly
+  * Bug fixes
+    * Animal destroys the object from a distance
+  
   * Proper level finishes
     * Finishing the level design and implementing developed mechanics
     * Creating a build that can be user tested.
-  * Bug fixes
-    * Animal destroys the object from a distance
-
 
 
 ### New Approaches  
