@@ -275,6 +275,25 @@ Reference for future efforts:
     * Creating a build that can be user tested.
 
 
+>>Week7
+
+Objectives:
+* Pressureplate/Button
+  * Detects number of entities _Y
+  * Detects specific entities using tags _Y
+  * Activates items in the level _X
+ 
+* Cage actor
+  * Can be dropped by button
+  * Can be dragged by player along one axis
+
+
+Odd Jobs:
+Reorganise and rename animals for easier navigation
+Constrain items so they don't fly off everywhere
+
+
+
 ### New Approaches  
 > - Detail any innovative or new approaches you explored during the project.  
 > - Explain why these approaches were chosen and how they differ from standard practices.  
