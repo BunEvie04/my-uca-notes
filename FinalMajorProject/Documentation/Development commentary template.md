@@ -292,6 +292,22 @@ Odd Jobs:
 Reorganise and rename animals for easier navigation
 Constrain items so they don't fly off everywhere
 
+>> Week8
+
+* Worked out the packaging issue on the project to finally allow the project to be uploaded onto itch for more chances of being tested.
+  * Had issues previously where the project when packaged and zipped would be over a gigabyte in size
+  * After specifying the maps to be included in the build alongside other smaller changes, the total size was reduced
+
+* The fire mechanic to be implemented is very basic, but the model can be replaced after the game is finished mechanically
+  * It would have the purpose of being placed in front of the player in an attempt to scare the animal away
+  * The player would recieve the item at some point within a level and be freely able to use it from that point onwards
+  * Has varying effects depending on the animal in the line of sight
+  * The Kibby would more in the opposing direction unless is is in dire need of food, in which it would be more direct
+    * A hunger bar/meter would need to be added to the animal and the blackboard to ensure that this purpose can be met
+      * Being visible to the player to be increasingly helpful, at the cost of immersion, as there aren't any animations I have currently that can display the tiredness to the player
+
+
+
 
 
 ### New Approaches  
