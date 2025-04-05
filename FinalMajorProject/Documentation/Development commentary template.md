@@ -39,14 +39,41 @@ Some difficulties that I may have with this project can be found within the desi
 
 * Trello boards are used with the agile working methodology to boost the working efficiency of the project. As a solo developer it is key to not lose track of how the project is developing, so making use of short sprints with the trello boards keeping track of what has been done/needs doing is key to making sure everything is progressing smoothly. 
 
+Utilising sites such as Trello and Miro boards, I have been able to outline an effective plan on how the development of my game will progress. This includes the different working stages with:
+* Planning
+* Development
+* User testing
+* Implementation of feedback
+
+With this, numerous 2 week sprints were put in place to go over portions of the work and allow a reflection afterwards to flexibly allow myself to further plan around any setbacks.
+
 ### Game Sources  
 > - Conduct research on games that are relevant to your project. Provide a brief description of each game and the insights it offers.  
 > - Analyse the game's approach, cross-referencing it with other sources such as articles or talks to support your analysis.  
 > - Explain how these insights apply to your project and influence your decision-making process.
+> - Why the specific game in the series compared to others
+> - DId they win awards etc.
 
-* Monster Hunter World (Capcom 2018)
-  * This game became an inspiration with how the monsters behave in the environment with and without the players influence
-  * It allows the environment to be interactable with many options for the player to exploit monsters
+
+#### Monster Hunter World (Capcom 2018)
+  This game became an inspiration with how the monsters behave in the environment with and without the players influence. This allows the environment to be interactable with many options for the player to exploit monsters in their pursuit to capture or slay them. I talk about this specific entry in the series due to the increased development time and developed hardware which allowed the team behind the game to implement more behaviours into the monsters that inhabit the environment.
+
+  Such examples of this can include each monster having a cycle of activities they perform, from finding and eating food, to marking their territory, to fighting with other monsters over resources. One of my favourite monsters, named Vaal-Hazaak, displays this to a higher degree due to it having a type of feeding that relies on a symbiotic relationship with gasses released from rotting flesh, causing some smaller monsters to surround it when it enters certain areas of the map. 
+
+  This is a key point that I want to include within this developing game, that being animals that take have a loop of actions they perform whilst being reflexive around the players actions.
+
+
+#### Captain Toad's Treasure Tracker (Nintendo 2014)
+  As part of the Super Mario series developed by Nintendo, this game is developed with the intention to be user friendly with a focus on putting the player first. The game revolves around using manuevering around enemies located within small scalled geometric levels alongside solving simple puzzles to collect items and reach the goal.
+  
+  This game is another of my inspirations during development since I have the decision between the visual and the gameplay elements of the animals. This is something I have previously talked about (and will in the next section) but after looking at this game and performing some self-reflection on my skills as a developer, I have decided that focusing on the gameplay elements of the animals should come first and extra behaviours could come later as extra flourashes.
+
+
+#### Other useful games
+
+
+
+
 
 ### Academic Sources  
 > - Research academic papers, books, or articles that provide theoretical guidance for your project. Include a brief summary of each source.  
@@ -55,11 +82,18 @@ Some difficulties that I may have with this project can be found within the desi
 * Refer back to written essay with taken notes and important reflections on the topic of animal behaviours in video games
 * Academic sources and pages can be found there, will be relinked and talked about in brief
 
+Previously I wrote an essay titled "How would Animal Behaviour translate into game formulas?", where I looked into numerous sources to talk about how animals can be utilised in video games and to what degree are they implemented to real world behaviours. The goal of this was to research into the topic to try and find that middle ground where the player can still become immersed into the animals behaviours and actions but don't take away from player actions/still allows the player to utilise them as game mechanics within the game itself.
+
+(Possible link to the essay/maybe explain the reading list in the essay)
+
 ### Documentation Sources  
 > - Investigate relevant documentation, tutorials, or instructional videos that provide technical insights into your tasks. Summarise the content and its relevance to your project.  
 > - Explain how this technical knowledge supports your project work and guides your decision-making process.
 
+This section would talk about the videos and documentation used within the project, these are helpful to me as these provide helpful insight into different features.
+
 https://www.youtube.com/watch?v=9JOstDKNHJg&t=120s
+
 https://www.youtube.com/watch?v=Ff67XtqgSxc
 
 ## Implementation
@@ -79,7 +113,7 @@ There some tasks where it was lacking research, when tackling any problem, its i
 ```
 
 #### Improvements
-Based on the feedback given on the prototype project and its development journal, it is clear that the final project needs to have more research put into each mechanic alongside haveing more substance insirted for the players enjoyment.
+Based on the feedback given on the prototype project and its development journal, it is clear that the final project needs to have more research put into each mechanic alongside having more substance inserted for the players enjoyment.
 
 #### Idea Generation:
 > This section will focus on the ideas that will be added into the game, with new ideas being expanded upon within their relevant sections
@@ -136,7 +170,7 @@ Working on a better hitbox on the animal would be great as it would previously p
 
 ##### C++ Conversion
 
-If felt appropriate, working on swapping some bp out for c++ would work, as it improves my knowledge on the subject and increases performance.
+If felt appropriate, working on swapping some bp out for c++ would work, as it improves my knowledge on the subject and increases performance. This, however, will be a stretch goal for the project and will therefore be relagated towards minor things. This will be done like this
 
 #### Styling and Level Design
 
