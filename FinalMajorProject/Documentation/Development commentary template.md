@@ -341,8 +341,33 @@ Constrain items so they don't fly off everywhere
       * Being visible to the player to be increasingly helpful, at the cost of immersion, as there aren't any animations I have currently that can display the tiredness to the player
 
 
+>> Week9
 
+* Fixed some blueprints belonging to a classmate on moving enemies without a behaviour tree
+* The cat now runs away when it sees fire
 
+* Grass needs fixing to be more consistent
+
+* Starting to replace MoveToLocation with AIMoveTo as it has the option to only continue after the movement is complete
+
+- Needs to have the fire be a pickupable item?
+  - Consumable or Permenant?
+
+- New level one is needed to explain more of animal behaviour 
+  - Or just a way to explain the controls and fox gap filler in detail
+  - Scene of fox falling and inflating to block the flow for player understanding
+
+- Settings need fixing
+  - Saving
+  - Audio needs adding
+
+- Detail items need adding
+  - Models/Effects
+
+- Levels need to be made
+  - All containing intro, middle and/or end section
+
+  * Redo latter half of done stuff
 
 ### New Approaches  
 > - Detail any innovative or new approaches you explored during the project.  
