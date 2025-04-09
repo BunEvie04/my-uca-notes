@@ -350,24 +350,31 @@ Constrain items so they don't fly off everywhere
 
 * Starting to replace MoveToLocation with AIMoveTo as it has the option to only continue after the movement is complete
 
-- Needs to have the fire be a pickupable item?
+- Needs to have the fire be a pickupable item? (Friday)
   - Consumable or Permenant?
 
-- New level one is needed to explain more of animal behaviour 
+- New level one is needed to explain more of animal behaviour (Thursday)
   - Or just a way to explain the controls and fox gap filler in detail
   - Scene of fox falling and inflating to block the flow for player understanding
 
-- Settings need fixing
+- Settings need fixing (Wednesday)
   - Saving
-  - Audio needs adding
+    - Using old system
+    - For general settings like level, can be done in menu/savesettings BP?
+    - Actor specific can be established in BeginPlay
 
-- Detail items need adding
+  - Audio needs adding (later weeks)
+
+- Detail items need adding (Later Weeks)
   - Models/Effects
 
-- Levels need to be made
+- Levels need to be made (Thursday - Saturday)
   - All containing intro, middle and/or end section
 
   * Redo latter half of done stuff
+
+* Player save systems
+
 
 ### New Approaches  
 > - Detail any innovative or new approaches you explored during the project.  
