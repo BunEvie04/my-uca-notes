@@ -375,6 +375,25 @@ Constrain items so they don't fly off everywhere
 
 * Player save systems
 
+>> Week 10 
+* Finished level 1 and accompanying mechanics
+
+Next steps:
+- Block out level 2
+  - Uses the runaway item for herding animals into a given location
+  - Subclass/child of kibby with wider vision/other adjustments to suit the task
+  - Possibly use lighter food at the end with pouch upgrade?
+
+- Block out level 3
+  - more local to people
+  - uses cages and pushing to move animals to locations
+  - later segment utilising this and food/lvl2 mechanic to manipulate animal to location
+ 
+- Fishing minigame
+  - Secret level
+  - Mini roaming animal
+  - Stretch goal
+
 
 ### New Approaches  
 > - Detail any innovative or new approaches you explored during the project.  
