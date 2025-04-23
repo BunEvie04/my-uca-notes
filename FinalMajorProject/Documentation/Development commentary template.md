@@ -377,6 +377,13 @@ Constrain items so they don't fly off everywhere
 
 >> Week 10 
 * Finished level 1 and accompanying mechanics
+* Start Planning the development of levels two, three and bonus level
+  * Level 2
+    * Based around the town at the top of the hill
+    * Moving small groups of animals using luring tools to push/pull their attention
+    * Once all groups have been collected into the central area, move into the end zone
+  * Level 3
+    * 
 
 Next steps:
 - Block out level 2
@@ -394,6 +401,42 @@ Next steps:
   - Mini roaming animal
   - Stretch goal
 
+- Showcase mindmap with layout
+
+
+>> Week 11
+
+* Starting development of level 2
+  * Sheep was added by following the blueprints of the the Kibby while placing it onto the same behaviour tree
+    * Was changed to have a wider view of the area
+    * More focus on the fear/eating rather than the movement and resting
+    * Could add interactions between them
+  * Ladder added
+    * Due to the level focus having the higher ground to view the puzzles and gather materials, ladders were made so the player could traverse the level easier
+  * 3 Different sections for the player to gather the animals
+    * One teaches the player about the button and cages that can be used to push the animals into the main area
+      * Shows they're pushable by placing them in the players way
+      * Give larger fruit that take longer to eat (show Kibby on the side with the bushes and larger fruit)
+      * Use larger fruit to be placed underneath to be used as bait
+    * The second gives the player the ability to use a lighter/sign (to be determined) which causes the animals to be navigated into the main area
+      * Anything that gets placed/used stays in the location
+      * Planned out obstacle course using the mechanic
+    * The third gives the player a food sack which can place food down to be eaten to guide onto the main area.
+      * Automatic 5 or more food to be used, gets replaced when other items are held
+      * Just a simple guide to the end of the area
+    * Main area uses the mechanics all together
+      * Cages being used as platforms for the animals to get across gaps
+      * Food/Fear can be used to guide them to the end of the area
+      * Once they get onto the button fenced are, they get counted and ends the level if all are there
+  
+- Need:
+  - Cage mesh
+  - cANmOVE? Needs to be on for everything to work?
+  - Smooth turning of animals
+  - Why Apples spawn underneath ground/Fall down
+  - Counter at end button for number of sheep
+  - Sheep Needs to be moveable when captured
+  - Remover pad added tot he activator that is seperately placed to also remove the 
 
 ### New Approaches  
 > - Detail any innovative or new approaches you explored during the project.  
