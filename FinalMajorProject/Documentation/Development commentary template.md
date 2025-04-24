@@ -418,16 +418,48 @@ Next steps:
       * Shows they're pushable by placing them in the players way
       * Give larger fruit that take longer to eat (show Kibby on the side with the bushes and larger fruit)
       * Use larger fruit to be placed underneath to be used as bait
+     
+* Push block into floor for path forward
+* Button to spawn the walkable block while overseeing kibby with larger fruit
+* See sheep and try to guide it onto the platform to be captured
+* Push sheep off edge
+* When following push button that releases it
+* 1st option, end section here with animal going to main area
+* 2nd option, go for mass capture
+* Either way push a block at the end of the stage back into the main area
+
+
+
     * The second gives the player the ability to use a lighter/sign (to be determined) which causes the animals to be navigated into the main area
       * Anything that gets placed/used stays in the location
       * Planned out obstacle course using the mechanic
+     
+* Could use fire to scare off kibby from area to prevent it from being mixed in
+* Kibby scares off the sheep due to size difference
+* Sheep automatically moves along spline to main area unless it sees a kibby along its path
+* Twists and turns to account for
+
+
     * The third gives the player a food sack which can place food down to be eaten to guide onto the main area.
       * Automatic 5 or more food to be used, gets replaced when other items are held
       * Just a simple guide to the end of the area
+     
+* Multiple sheep to guide, providing a hint onto the main area
+* Player has to craft and replenish the bag of food from different sources
+* Bag to be used in main area
+
+
     * Main area uses the mechanics all together
       * Cages being used as platforms for the animals to get across gaps
       * Food/Fear can be used to guide them to the end of the area
       * Once they get onto the button fenced are, they get counted and ends the level if all are there
+
+* Box/cage from earlier to be pushed into a pit to provide access
+* Food to be used to lure them in
+* Fire to scare them back into the crowd
+
+
+
   
 - Need:
   - Cage mesh
@@ -436,7 +468,8 @@ Next steps:
   - Why Apples spawn underneath ground/Fall down
   - Counter at end button for number of sheep
   - Sheep Needs to be moveable when captured
-  - Remover pad added tot he activator that is seperately placed to also remove the 
+  - Remover pad added tot he activator that is seperately placed to also remove the
+  - Book descripter for animals + level objective
 
 ### New Approaches  
 > - Detail any innovative or new approaches you explored during the project.  
