@@ -440,6 +440,19 @@ Next steps:
 * Twists and turns to account for
 
 
+> Spline Notes
+* Connects the start to play when the player activates it instead of the begin play
+* Set it slower
+* Reverses when the sheep sees the Kibby/Kibby gets too close
+* Add large collision for detection onto sheep
+* Nav mesh for high ground for Kibby traversal
+* Test until good (User testing)
+* Could put fire behaviour and pawn sensing onto Foxling
+  * More fitting and Kibby can be used for the next set
+
+* Third area has Kibby eating fruit needed to make fruit bag
+  * Could capture to prevent (stretch)
+
     * The third gives the player a food sack which can place food down to be eaten to guide onto the main area.
       * Automatic 5 or more food to be used, gets replaced when other items are held
       * Just a simple guide to the end of the area
