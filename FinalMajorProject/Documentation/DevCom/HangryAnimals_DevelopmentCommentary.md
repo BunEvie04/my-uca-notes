@@ -16,16 +16,16 @@ Some difficulties that I may have with this project can be found within the desi
 
 
 
-## Research
+## Research  
 
-### Methodology  
+### Methodology   
 Whilst researching for my game, core points behind the prototypes development were looked at to see if they can be expanded upon. This mainly came from Monster Hunter World (Capcom 2018), where the primary goal besides slaying the large creatures is to capture and study the world and how the monsters interact with it. This laid the groundwork for the ideas that would be used such as trapping and luring of monsters with tools.  
 From here, I wanted to look at other games on the separate side of the spectrum of animals in games; from being creatures, to being tools and obstacles the player uses to move forward. This was an idea founded from 'Towards a Categorization of Animals in Video Games' (Jański, K. 2016), where they talk about how the usage of animals differs between games depending on the author's intent.  
 The example that came to mind is Captain Toad: Treasure Tracker (Nintendo 2014) where the enemy encounters mainly consist of manoeuvring around them to get to the goal. I wanted to look at animals as tools as it may help with designing some puzzles and areas in game, especially as the fox in the prototype acted as such in its utilization as a platform. Since the game's premise is all about utilising animal behaviours in puzzles, I figured it'd be another good starting point for the main game.  
 
 
 ### Game Sources  
-#### Monster Hunter World (Capcom 2018)
+#### Monster Hunter World (Capcom 2018)  
 This game became an inspiration with regards to how monsters behave in an environment uninterupted or otherwise. The environment is intractable with many options for the player to exploit monsters to capture or slay them. I talk about this specific entry in the series due to the increased development time and developed hardware which allowed the team behind the game to implement more behaviours into the monsters that inhabit the environment.  
    
 Such examples of this can include each monster having a cycle of activities they perform, from finding and eating food, to marking their territory, to fighting with other monsters over resources. One of my favourite monsters, named Vaal-Hazaak, displays this to a higher degree due to its symbiotic relationship with gasses released from the rotting flesh in its habitat, where it draws in small monsters when nearby.  
@@ -37,7 +37,7 @@ Other parts of the game intrigue me with mechanics that I'd like to include in t
 
 This is a key point that I want to include within this developing game, that being animals that take have a loop of actions they perform whilst being reflexive around the players actions.  
 
-#### Captain Toad's Treasure Tracker (Nintendo 2014)
+#### Captain Toad's Treasure Tracker (Nintendo 2014)  
 As part of the Super Mario series developed by Nintendo, this game is developed with the intention to be user friendly with a focus on putting the player first. The game revolves around using manoeuvring around enemies located within small scaled geometric levels alongside solving simple puzzles to collect items and reach the goal   
 
 ![446984647-317f55c5-3082-4b0d-a1dd-d9c0dbdad8a0](https://github.com/user-attachments/assets/3a0dd0ba-c4ca-4836-9bcd-ba2c71fe574c)  
@@ -47,7 +47,7 @@ This game is another of my inspirations during development since I have the deci
 
 
 
-#### Nintendogs (Nintendo 2005)
+#### Nintendogs (Nintendo 2005)  
 The third game that struck out to me to research was Nintendogs, as this game, compared to the other two, has the animals as the primary focal point. The dogs behave as close to 1-1 as they would outside the digital space, as this is a virtual pet simulation. The game gives the player methods to interact with the dogs, either through caring for them with bath time and brushing, or through playing and joyful interactions. Perhaps through more personal interactions with the animals will the player truly get a feel for how they behave and give back to the game's world. Alternatively, for the short term, simply using tools that provide feeding and other interactive methods would work all the same.  
 
 ![Care2](https://github.com/user-attachments/assets/626f4c92-ddcf-44a6-b4f5-f2215e023dc1)  
@@ -82,7 +82,7 @@ https://dev.epicgames.com/documentation/en-us/unreal-engine/behavior-tree-in-unr
 <iframe width="560" height="315" src="https://www.youtube.com/embed/deUc7FnGvQo?si=CnUCmeoez22qDuuu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>    
 
 
-## Implementation
+## Implementation  
 
 ### Process  
 #### Developing the Animals/Behaviour Trees  
@@ -106,8 +106,8 @@ The only other alteration the Kibby has compared to the other animals is its fea
 <iframe src="https://blueprintue.com/render/7-df7dv5/" scrolling="no" allowfullscreen></iframe>  
 *These go over the Kibby's behaviour tree, with the main cycle of roaming until food is spotted*  
 
-![ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/05b6a54b-d064-46c0-a8ee-a8a421801903)
-*Another example of the Kibby moving once food is spotted*
+![ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/05b6a54b-d064-46c0-a8ee-a8a421801903)  
+*Another example of the Kibby moving once food is spotted*  
 
 Now that the Kibby is set up as the normal reusable animal, I felt it safe to continue work on optimising the Fox into the new version of the game, as there is a base to the game and the Fox would fit right in. To optimize them, I neatened the connections between nodes and cross referenced with the Kibby to make the Foxling more consistent, whilst keeping the Foxling's behaviour tree and tasks unique to it alone.  
 The goal of it will stay the same, with the cycle being continuously followed. The Foxling has an internal meter that will be spent by existing and even more so by performing actions, with roaming being one of such actions. Eating the grass block will restore the energy meter but if it gets too low the Foxling will rest instead of roaming the next time it is on that part of the execution tree.  
@@ -148,7 +148,7 @@ They started at a very rudimentary point in the prototype, where they could only
 Custom decorators are additions that can be added to selector and sequence nodes that I can use to determine if the behaviour tree flow should go this way, an example of this being used in the project is with the Kibby and its relation to fire. The fire gets spotted by the actor, which then is passed through the controller into the blackboard instance to tell the decorator that the fire has been spotted, which then reroutes the tree away from that branch.  
 
 
-#### Player character
+#### Player character  
 Players will notice when they start the game that they have a unique set of tools to work with
 * They cannot jump
 * Collects and places items with matches being the ability to place fire once unlocked  
@@ -159,11 +159,11 @@ The player character is the main link between many of the systems in the game th
 * Unique items
 These are all handled inside of the player character due to the player being a constant with one instance to refer back to. It has easy access to the other components to manage connections.  
 
-![Player](https://github.com/user-attachments/assets/f203b20f-6c91-473e-bdc3-ee609a683721)
-*The player model, using a free asset with animations*
+![Player](https://github.com/user-attachments/assets/f203b20f-6c91-473e-bdc3-ee609a683721)  
+*The player model, using a free asset with animations*  
 
 
-#### Item Mechanics
+#### Item Mechanics  
 Items and components play a big role in the game as they are what the player and animals interact with, listed below are each with a short description of what role they perform:
 * Grass block
   * For the Foxling to grab as part of its cycle
@@ -226,14 +226,14 @@ Items and components play a big role in the game as they are what the player and
   * The sheep reverses when Kibby come near  
     
 
-#### Levels
+#### Levels  
 The levels were designed around the ideas and mechanics of the animals that were made:  
 
 * The 1st has a mix of the Fox and the Kibby, I wanted to try and develop an area around each that demonstrated the basic goals and controls of the game. This was done by having a lower area for the player to mess around with the Fox, before moving to higher ground and moving the Kibby with food. It is simple and showcases the intent of the animals before pushing the player into the action.
 * The 2nd level is designed around the Sheep being this creature you have to work around to be able to bring it back to the main area and finish the game. As such, the level is split into 3 segments that explore different mechanics such as direct moving and scaring away the Kibby. I thought it was best to divide the areas before combining them for the final push.  
 
 
-#### Extra Features
+#### Extra Features  
 The game features basic saving. Due to time constraints it can only save the player position and whether it can use the fire.  
 
 The user interface was a big factor of this game, as there was an overlay that displayed keybindings, objectives and current usable items. This allows the player to always be in the know as to their current status.    
@@ -252,7 +252,7 @@ The user interface was a big factor of this game, as there was an overlay that d
 ![NotepadUI](https://github.com/user-attachments/assets/43e86d2d-caab-4d6a-956d-a0d920a6b993)  
 *NotepadUI that appears in the second level as a way to give information to the player dependant on the level segment*  
 
-#### Polish  
+#### Polish    
 For polish on the game itself, the game uses a post-processing volume with associated materials to apply a cell shaded style with black outlines.  
 Free assets fill in the music, sound effects, meshes and animations, with modification to the sound effects by an outside help.  
 That same outside help also designed the UI widget sprites that would be used for the overlay.  
@@ -260,12 +260,12 @@ That same outside help also designed the UI widget sprites that would be used fo
 ![ShaderAndOutline](https://github.com/user-attachments/assets/0d6d9a9f-9738-45ed-ad93-9511d532d5dc)  
 *The cel-shaded style with the black outline*  
 
-### New Approach
+### New Approach  
 New approaches taken to this project include the whole concept behind behaviour trees, as this was a first for me to take on. I took this task towards my AI creatures as it would allow me to truly tackle something new within the realm of UE5 developing, and as a result I've learnt more than I would've had I just researched. This hands-on experience was really useful moving forwards.  
 
 
 
-### Testing
+### Testing  
 Through numerous testing iterations I have been figuring out what works best for the game. From the most recent testing phase I found out what the rough playtime is for the game alongside how people feel towards it. 
 
 
@@ -285,7 +285,7 @@ The biggest response talked about the game being unplayable due to the gate lock
 
 
 
-### Technical Difficulties  
+### Technical Difficulties   
 * Git LFS overusing its data quota, preventing me from accessing the project until it gets 
   fixed
   * This was caused by the file structure and setup of Git LFS being incorrect, this was 
