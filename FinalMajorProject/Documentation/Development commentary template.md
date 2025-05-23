@@ -272,6 +272,7 @@ Tyler, T. (2022) Game: Animals, video games, and humanity. Minneapolis, MN: Univ
 
 Unreal University (2023) How To Make An Options Menu - Unreal Engine 5 Tutorial. At: https://www.youtube.com/watch?v=Ff67XtqgSxc
 
+![MonsterHunterWorldHuntersNotes](https://github.com/user-attachments/assets/ef4e862e-c2c9-493a-a38a-9268f818705c)
 
 
 
