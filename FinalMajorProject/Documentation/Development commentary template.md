@@ -33,7 +33,7 @@ My goals for this project include:
 * Player actions such as placeable items that interacts with the animals
 * Different levels and goals for the player to complete
 
-
+The development process will be set up and divided into sprints that will manage my time to effectively negate most work build-up. This maintains the agile methodology of working in short bursts with time to reflect and manage the current stages of a project during development. Being flexible will assist in any events of emergencies.
 
 
 Some difficulties that I may have with this project can be found within the design elements around the stages, as most of my ideas are around the mechanics themselves with the level design coming into play to fit in with the features. Alongside this I worry if I will have enough time to flesh out the animals, which I will have to work on with methods such as trello boards and timelines.
@@ -90,17 +90,23 @@ The third game that struck out to me to research was Nintendogs, as this game, c
 
 Previously I wrote an essay titled "How would Animal Behaviour translate into game formulas?", where I looked into numerous sources to talk about how animals can be utilised in video games and to what degree are they implemented to real world behaviours. The goal of this was to research into the topic to try and find that middle ground where the player can still become immersed into the animals behaviours and actions but don't take away from player actions/still allows the player to utilise them as game mechanics within the game itself.
 
-This relates to 
+Relating to the direct topic of animal behaviours doesn't appear often within academic papers. However, during my research I found a paper 'Towards a Categorization of Animals in Video Games' (Jański, K. 2016). One of the primary issue brought up within this work was the different "categorizations: one functional, one visual", with this relating to my work in how the different potential animals present would have to balance the line of how gamified it would be with its behaviours contrasting how it would outside of the screen.
 
-(Possible link to the essay/maybe explain the reading list in the essay)
+Alternatively, when looking at 'Animals Video Games and Humanity (Tyler, T. 2022), they refer to how many video games use animals as interchangeable set pieces that are "confined to a restricted range of stereotypical movements" (pg 9). For the topic animals in games it rings true for a lot of games on the market, as it is quicker to have one set of motions for all the animals in a game when they aren't the main point. It wouldn't be a bad idea to incorporate this philosophy into the game with regards to similar activity shared between different animals. An example of this would be in how the animals could all search for food and divert the behaviours from there.
+
+
 
 ### Documentation Sources  
 > - Investigate relevant documentation, tutorials, or instructional videos that provide technical insights into your tasks. Summarise the content and its relevance to your project.  
 > - Explain how this technical knowledge supports your project work and guides your decision-making process.
 
-This section would talk about the videos and documentation used within the project, these are helpful to me as these provide helpful insight into different features. 
+Helpful tutorials and videos can assist down the line as my knowledge of a lot of unreal systems isn't the best. Using some tools to assist the process is always a good idea as this prevents slowdown due to lack of knowledge.
 
-![alt text](FoxMesh.png)
+The main offenders when it came to needing tips were the menus and working with behaviour trees. Behaviour trees and everything attached (decorators, blackboard variables) are complex to understand for a first time use, so I have been using videos and tutorials to gather the basics of this to then expand upon through my own experimentation.
+
+https://dev.epicgames.com/documentation/en-us/unreal-engine/behavior-tree-in-unreal-engine---quick-start-guide
+
+https://www.youtube.com/watch?v=hbHqv9ov8IM
 
 https://www.youtube.com/watch?v=9JOstDKNHJg&t=120s
 
@@ -113,16 +119,13 @@ https://www.youtube.com/watch?v=Ff67XtqgSxc
 > - Highlight any tools, frameworks, or techniques used, and explain how they contributed to the implementation.  
 > - Include screenshots, diagrams, or code snippets where relevant to showcase your progress.
 
-#### Developing the Animals
-Development of the game started with the main focus on the 
+#### Developing the Animals/Behaviour Trees
+Development of the game started with the main focus on the animals, as there wouldn't be much of a gameplay loop without them. From the prototype build I had a half working Fox animal with its associating grass food block and basic behaviour tree logic. Even if it took a bit more work to incorporate, I still wanted to include these components in the final build as they were the face of what would become "Hangry Animals". 
 
-#### Learning Behaviour Trees
+Before that, however, it was decided to start on another animal, the Kibby, as it would be a fresh look into the process. This was ultimately useful as its resulting actions and behaviours allowed it heavy usage across both the levels present in the final build. The Kibby would cycle between roaming spots and looking around. If it spotted its primary food source, the fruit, it would activate a boolean variable set in the behaviour tree's blackboard that would switch the tree's logic via a decorator. The resulting action being the Kibby moving towards and eating the food it spotted. Learning to set this up was a struggle as the blackboard variables would be unique to each instance, and it wasn't until I realised that they should be accessed through the AI Controller that everything fell into place.  
+For the longest part of this project there was an issue that the animal would be activated to a fruit when it shouldn't when there were multiple, this was an error due to the "instance sync" tickbox being ticked, meaning any change to the blackboard variable affected everything using that blackboard. It wasn't until the topic was further researched that the solution was found.  
+This Kibby animal was the first fleshed out animal to be included into the main project, with a focus on cycling the basic 
 
-
-#### Blackboard Variable
-
-
-#### Custom Decorators
 
 
 #### Item Mechanics
