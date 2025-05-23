@@ -32,7 +32,7 @@ Such examples of this can include each monster having a cycle of activities they
 
 Other parts of the game intrigue me with mechanics that I'd like to include in the final product, that being the hunter's notebook that the player would use to research the locations of the monsters and give hints on how to fight them. I'd like to include such an idea as a helpful guide book as a more diegetic way for the player to receive information on the animals in game.
 
-![MonsterHunterWorldHuntersNotes](https://github.com/user-attachments/assets/ef4e862e-c2c9-493a-a38a-9268f818705c)  
+![MonsterHunterWorldHuntersNotes](https://github.com/user-attachments/assets/ef4e862e-c2c9-493a-a38a-9268f818705c)    
 *Image of the notebook - Displaying the useful information about one of the monsters*
 
 This is a key point that I want to include within this developing game, that being animals that take have a loop of actions they perform whilst being reflexive around the players actions.
@@ -40,18 +40,17 @@ This is a key point that I want to include within this developing game, that bei
 #### Captain Toad's Treasure Tracker (Nintendo 2014)
 As part of the Super Mario series developed by Nintendo, this game is developed with the intention to be user friendly with a focus on putting the player first. The game revolves around using manoeuvring around enemies located within small scaled geometric levels alongside solving simple puzzles to collect items and reach the goal.
 
+![446984647-317f55c5-3082-4b0d-a1dd-d9c0dbdad8a0](https://github.com/user-attachments/assets/3a0dd0ba-c4ca-4836-9bcd-ba2c71fe574c)  
 *Image containing the creatures in the protagonists path*
 
 This game is another of my inspirations during development since I have the decision between the visual and the gameplay elements of the animals. This is something I have previously talked about (and will in the next section) but after looking at this game and performing some self-reflection on my skills as a developer, I have decided that focusing on the gameplay elements of the animals should come first and extra behaviours could come later as extra flourishes.
-![image](https://github.com/user-attachments/assets/39d43fca-db7f-4fc4-839a-f42ed061ced5)
+
 
 
 #### Nintendogs (Nintendo 2005)
 The third game that struck out to me to research was Nintendogs, as this game, compared to the other two, has the animals as the primary focal point. The dogs behave as close to 1-1 as they would outside the digital space, as this is a virtual pet simulation. The game gives the player methods to interact with the dogs, either through caring for them with bath time and brushing, or through playing and joyful interactions. Perhaps through more personal interactions with the animals will the player truly get a feel for how they behave and give back to the game's world. Alternatively, for the short term, simply using tools that provide feeding and other interactive methods would work all the same.
 
-
-![Care2](https://github.com/user-attachments/assets/626f4c92-ddcf-44a6-b4f5-f2215e023dc1)
-
+![Care2](https://github.com/user-attachments/assets/626f4c92-ddcf-44a6-b4f5-f2215e023dc1)  
 *Image containing a fould beast being cleansed at bathtime*
 
 
@@ -73,11 +72,15 @@ The main offenders when it came to needing tips were the menus and working with 
 
 https://dev.epicgames.com/documentation/en-us/unreal-engine/behavior-tree-in-unreal-engine---quick-start-guide
 
-https://www.youtube.com/watch?v=hbHqv9ov8IM
 
-https://www.youtube.com/watch?v=9JOstDKNHJg&t=120s
+<iframe width="560" height="315" src="https://www.youtube.com/embed/hbHqv9ov8IM?si=dMjicFJYwJh9R0zu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-https://www.youtube.com/watch?v=Ff67XtqgSxc
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9JOstDKNHJg?si=ICzexVAbo8yJUDD2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Ff67XtqgSxc?si=T3e0L7erMuvsNa84" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/deUc7FnGvQo?si=CnUCmeoez22qDuuu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 
 ## Implementation
 
@@ -279,9 +282,12 @@ Nintendo (2014) Captain Toad: Treasure Tracker. (s.l.): (s.n.).
 
 Royalty Free Music (s.d.) At: https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1700075&Search=Search 
 
-Tyler, T. (2022) Game: Animals, video games, and humanity. Minneapolis, MN: University of Minnesota Press.
+Studios, E. (2024) How to Create a Outline Shader in UE5. At: https://www.youtube.com/watch?v=deUc7FnGvQo
+
+Tyler, T. (2022) Game: Animals, video games, and humanity. Minneapolis, MN: University of Minnesota Press
 
 Unreal University (2023) How To Make An Options Menu - Unreal Engine 5 Tutorial. At: https://www.youtube.com/watch?v=Ff67XtqgSxc
+
 
 
 
