@@ -124,7 +124,10 @@ Development of the game started with the main focus on the animals, as there wou
 
 Before that, however, it was decided to start on another animal, the Kibby, as it would be a fresh look into the process. This was ultimately useful as its resulting actions and behaviours allowed it heavy usage across both the levels present in the final build. The Kibby would cycle between roaming spots and looking around. If it spotted its primary food source, the fruit, it would activate a boolean variable set in the behaviour tree's blackboard that would switch the tree's logic via a decorator. The resulting action being the Kibby moving towards and eating the food it spotted. Learning to set this up was a struggle as the blackboard variables would be unique to each instance, and it wasn't until I realised that they should be accessed through the AI Controller that everything fell into place.  
 For the longest part of this project there was an issue that the animal would be activated to a fruit when it shouldn't when there were multiple, this was an error due to the "instance sync" tickbox being ticked, meaning any change to the blackboard variable affected everything using that blackboard. It wasn't until the topic was further researched that the solution was found.  
-This Kibby animal was the first fleshed out animal to be included into the main project, with a focus on cycling the basic 
+This Kibby animal was the first fleshed out animal to be included into the main project, with a focus on cycling the basic behaviours for the player to quickly pick up on. In addition, I decided to add a function to control whether or not the Kibby can move, with this being changable by the Kibby seeing food.  
+The only other alteration the Kibby has compared to the other animals is its fear of fire, and item the player can use to scare them away. This gives the Kibby a unique behaviour that causes puzzles only it can be a part of.
+
+Now that the Kibby is set up as the normal reusable animal, I felt it safe to continue work on optimising the Fox into the new version of the game, as there is a base to the game and the Fox would fit right in.  pipe
 
 
 
