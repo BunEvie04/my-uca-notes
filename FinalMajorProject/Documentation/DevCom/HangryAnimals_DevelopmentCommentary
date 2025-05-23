@@ -93,7 +93,7 @@ For the longest part of this project there was an issue that the animal would be
 This Kibby animal was the first fleshed out animal to be included into the main project, with a focus on cycling the basic behaviours for the player to quickly pick up on. In addition, I decided to add a function to control whether or not the Kibby can move, with this being changable by the Kibby seeing food.  
 The only other alteration the Kibby has compared to the other animals is its fear of fire, and item the player can use to scare them away. This gives the Kibby a unique behaviour that causes puzzles only it can be a part of.  
 
-![Gamelogo](https://github.com/user-attachments/assets/33b5bdf3-64a2-43c4-8b32-b9828898b6bf)  
+![alt text](Gamelogo.png)
 *The initial Kibby model during the games development*  
 
 ![Cat](https://github.com/user-attachments/assets/1173b300-a8a0-4eae-86e2-3abaf523d440)  
