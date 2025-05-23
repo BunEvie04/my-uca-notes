@@ -25,9 +25,8 @@ Provide a up to date schedule of works using an software package that utilises a
 > - Outline the initial goals or objectives you aim to achieve.  
 > - Identify any anticipated challenges or potential issues that may arise during development.
 
-This is a project that uses behaviour trees in conjunction with other mechanics to create a simple puzzle game with a primary focus on exploiting animal creature behaviours in order for the player to reach the destination.
+The desired result is to develop the mechanics used in the prototype so that the player can learn the mechanics behind the animals alongside how items affect them in their routines.
 
-The desired result is for a couple of levels that showcase and develop the mechanics used previously. The player aim to learn the mechanics behind the animals alongside how items affect them in their routines.
 
 My goals for this project include:
 * Multiple animals present with different actions relating to them
@@ -35,7 +34,10 @@ My goals for this project include:
 * Different levels and goals for the player to complete
 
 
-Some difficulties that I may have with this project can be found within the design elements around the stages, as most of my ideas are around the mechanics themselves with the level design coming into play to fit in with the features. Alongside this I worry on if I will have enough time to fully flesh out the animals to a standard I would be perfectly happy with, as I want as much as possible to be perfect which cuts into the time left of the project. This, however, I will have to work on with methods such as trello boards and timelines to keep myself on track.
+
+
+Some difficulties that I may have with this project can be found within the design elements around the stages, as most of my ideas are around the mechanics themselves with the level design coming into play to fit in with the features. Alongside this I worry if I will have enough time to flesh out the animals, which I will have to work on with methods such as trello boards and timelines.
+
 
 
 ## Research
@@ -44,10 +46,9 @@ Some difficulties that I may have with this project can be found within the desi
 > - Identify relevant sources for the project, including articles, documentation, talks, and games.  
 > - Detail how these sources have informed your practical work and influenced your approach.
 
-When working on the research and decisions surrounding my game, I had a look at the core points behind the prototypes development to see if they can be expanded upon. This mainly came from Monster Hunter World (Capcom 2018), where the primary goal besides slaying the large creatures is to capture and study the world and how the monsters interact with it. This laid the groundwork for the ideas that would be used such as trapping and luring of monsters with tools.  
+Whilst researching for my game, core points behind the prototypes development were looked at to see if they can be expanded upon. This mainly came from Monster Hunter World (Capcom 2018), where the primary goal besides slaying the large creatures is to capture and study the world and how the monsters interact with it. This laid the groundwork for the ideas that would be used such as trapping and luring of monsters with tools.  
 From here, I wanted to look at other games on the separate side of the spectrum of animals in games; from being creatures, to being tools and obstacles the player uses to move forward. This was an idea founded from 'Towards a Categorization of Animals in Video Games' (Jański, K. 2016), where they talk about how the usage of animals differs between games depending on the author's intent.  
 The example that came to mind is Captain Toad: Treasure Tracker (Nintendo 2014) where the enemy encounters mainly consist of manoeuvring around them to get to the goal. I wanted to look at animals as tools as it may help with designing some puzzles and areas in game, especially as the fox in the prototype acted as such in its utilization as a platform. Since the game's premise is all about utilising animal behaviours in puzzles, I figured it'd be another good starting point for the main game.
-
 
 
 ### Game Sources  
@@ -59,14 +60,13 @@ The example that came to mind is Captain Toad: Treasure Tracker (Nintendo 2014) 
 
 
 #### Monster Hunter World (Capcom 2018)
-This game became an inspiration with how the monsters behave in the environment with and without the player's influence. This allows the environment to be intractable with many options for the player to exploit monsters in their pursuit to capture or slay them. I talk about this specific entry in the series due to the increased development time and developed hardware which allowed the team behind the game to implement more behaviours into the monsters that inhabit the environment.
+This game became an inspiration with regards to how monsters behave in an environment uninterupted or otherwise. The environment is intractable with many options for the player to exploit monsters to capture or slay them. I talk about this specific entry in the series due to the increased development time and developed hardware which allowed the team behind the game to implement more behaviours into the monsters that inhabit the environment.
 
+Such examples of this can include each monster having a cycle of activities they perform, from finding and eating food, to marking their territory, to fighting with other monsters over resources. One of my favourite monsters, named Vaal-Hazaak, displays this to a higher degree due to its symbiotic relationship with gasses released from the rotting flesh in its habitat, where it draws in small monsters when nearby.
 
-  Such examples of this can include each monster having a cycle of activities they perform, from finding and eating food, to marking their territory, to fighting with other monsters over resources. One of my favourite monsters, named Vaal-Hazaak, displays this to a higher degree due to it having a type of feeding that relies on a symbiotic relationship with gasses released from rotting flesh, causing some smaller monsters to surround it when it enters certain areas of the map.
+Other parts of the game intrigue me with mechanics that I'd like to include in the final product, that being the hunter's notebook that the player would use to research the locations of the monsters and give hints on how to fight them. I'd like to include such an idea as a helpful guide book as a more diegetic way for the player to receive information on the animals in game.
 
-
-  This is a key point that I want to include within this developing game, that being animals that take have a loop of actions they perform whilst being reflexive around the players actions.
-
+This is a key point that I want to include within this developing game, that being animals that take have a loop of actions they perform whilst being reflexive around the players actions.
 
 
 #### Captain Toad's Treasure Tracker (Nintendo 2014)
@@ -77,9 +77,7 @@ This game is another of my inspirations during development since I have the deci
 
 
 #### Nintendogs (Nintendo 2005)
-The third game that struck out to me to research was Nintendogs, as this game, compared to the other two, have the animals as the primary focal point. The dogs behave as close to 1-1 as they would outside the digital space, as this is a virtual pet simulation. The game gives the player methods to interact with the dogs, either through caring for them with bath time and brushing, or through playing and joyful interactions. Perhaps through more personal interactions with the animals will the player truly get a feel for how they behave and give back to the games world. Alternatively, for the short term, simply using tools that provide feeding and other interactive methods would work all the same.
-
-
+The third game that struck out to me to research was Nintendogs, as this game, compared to the other two, has the animals as the primary focal point. The dogs behave as close to 1-1 as they would outside the digital space, as this is a virtual pet simulation. The game gives the player methods to interact with the dogs, either through caring for them with bath time and brushing, or through playing and joyful interactions. Perhaps through more personal interactions with the animals will the player truly get a feel for how they behave and give back to the game's world. Alternatively, for the short term, simply using tools that provide feeding and other interactive methods would work all the same.
 
 
 
@@ -92,6 +90,8 @@ The third game that struck out to me to research was Nintendogs, as this game, c
 
 Previously I wrote an essay titled "How would Animal Behaviour translate into game formulas?", where I looked into numerous sources to talk about how animals can be utilised in video games and to what degree are they implemented to real world behaviours. The goal of this was to research into the topic to try and find that middle ground where the player can still become immersed into the animals behaviours and actions but don't take away from player actions/still allows the player to utilise them as game mechanics within the game itself.
 
+This relates to 
+
 (Possible link to the essay/maybe explain the reading list in the essay)
 
 ### Documentation Sources  
@@ -100,7 +100,7 @@ Previously I wrote an essay titled "How would Animal Behaviour translate into ga
 
 This section would talk about the videos and documentation used within the project, these are helpful to me as these provide helpful insight into different features. 
 
-
+![alt text](FoxMesh.png)
 
 https://www.youtube.com/watch?v=9JOstDKNHJg&t=120s
 
