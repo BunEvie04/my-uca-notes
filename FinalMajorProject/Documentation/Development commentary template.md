@@ -25,9 +25,15 @@ Provide a up to date schedule of works using an software package that utilises a
 > - Outline the initial goals or objectives you aim to achieve.  
 > - Identify any anticipated challenges or potential issues that may arise during development.
 
-This is a project that uses behaviour trees alongside alternative mechanics that creates a simple puzzle game with a primary focus on exploiting animal creature behaviours in order for the player to reach the destination.
+This is a project that uses behaviour trees in conjunction with other mechanics to create a simple puzzle game with a primary focus on exploiting animal creature behaviours in order for the player to reach the destination.
 
-The desired result is for at least a set of levels that showcase and develop the mechanics built up previously. The player would hope to learn the mechanics behind the animals alongside how items affect them in their routines.
+The desired result is for a couple of levels that showcase and develop the mechanics used previously. The player aim to learn the mechanics behind the animals alongside how items affect them in their routines.
+
+My goals for this project include:
+* Multiple animals present with different actions relating to them
+* Player actions such as placeable items that interacts with the animals
+* Different levels and goals for the player to complete
+
 
 Some difficulties that I may have with this project can be found within the design elements around the stages, as most of my ideas are around the mechanics themselves with the level design coming into play to fit in with the features. Alongside this I worry on if I will have enough time to fully flesh out the animals to a standard I would be perfectly happy with, as I want as much as possible to be perfect which cuts into the time left of the project. This, however, I will have to work on with methods such as trello boards and timelines to keep myself on track.
 
@@ -38,15 +44,11 @@ Some difficulties that I may have with this project can be found within the desi
 > - Identify relevant sources for the project, including articles, documentation, talks, and games.  
 > - Detail how these sources have informed your practical work and influenced your approach.
 
-* Trello boards are used with the agile working methodology to boost the working efficiency of the project. As a solo developer it is key to not lose track of how the project is developing, so making use of short sprints with the trello boards keeping track of what has been done/needs doing is key to making sure everything is progressing smoothly. 
+When working on the research and decisions surrounding my game, I had a look at the core points behind the prototypes development to see if they can be expanded upon. This mainly came from Monster Hunter World (Capcom 2018), where the primary goal besides slaying the large creatures is to capture and study the world and how the monsters interact with it. This laid the groundwork for the ideas that would be used such as trapping and luring of monsters with tools.  
+From here, I wanted to look at other games on the separate side of the spectrum of animals in games; from being creatures, to being tools and obstacles the player uses to move forward. This was an idea founded from 'Towards a Categorization of Animals in Video Games' (Jański, K. 2016), where they talk about how the usage of animals differs between games depending on the author's intent.  
+The example that came to mind is Captain Toad: Treasure Tracker (Nintendo 2014) where the enemy encounters mainly consist of manoeuvring around them to get to the goal. I wanted to look at animals as tools as it may help with designing some puzzles and areas in game, especially as the fox in the prototype acted as such in its utilization as a platform. Since the game's premise is all about utilising animal behaviours in puzzles, I figured it'd be another good starting point for the main game.
 
-Utilising sites such as Trello and Miro boards, I have been able to outline an effective plan on how the development of my game will progress. This includes the different working stages with:
-* Planning
-* Development
-* User testing
-* Implementation of feedback
 
-With this, numerous 2 week sprints were put in place to go over portions of the work and allow a reflection afterwards to flexibly allow myself to further plan around any setbacks.
 
 ### Game Sources  
 > - Conduct research on games that are relevant to your project. Provide a brief description of each game and the insights it offers.  
@@ -57,20 +59,25 @@ With this, numerous 2 week sprints were put in place to go over portions of the 
 
 
 #### Monster Hunter World (Capcom 2018)
-  This game became an inspiration with how the monsters behave in the environment with and without the players influence. This allows the environment to be interactable with many options for the player to exploit monsters in their pursuit to capture or slay them. I talk about this specific entry in the series due to the increased development time and developed hardware which allowed the team behind the game to implement more behaviours into the monsters that inhabit the environment.
+This game became an inspiration with how the monsters behave in the environment with and without the player's influence. This allows the environment to be intractable with many options for the player to exploit monsters in their pursuit to capture or slay them. I talk about this specific entry in the series due to the increased development time and developed hardware which allowed the team behind the game to implement more behaviours into the monsters that inhabit the environment.
 
-  Such examples of this can include each monster having a cycle of activities they perform, from finding and eating food, to marking their territory, to fighting with other monsters over resources. One of my favourite monsters, named Vaal-Hazaak, displays this to a higher degree due to it having a type of feeding that relies on a symbiotic relationship with gasses released from rotting flesh, causing some smaller monsters to surround it when it enters certain areas of the map. 
+
+  Such examples of this can include each monster having a cycle of activities they perform, from finding and eating food, to marking their territory, to fighting with other monsters over resources. One of my favourite monsters, named Vaal-Hazaak, displays this to a higher degree due to it having a type of feeding that relies on a symbiotic relationship with gasses released from rotting flesh, causing some smaller monsters to surround it when it enters certain areas of the map.
+
 
   This is a key point that I want to include within this developing game, that being animals that take have a loop of actions they perform whilst being reflexive around the players actions.
 
 
+
 #### Captain Toad's Treasure Tracker (Nintendo 2014)
-  As part of the Super Mario series developed by Nintendo, this game is developed with the intention to be user friendly with a focus on putting the player first. The game revolves around using manuevering around enemies located within small scalled geometric levels alongside solving simple puzzles to collect items and reach the goal.
-  
-  This game is another of my inspirations during development since I have the decision between the visual and the gameplay elements of the animals. This is something I have previously talked about (and will in the next section) but after looking at this game and performing some self-reflection on my skills as a developer, I have decided that focusing on the gameplay elements of the animals should come first and extra behaviours could come later as extra flourashes.
+As part of the Super Mario series developed by Nintendo, this game is developed with the intention to be user friendly with a focus on putting the player first. The game revolves around using manoeuvring around enemies located within small scaled geometric levels alongside solving simple puzzles to collect items and reach the goal.
+ 
+This game is another of my inspirations during development since I have the decision between the visual and the gameplay elements of the animals. This is something I have previously talked about (and will in the next section) but after looking at this game and performing some self-reflection on my skills as a developer, I have decided that focusing on the gameplay elements of the animals should come first and extra behaviours could come later as extra flourishes.
 
 
-#### Other useful games
+
+#### Nintendogs (Nintendo 2005)
+The third game that struck out to me to research was Nintendogs, as this game, compared to the other two, have the animals as the primary focal point. The dogs behave as close to 1-1 as they would outside the digital space, as this is a virtual pet simulation. The game gives the player methods to interact with the dogs, either through caring for them with bath time and brushing, or through playing and joyful interactions. Perhaps through more personal interactions with the animals will the player truly get a feel for how they behave and give back to the games world. Alternatively, for the short term, simply using tools that provide feeding and other interactive methods would work all the same.
 
 
 
@@ -91,8 +98,10 @@ Previously I wrote an essay titled "How would Animal Behaviour translate into ga
 > - Investigate relevant documentation, tutorials, or instructional videos that provide technical insights into your tasks. Summarise the content and its relevance to your project.  
 > - Explain how this technical knowledge supports your project work and guides your decision-making process.
 
-This section would talk about the videos and documentation used within the project, these are helpful to me as these provide helpful insight into different features.
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=9JOstDKNHJg&t=120s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+This section would talk about the videos and documentation used within the project, these are helpful to me as these provide helpful insight into different features. 
+
+
+
 https://www.youtube.com/watch?v=9JOstDKNHJg&t=120s
 
 https://www.youtube.com/watch?v=Ff67XtqgSxc
@@ -104,6 +113,35 @@ https://www.youtube.com/watch?v=Ff67XtqgSxc
 > - Highlight any tools, frameworks, or techniques used, and explain how they contributed to the implementation.  
 > - Include screenshots, diagrams, or code snippets where relevant to showcase your progress.
 
+#### Developing the Animals
+Development of the game started with the main focus on the 
+
+#### Learning Behaviour Trees
+
+
+#### Blackboard Variable
+
+
+#### Custom Decorators
+
+
+#### Item Mechanics
+
+
+#### Level Design
+
+
+#### Saving and UserInterface
+
+
+#### Post-Processing
+
+
+#### Polish
+
+
+
+
 #### Feedback
 
 ```
@@ -113,8 +151,8 @@ I would have expected a little more features for a prototype. While everything i
 There some tasks where it was lacking research, when tackling any problem, its important to research and understand the problem you are trying to solve.
 ```
 
-#### Improvements[[]]
-Based on the feedback given on the prototype project and its development journal, it is clear that the final project needs to have more research put into each mechanic alongside having more substance inserted for the players enjoyment.
+#### Improvements
+Based on the **feedback** given on the prototype project and its development journal, it is clear that the final project needs to have more research put into each mechanic alongside having more substance inserted for the players enjoyment.
 
 #### Idea Generation:
 > This section will focus on the ideas that will be added into the game, with new ideas being expanded upon within their relevant sections
@@ -568,7 +606,7 @@ To be updated properly later:
 > - Declare any use of AI tools (e.g., ChatGPT, GitHub Copilot, Meshy) or pre-existing code. Specify the purpose of these assets/tools and how they were integrated into your work.  
 > - Ensure you clearly distinguish between your original work and any external contributions to maintain academic integrity.
 
-* Animal Variety Pack
+
 
 
 
