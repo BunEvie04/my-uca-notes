@@ -142,8 +142,15 @@ Custom decorators are additions that can be added to selector and sequence nodes
 
 
 #### Player character
-Players will notice when they start the game that they have a unique set of tools to work with, they cannot jump but in return gain access to collection and placing of items, alongside the matches being collected in level two granting the player the ability to place fire in front of them.  
-The player character is the main link between many of the systems in the game that are unrelated to the animals. The save system, UI work, inventory and unique items are all handled inside of the player character. This is due to the player being a constant within the games, especially only having one instance to refer back to. This means that it has easy access to the other components and can manage everything player related.
+Players will notice when they start the game that they have a unique set of tools to work with
+* They cannot jump
+* Collects and places items with matches being the ability to place fire once unlocked  
+The player character is the main link between many of the systems in the game that are unrelated to the animals:
+* The save system
+* UI work
+* Inventory
+* Unique items
+These are all handled inside of the player character due to the player being a constant with one instance to refer back to. It has easy access to the other components to manage connections.
 
 
 #### Item Mechanics
@@ -195,19 +202,17 @@ Items and components play a big role in the game as they are what the player and
 
 The levels were designed around the ideas and mechanics of the animals that were made:
 
-* The 1st has a mix of the fox and the 
+* The 1st has a mix of the Fox and the Kibby, I wanted to try and develop an area around each that demonstrated the basic goals and controls of the game. This was done by having a lower area for the player to mess around with the Fox, before moving to higher ground and moving the Kibby with food. It is simple and showcases the intent of the animals before pushing the player into the action.
+* The 2nd level is designed around the Sheep being this creature you have to work around to be able to bring it back to the main area and finish the game. As such, the level is split into 3 segments that explore different mechanics such as direct moving and scaring away the Kibby. I thought it was best to divide the areas before combining them for the final push.
+
+The game features basic saving. Due to time constraints it can only save the player position and whether it can use the fire.
+
+The user interface was a big factor of this game, as there was an overlay that displayed keybindings, objectives and current usable items. This allows the player to always be in the know as to their current status.
 
 
-#### Level Design
-
-
-#### Saving and UserInterface
-
-
-#### Post-Processing
-
-
-#### Polish
+For polish on the game itself, the game uses a post-processing volume with associated materials to apply a cell shaded style with black outlines.  
+Free assets fill in the music, sound effects, meshes and animations, with modification to the sound effects by an outside help.  
+That same outside help also designed the UI widget sprites that would be used for the overlay.
 
 
 
@@ -598,10 +603,26 @@ Next steps:
 > - Explain why these approaches were chosen and how they differ from standard practices.  
 > - Evaluate the success of these approaches, including any challenges faced and lessons learned.
 
+New approaches taken to this project include the whole concept behind behaviour trees, as this was a first for me to take on. I took this task towards my AI creatures as it would allow me to truly tackle something new within the realm of UE5 developing, and as a result I've learnt more than I would've had I just researched. This hands-on experience was really useful moving forwards.
+
+
+
 ### Testing
 > - Document the user testing conducted, specifying the type of tests used (e.g., automated testing, guided user testing, blind testing).  
 > - Present feedback or issues identified during testing, using graphs, tables, or visual aids to summarise results.  
 > - Describe how these issues were addressed. If any issues were not resolved, provide a clear justification for leaving them unaddressed.
+
+Through numerous testing iterations I have been figuring out what works best for the game. From the most recent testing phase I found out what the rough playtime is for the game alongside how people feel towards it. 
+
+
+Most people played for around 10 minutes and the responses averaged out to an average playing experience.  
+
+
+Thankfully, they gave their thoughts on the game for me to improve upon alongside the current bugs present within that build of the game. 
+
+The biggest response talked about the game being unplayable due to the gate locking off the later exits, the issue was found quickly due to how differently the default editor viewport and the build handles certain relationships between actors. This error was quickly fixed to allow the level to become complete.
+
+
 
 ### Technical Difficulties
 > - Identify any technical difficulties encountered during the implementation phase.  
@@ -614,7 +635,8 @@ Next steps:
   * This was caused by the file structure and setup of Git LFS being incorrect, this was changed by organising the files and folders in the project into 'Dynamic' and 'Static'. From there the git ignore file was altered to only use LFS on the larger files/one of the folders.
 * This created another issue when cloning the project on another device; where some of the blueprint files would not appear within the UE5 editor
   * A solution was to directly place the missing files into their respective locations, gathering the new files from an older commit where they appeared still.
-
+* Behaviour tree logic was not corrisponding to the correct actors
+  * This caused seperate instances of the same actor to perform tasks they weren't meant to perform. Solved by having the relationships to the AIController looked at closer
 
 ## Outcomes
 
@@ -650,10 +672,6 @@ Next steps:
 > - Discuss challenges you faced, whether technical, creative, or time-related, and evaluate their impact on the final product.  
 > - Reflect on any mistakes or missteps and what you learned from them.
 
-* Understanding more about how Github works with Git LFS
-  * Portions of the working timeline have been cut due to having an inaccessable project
-* Working with item management for puzzles
-  * Linking each instance of a spawning actor with a set amount of sub actors (tree instances spawning a set amount of apples each)
 
 ### Next Time
 > - Outline what you would do differently if you were to undertake a similar project again.  
@@ -665,10 +683,6 @@ Next steps:
 > - Ensure all references are formatted according to the [university's citation method](https://mylibrary.uca.ac.uk/referencing).  
 > - Organise your references in alphabetical order. Alternatively, you may separate them by type (e.g., academic sources, games, videos), but consistency is key.
 
-To be updated properly later:
-* Monster Hunter World
- * Capcom 2018
-* Captain Toad
 
 ## Declared Assets
 > - Provide a detailed list of any third-party assets used in the project.  
@@ -676,14 +690,3 @@ To be updated properly later:
 > - Declare any use of AI tools (e.g., ChatGPT, GitHub Copilot, Meshy) or pre-existing code. Specify the purpose of these assets/tools and how they were integrated into your work.  
 > - Ensure you clearly distinguish between your original work and any external contributions to maintain academic integrity.
 
-
-
-
-
-
-
-
-# Next steps for the dev commentary
-* Inclusion of images, gifs and videos
-* Fill in research sections
-* User testing
