@@ -49,15 +49,13 @@ This game is another of my inspirations during development since I have the deci
 #### Nintendogs (Nintendo 2005)
 The third game that struck out to me to research was Nintendogs, as this game, compared to the other two, has the animals as the primary focal point. The dogs behave as close to 1-1 as they would outside the digital space, as this is a virtual pet simulation. The game gives the player methods to interact with the dogs, either through caring for them with bath time and brushing, or through playing and joyful interactions. Perhaps through more personal interactions with the animals will the player truly get a feel for how they behave and give back to the game's world. Alternatively, for the short term, simply using tools that provide feeding and other interactive methods would work all the same.
 
-![20200105_154840](https://github.com/user-attachments/assets/51085f10-6a30-4c5c-a0b8-29e230281c55)
+
+![Care2](https://github.com/user-attachments/assets/626f4c92-ddcf-44a6-b4f5-f2215e023dc1)
 
 *Image containing a fould beast being cleansed at bathtime*
 
 
-<img src="https://private-user-images.githubusercontent.com/182627985/446984647-317f55c5-3082-4b0d-a1dd-d9c0dbdad8a0.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDc5OTg3NTksIm5iZiI6MTc0Nzk5ODQ1OSwicGF0aCI6Ii8xODI2Mjc5ODUvNDQ2OTg0NjQ3LTMxN2Y1NWM1LTMwODItNGIwZC1hMWRkLWQ5YzBkYmRhZDhhMC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNTIzJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDUyM1QxMTA3MzlaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT02ODUyNGYzOTFkMWMyZWQwMTk0Yjk4MGU0YTc1YjkxMzlkNTRhM2Q3YThkMTgzOTUyZjFjMDUwNDkxNjg5Y2NlJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.c4m1v2l_zj0doQlUVmzCEF_OQu9kd5ca1ncJqD0t9mg">
-![sub-buzz-790-1629336526-6](https://github.com/user-attachments/assets/6d87a73f-13d3-477f-a2db-9663b299f77e)
 
-![Care2](https://github.com/user-attachments/assets/7dc2d6d2-f025-447d-878a-27213be2c9a5)
 
 ### Academic Sources  
 Previously I wrote an essay titled "How would Animal Behaviour translate into game formulas?", where I looked into numerous sources to talk about how animals can be utilised in video games and to what degree are they implemented to real world behaviours. The goal of this was to research into the topic to try and find that middle ground where the player can still become immersed into the animals behaviours and actions but don't take away from player actions/still allows the player to utilise them as game mechanics within the game itself.
