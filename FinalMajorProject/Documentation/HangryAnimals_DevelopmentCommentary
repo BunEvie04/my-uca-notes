@@ -73,13 +73,13 @@ The main offenders when it came to needing tips were the menus and working with 
 https://dev.epicgames.com/documentation/en-us/unreal-engine/behavior-tree-in-unreal-engine---quick-start-guide
 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/hbHqv9ov8IM?si=dMjicFJYwJh9R0zu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/hbHqv9ov8IM?si=dMjicFJYwJh9R0zu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>  
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/9JOstDKNHJg?si=ICzexVAbo8yJUDD2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9JOstDKNHJg?si=ICzexVAbo8yJUDD2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>  
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Ff67XtqgSxc?si=T3e0L7erMuvsNa84" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Ff67XtqgSxc?si=T3e0L7erMuvsNa84" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>  
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/deUc7FnGvQo?si=CnUCmeoez22qDuuu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/deUc7FnGvQo?si=CnUCmeoez22qDuuu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>  
 
 
 ## Implementation
@@ -91,20 +91,61 @@ Development of the game started with the main focus on the animals, as there wou
 Before that, however, it was decided to start on another animal, the Kibby, as it would be a fresh look into the process. This was ultimately useful as its resulting actions and behaviours allowed it heavy usage across both the levels present in the final build. The Kibby would cycle between roaming spots and looking around. If it spotted its primary food source, the fruit, it would activate a boolean variable set in the behaviour tree's blackboard that would switch the tree's logic via a decorator. The resulting action being the Kibby moving towards and eating the food it spotted. Learning to set this up was a struggle as the blackboard variables would be unique to each instance, and it wasn't until I realised that they should be accessed through the AI Controller that everything fell into place.  
 For the longest part of this project there was an issue that the animal would be activated to a fruit when it shouldn't when there were multiple, this was an error due to the "instance sync" tickbox being ticked, meaning any change to the blackboard variable affected everything using that blackboard. It wasn't until the topic was further researched that the solution was found.  
 This Kibby animal was the first fleshed out animal to be included into the main project, with a focus on cycling the basic behaviours for the player to quickly pick up on. In addition, I decided to add a function to control whether or not the Kibby can move, with this being changable by the Kibby seeing food.  
-The only other alteration the Kibby has compared to the other animals is its fear of fire, and item the player can use to scare them away. This gives the Kibby a unique behaviour that causes puzzles only it can be a part of.
+The only other alteration the Kibby has compared to the other animals is its fear of fire, and item the player can use to scare them away. This gives the Kibby a unique behaviour that causes puzzles only it can be a part of.  
+
+![Gamelogo](https://github.com/user-attachments/assets/33b5bdf3-64a2-43c4-8b32-b9828898b6bf)  
+*The initial Kibby model during the games development*  
+
+![Cat](https://github.com/user-attachments/assets/1173b300-a8a0-4eae-86e2-3abaf523d440)  
+*The final design of the Kibby, changed to have animations work on the mesh*  
+
+<iframe src="https://blueprintue.com/render/agl932rl/" scrolling="no" allowfullscreen></iframe>  
+*This covers the main logic behind seeing the food and changing the variable to change the cycle*  
+
+<iframe src="https://blueprintue.com/render/j0ilssz_/" scrolling="no" allowfullscreen></iframe>   
+<iframe src="https://blueprintue.com/render/7-df7dv5/" scrolling="no" allowfullscreen></iframe>  
+*These go over the Kibby's behaviour tree, with the main cycle of roaming until food is spotted*  
+
+![ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/05b6a54b-d064-46c0-a8ee-a8a421801903)
+*Another example of the Kibby moving once food is spotted*
 
 Now that the Kibby is set up as the normal reusable animal, I felt it safe to continue work on optimising the Fox into the new version of the game, as there is a base to the game and the Fox would fit right in. To optimize them, I neatened the connections between nodes and cross referenced with the Kibby to make the Foxling more consistent, whilst keeping the Foxling's behaviour tree and tasks unique to it alone.  
 The goal of it will stay the same, with the cycle being continuously followed. The Foxling has an internal meter that will be spent by existing and even more so by performing actions, with roaming being one of such actions. Eating the grass block will restore the energy meter but if it gets too low the Foxling will rest instead of roaming the next time it is on that part of the execution tree.  
 The Foxling has been expanded in versatility however, as the Foxling becoming a platform in the prototype was not very apparent and would bug out quite often. To fix this issue I first opted to have an invisible platform become solid in place of the bridge gap, which would become an issue when improperly interacted with. So I wanted to visually indicate the Fox filling in the space for the player to cross, which turned into the creature growing a cube to indicate it soaking water through its fur like a sponge.  
 
+![Fox](https://github.com/user-attachments/assets/b3588492-4ba8-4704-9666-3aa06b9f9b93)  
+*The image of the Fox in its normal form/unpoofed*  
+
+<iframe src="https://blueprintue.com/render/f88kl818/" scrolling="no" allowfullscreen></iframe>  
+<iframe src="https://blueprintue.com/render/6bjlcl9i/" scrolling="no" allowfullscreen></iframe>  
+*The Fox AI controller setting up and interacting with its behaviour tree*  
+
+![ezgif com-optimize](https://github.com/user-attachments/assets/cd716b99-894d-451d-b879-83bc6790d34c)  
+<iframe src="https://blueprintue.com/render/rip5llyi/" scrolling="no" allowfullscreen></iframe>  
+*For the poofing/water absorbtion when the Fox touches the water*  
+
+
+
 The last animal that was developed with the intention of being used within the main game was the Sheep. This would be an animal that followed the Kibby in its setup but be altered in the execution, as the Sheep was primarily designed around being the central goal of the player in the second level.  
 Multiple areas for the Sheep to inhabit existed, with the main one being a group of Sheep as the big set piece of the level: they needed to be guided back to the village. This includes the one that the player returns back to the flock.  
 Sheep were designed to be captured in the cage mechanic, to be moved about this way by the player for puzzle solving. Alongside this, the Sheep had a collision sphere placed on it to detect when the Kibby were close to move away from them.  
-Nothing much else important to note aside from the model being from a deer, as it was the closest it could be for the project. Steps had been made to try and remedy this as best as possible.
+Nothing much else important to note aside from the model being from a deer, as it was the closest it could be for the project. Steps had been made to try and remedy this as best as possible.  
+
+![Deer](https://github.com/user-attachments/assets/781e76fc-bf70-4545-9045-545ca74693c8)   
+*The Sheep's look in game using the clostest model that was available with some adjustments to the materials used*  
+
+<iframe src="https://blueprintue.com/render/0hos9wr7/" scrolling="no" allowfullscreen></iframe>  
+*For the Sheep's fear of the Kibby*  
+
+<iframe src="https://blueprintue.com/render/2l9l413q/" scrolling="no" allowfullscreen></iframe>  
+*For the capturing of the Sheep*  
+
+![2025-05-2315-22-35-ezgif com-optimize (1)](https://github.com/user-attachments/assets/de398d79-5bb6-404f-8cea-8bb551c811ff)  
+*A gif of the sheep moving along a spline to reach the exit in segment2*
 
 Behaviour trees are an integral part of the project, as they've been explained to be previously. I wanted to explain in a bit more detail as to how they were developed for this game.  
 They started at a very rudimentary point in the prototype, where they could only execute very basic commands with little leeway. From working on this project they've been expanded with custom decorators and tasks to perform most tasks I need the animals to do. 
-Custom decorators are additions that can be added to selector and sequence nodes that I can use to determine if the behaviour tree flow should go this way, an example of this being used in the project is with the Kibby and its relation to fire. The fire gets spotted by the actor, which then is passed through the controller into the blackboard instance to tell the decorator that the fire has been spotted, which then reroutes the tree away from that branch.
+Custom decorators are additions that can be added to selector and sequence nodes that I can use to determine if the behaviour tree flow should go this way, an example of this being used in the project is with the Kibby and its relation to fire. The fire gets spotted by the actor, which then is passed through the controller into the blackboard instance to tell the decorator that the fire has been spotted, which then reroutes the tree away from that branch.  
 
 
 #### Player character
@@ -116,7 +157,10 @@ The player character is the main link between many of the systems in the game th
 * UI work
 * Inventory
 * Unique items
-These are all handled inside of the player character due to the player being a constant with one instance to refer back to. It has easy access to the other components to manage connections.
+These are all handled inside of the player character due to the player being a constant with one instance to refer back to. It has easy access to the other components to manage connections.  
+
+![Player](https://github.com/user-attachments/assets/f203b20f-6c91-473e-bdc3-ee609a683721)
+*The player model, using a free asset with animations*
 
 
 #### Item Mechanics
@@ -124,7 +168,10 @@ Items and components play a big role in the game as they are what the player and
 * Grass block
   * For the Foxling to grab as part of its cycle
   * Respawns within the specific small areas
-  * It used to struggle with bouncing in different directions but the axis were restricted to prevent this from occurring in the future
+  * It used to struggle with bouncing in different directions but the axis were restricted to prevent this from occurring in the future  
+
+![Grass](https://github.com/user-attachments/assets/1b8092b8-6b32-4728-abdc-d991c4a838cf)  
+*The grass block that respawns once eaten*  
 
 
 * Fruit
@@ -132,6 +179,12 @@ Items and components play a big role in the game as they are what the player and
   * They respawn by their corresponding tree actor when they get destroyed
   * Apples are a subclass that have a longer time to eat than berried, to give players more time with the monster not doing anything
   * The apples remain unused currently
+  
+![Berry](https://github.com/user-attachments/assets/e0510c17-0c8e-486a-be72-153cebb47fe1)
+*The Berry fruit item that spawns from any Berry Tree*
+
+![BerryTree](https://github.com/user-attachments/assets/bbe1cd70-c8f7-4fb6-b393-423298f5ee3e)
+*The Berry Tree that has an internal counter on the number of currently spawned fruits, and doesn't spawn another until a slot is free*
 
 
 * Item Basket
@@ -151,6 +204,7 @@ Items and components play a big role in the game as they are what the player and
   * An invisible collision box that relies on an enum to get the node pathways it needs
   * Present in level 2 with the purpose of moving the player between segments and setting everything up to align with that movement
   * Prevents the player from being out of the cycle and in the boundaries of the game
+    
 
 
 * Cage
@@ -159,6 +213,8 @@ Items and components play a big role in the game as they are what the player and
   * can be pushed by the player and stepped on top of for puzzle purposes
   * When surrounding a Sheep, it will simulate the physics of the Sheep to allow them to be pushed around
 
+![ActivatorButtons](https://github.com/user-attachments/assets/c1212400-3ded-44b4-a102-5653ecadee15)
+*A set of buttons that spawn and despawn the cage, also used to count the sheep at the end of level 2*
 
 * Fences
   * Restricts the player until the prerequisites have been met
@@ -168,6 +224,7 @@ Items and components play a big role in the game as they are what the player and
 * Splines
   * Provided specialised movement to the sheep for its own puzzle in shooing the Kibby away
   * The sheep reverses when Kibby come near
+    
 
 #### Levels
 The levels were designed around the ideas and mechanics of the animals that were made:
@@ -179,13 +236,29 @@ The levels were designed around the ideas and mechanics of the animals that were
 #### Extra Features
 The game features basic saving. Due to time constraints it can only save the player position and whether it can use the fire.
 
-The user interface was a big factor of this game, as there was an overlay that displayed keybindings, objectives and current usable items. This allows the player to always be in the know as to their current status.
+The user interface was a big factor of this game, as there was an overlay that displayed keybindings, objectives and current usable items. This allows the player to always be in the know as to their current status.  
+
+![MainMenu](https://github.com/user-attachments/assets/dd23bc3c-2e68-4920-8d3e-c53cd090c330)  
+![LevelSelect](https://github.com/user-attachments/assets/12b9ceb2-f2b6-44cd-a5af-5152ee5e0c5d)
+![Settings](https://github.com/user-attachments/assets/d6096aff-7aee-4d12-b505-9e0ac05c548b)
+![PauseMenu](https://github.com/user-attachments/assets/934d0747-fbda-481e-8707-ca643b029565)
+*Main menu, Level select, Settings, Pause Menu*  
+
+
+![UI overlay2](https://github.com/user-attachments/assets/06481b88-e0cd-4c9f-a71a-6b200ba5e355)  
+![UIExample](https://github.com/user-attachments/assets/3ce53c75-9bf9-43e2-b9fb-e77b605c2869)  
+*The UI overlay changes depending on the players held item/where the are in the game*  
+
+![NotepadUI](https://github.com/user-attachments/assets/43e86d2d-caab-4d6a-956d-a0d920a6b993)
+*NotepadUI that appears in the second level as a way to give information to the player dependant on the level segment*
 
 #### Polish
 For polish on the game itself, the game uses a post-processing volume with associated materials to apply a cell shaded style with black outlines.  
 Free assets fill in the music, sound effects, meshes and animations, with modification to the sound effects by an outside help.  
 That same outside help also designed the UI widget sprites that would be used for the overlay.
 
+![ShaderAndOutline](https://github.com/user-attachments/assets/0d6d9a9f-9738-45ed-ad93-9511d532d5dc)
+*The cel-shaded style with the black outline*
 
 ### New Approach
 New approaches taken to this project include the whole concept behind behaviour trees, as this was a first for me to take on. I took this task towards my AI creatures as it would allow me to truly tackle something new within the realm of UE5 developing, and as a result I've learnt more than I would've had I just researched. This hands-on experience was really useful moving forwards.
@@ -198,8 +271,15 @@ Through numerous testing iterations I have been figuring out what works best for
 
 Most people played for around 10 minutes and the responses averaged out to an average playing experience.  
 
+![TestTime](https://github.com/user-attachments/assets/ef7f42f0-61c1-48b7-95eb-7af1412dbca5)
+*The time taken, containing an error as I did not set the time to be the right answer type*  
 
-Thankfully, they gave their thoughts on the game for me to improve upon alongside the current bugs present within that build of the game. 
+Thankfully, they gave their thoughts on the game for me to improve upon alongside the current bugs present within that build of the game.  
+
+![TestGraph](https://github.com/user-attachments/assets/98756461-4342-433b-93ad-f6ec8885ebba)
+![TestThoughts](https://github.com/user-attachments/assets/55792014-b5c6-4695-9edb-7bf06afb6380)
+![TestBugs](https://github.com/user-attachments/assets/67de650c-511a-48db-a437-28d19aa43b4f)
+*Graphs of user experience folowed up by their thoughts and helpful bug finding*  
 
 The biggest response talked about the game being unplayable due to the gate locking off the later exits, the issue was found quickly due to how differently the default editor viewport and the build handles certain relationships between actors. This error was quickly fixed to allow the level to become complete.
 
@@ -229,14 +309,11 @@ This is the repository of the project, inlcuding all source files and a readME.
 ### Build Link
 https://bunevie.itch.io/hangry-animals  
 
-Link to Itch.io where the game can be downloaded, including instructions for doing so.
-
 
 
 ### Video Demonstration
-> - Embed a video or provide a link to a recorded demonstration of your project in action.  
-> - The video should showcase key features, functionality, and any unique elements of your project.  
-> - Include a brief commentary or text overlay in the video to explain the different aspects of your project as they are shown.
+https://www.youtube.com/watch?v=-aIkyifli6I  
+<iframe width="560" height="315" src="https://www.youtube.com/embed/-aIkyifli6I?si=x5N2pnzpJFu4MgZS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>  
 
 ## Reflection
 
