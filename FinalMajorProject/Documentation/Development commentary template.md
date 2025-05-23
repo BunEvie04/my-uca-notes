@@ -127,11 +127,75 @@ For the longest part of this project there was an issue that the animal would be
 This Kibby animal was the first fleshed out animal to be included into the main project, with a focus on cycling the basic behaviours for the player to quickly pick up on. In addition, I decided to add a function to control whether or not the Kibby can move, with this being changable by the Kibby seeing food.  
 The only other alteration the Kibby has compared to the other animals is its fear of fire, and item the player can use to scare them away. This gives the Kibby a unique behaviour that causes puzzles only it can be a part of.
 
-Now that the Kibby is set up as the normal reusable animal, I felt it safe to continue work on optimising the Fox into the new version of the game, as there is a base to the game and the Fox would fit right in.  pipe
+Now that the Kibby is set up as the normal reusable animal, I felt it safe to continue work on optimising the Fox into the new version of the game, as there is a base to the game and the Fox would fit right in. To optimize them, I neatened the connections between nodes and cross referenced with the Kibby to make the Foxling more consistent, whilst keeping the Foxling's behaviour tree and tasks unique to it alone.  
+The goal of it will stay the same, with the cycle being continuously followed. The Foxling has an internal meter that will be spent by existing and even more so by performing actions, with roaming being one of such actions. Eating the grass block will restore the energy meter but if it gets too low the Foxling will rest instead of roaming the next time it is on that part of the execution tree.  
+The Foxling has been expanded in versatility however, as the Foxling becoming a platform in the prototype was not very apparent and would bug out quite often. To fix this issue I first opted to have an invisible platform become solid in place of the bridge gap, which would become an issue when improperly interacted with. So I wanted to visually indicate the Fox filling in the space for the player to cross, which turned into the creature growing a cube to indicate it soaking water through its fur like a sponge.  
 
+The last animal that was developed with the intention of being used within the main game was the Sheep. This would be an animal that followed the Kibby in its setup but be altered in the execution, as the Sheep was primarily designed around being the central goal of the player in the second level.  
+Multiple areas for the Sheep to inhabit existed, with the main one being a group of Sheep as the big set piece of the level: they needed to be guided back to the village. This includes the one that the player returns back to the flock.  
+Sheep were designed to be captured in the cage mechanic, to be moved about this way by the player for puzzle solving. Alongside this, the Sheep had a collision sphere placed on it to detect when the Kibby were close to move away from them.  
+Nothing much else important to note aside from the model being from a deer, as it was the closest it could be for the project. Steps had been made to try and remedy this as best as possible.
+
+Behaviour trees are an integral part of the project, as they've been explained to be previously. I wanted to explain in a bit more detail as to how they were developed for this game.  
+They started at a very rudimentary point in the prototype, where they could only execute very basic commands with little leeway. From working on this project they've been expanded with custom decorators and tasks to perform most tasks I need the animals to do. 
+Custom decorators are additions that can be added to selector and sequence nodes that I can use to determine if the behaviour tree flow should go this way, an example of this being used in the project is with the Kibby and its relation to fire. The fire gets spotted by the actor, which then is passed through the controller into the blackboard instance to tell the decorator that the fire has been spotted, which then reroutes the tree away from that branch.
+
+
+#### Player character
+Players will notice when they start the game that they have a unique set of tools to work with, they cannot jump but in return gain access to collection and placing of items, alongside the matches being collected in level two granting the player the ability to place fire in front of them.  
+The player character is the main link between many of the systems in the game that are unrelated to the animals. The save system, UI work, inventory and unique items are all handled inside of the player character. This is due to the player being a constant within the games, especially only having one instance to refer back to. This means that it has easy access to the other components and can manage everything player related.
 
 
 #### Item Mechanics
+Items and components play a big role in the game as they are what the player and animals interact with, listed below are each with a short description of what role they perform:
+* Grass block
+  * For the Foxling to grab as part of its cycle
+  * Respawns within the specific small areas
+  * It used to struggle with bouncing in different directions but the axis were restricted to prevent this from occurring in the future
+
+
+* Fruit
+  * Berries are the main fruit the player will see in the game
+  * They respawn by their corresponding tree actor when they get destroyed
+  * Apples are a subclass that have a longer time to eat than berried, to give players more time with the monster not doing anything
+  * The apples remain unused currently
+
+
+* Item Basket
+  * Obtained after completing the 2nd segment of the 2nd level
+  * Gives the player a maximum of 5 berry items to place in front of them
+  * Fruit will disappear after a certain amount of time using a delay node within the character
+  * When destroyed, it goes back to the player to place again, utilising the OnDestroyed node from the spawned actor.
+
+
+* Fire mechanic
+  * Obtained after completing the 1st segment of the 2nd level
+  * Places in front of the player while playing a sound effect
+  * When overlapping a Kibby, it spooks them and sends them moving away from the source
+
+
+* Activator
+  * An invisible collision box that relies on an enum to get the node pathways it needs
+  * Present in level 2 with the purpose of moving the player between segments and setting everything up to align with that movement
+  * Prevents the player from being out of the cycle and in the boundaries of the game
+
+
+* Cage
+  * A box with holes in the sides to see through
+  * To be called down when the associating buttons have been pressed
+  * can be pushed by the player and stepped on top of for puzzle purposes
+  * When surrounding a Sheep, it will simulate the physics of the Sheep to allow them to be pushed around
+
+
+* Fences
+  * Restricts the player until the prerequisites have been met
+  * This typically involves the player figuring out the puzzle of the area
+  * Upon completing the puzzle the gate will open
+
+
+The levels were designed around the ideas and mechanics of the animals that were made:
+
+* The 1st has a mix of the fox and the 
 
 
 #### Level Design
