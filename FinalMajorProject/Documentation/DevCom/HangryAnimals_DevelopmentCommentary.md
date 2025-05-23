@@ -298,45 +298,45 @@ The biggest response talked about the game being unplayable due to the gate lock
   * This caused seperate instances of the same actor to perform tasks they weren't meant  
     to perform. Solved by having the relationships to the AIController looked at closer  
 
-## Outcomes
+## Outcomes  
 
-### Source Code/Project Files
+### Source Code/Project Files  
 https://github.com/BunEvie04/Hangry-Animals  
 
 This is the repository of the project, inlcuding all source files and a readME.  
 
 
-### Build Link
+### Build Link  
 https://bunevie.itch.io/hangry-animals  
 
 
 
-### Video Demonstration
+### Video Demonstration  
 https://www.youtube.com/watch?v=-aIkyifli6I  
 <iframe width="560" height="315" src="https://www.youtube.com/embed/-aIkyifli6I?si=x5N2pnzpJFu4MgZS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>  
 
-## Reflection
+## Reflection  
 
-### Research Effectiveness  
+### Research Effectiveness    
 Research provided essential information that could be used in the project itself, finding the balance between the visual and gameplay of the animals was a line that was crossed, as the animals moved into the gameplay side with flourishes for the visual behavioural side.
 
 Other areas of research also helped in the idea generation side, such as the idea of the pushing cages and the notebook to study the behaviours, coming as an offshoot of the ideas present in Monster Hunter World (Capcom 2016)
 
 
-### Positive Analysis 
+### Positive Analysis  
 Positives of working on this project are the new ideas that come forward as I have a newfound understanding of how to utilise AI behaviour trees in Unreal Engine. The more practice and experience I get, the more confident I feel towards larger scale projects in the future.
 
 
-### Negative Analysis  
+### Negative Analysis   
 What I found to be the bad sides of my project was how everything interconnected. I felt that everything could get tangled really easily and that didn't make the repairs simple. A lot of the time spent on this project was working on fixing the connections and casts to different actors/components. This would be remedied in the future by ensuring that there is a dedicated way to connect multiple entities while keeping the blueprints tidy.
 
 
 
-### Next Time
+### Next Time  
 Next time I would account for the time taken for the repairs and fixes a lot better. Especially now that I know a lot more about how behaviour tree tasks and actors work, most of the pitfalls should be avoidable on future versions of projects with similar premises. Perhaps I could have a universal entity to manage links between actors and perform actions, or just any more experimentation to expand my knowledge on the subject. But overall, this project was a wonderful experience experimenting with AI animals.
 
 
-## Bibliography  
+## Bibliography   
 > - Compile a complete list of all sources referenced throughout your project. This may include articles, journals, videos, games, software, documentation, or any other materials.
 > - Ensure all references are formatted according to the [university's citation method](https://mylibrary.uca.ac.uk/referencing).  
 > - Organise your references in alphabetical order. Alternatively, you may separate them by type (e.g., academic sources, games, videos), but consistency is key.
@@ -372,7 +372,7 @@ Unreal University (2023) How To Make An Options Menu - Unreal Engine 5 Tutorial.
 
 
 
-## Declared Assets
+## Declared Assets  
 > - Provide a detailed list of any third-party assets used in the project.  
 > - This includes asset packs, music, sound effects, 3D models, textures, scripts, or code from external sources.  
 > - Declare any use of AI tools (e.g., ChatGPT, GitHub Copilot, Meshy) or pre-existing code. Specify the purpose of these assets/tools and how they were integrated into your work.  
