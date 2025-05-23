@@ -178,32 +178,32 @@ Items and components play a big role in the game as they are what the player and
   * Berries are the main fruit the player will see in the game
   * They respawn by their corresponding tree actor when they get destroyed
   * Apples are a subclass that have a longer time to eat than berried, to give players more time with the monster not doing anything
-  * The apples remain unused currently
+  * The apples remain unused currently  
   
-![Berry](https://github.com/user-attachments/assets/e0510c17-0c8e-486a-be72-153cebb47fe1)
-*The Berry fruit item that spawns from any Berry Tree*
+![Berry](https://github.com/user-attachments/assets/e0510c17-0c8e-486a-be72-153cebb47fe1)  
+*The Berry fruit item that spawns from any Berry Tree*  
 
-![BerryTree](https://github.com/user-attachments/assets/bbe1cd70-c8f7-4fb6-b393-423298f5ee3e)
-*The Berry Tree that has an internal counter on the number of currently spawned fruits, and doesn't spawn another until a slot is free*
+![BerryTree](https://github.com/user-attachments/assets/bbe1cd70-c8f7-4fb6-b393-423298f5ee3e)  
+*The Berry Tree that has an internal counter on the number of currently spawned fruits, and doesn't spawn another until a slot is free*  
 
 
 * Item Basket
   * Obtained after completing the 2nd segment of the 2nd level
   * Gives the player a maximum of 5 berry items to place in front of them
   * Fruit will disappear after a certain amount of time using a delay node within the character
-  * When destroyed, it goes back to the player to place again, utilising the OnDestroyed node from the spawned actor.
+  * When destroyed, it goes back to the player to place again, utilising the OnDestroyed node from the spawned actor.  
 
 
 * Fire mechanic
   * Obtained after completing the 1st segment of the 2nd level
   * Places in front of the player while playing a sound effect
-  * When overlapping a Kibby, it spooks them and sends them moving away from the source
+  * When overlapping a Kibby, it spooks them and sends them moving away from the source  
 
 
 * Activator
   * An invisible collision box that relies on an enum to get the node pathways it needs
   * Present in level 2 with the purpose of moving the player between segments and setting everything up to align with that movement
-  * Prevents the player from being out of the cycle and in the boundaries of the game
+  * Prevents the player from being out of the cycle and in the boundaries of the game  
     
 
 
@@ -211,37 +211,37 @@ Items and components play a big role in the game as they are what the player and
   * A box with holes in the sides to see through
   * To be called down when the associating buttons have been pressed
   * can be pushed by the player and stepped on top of for puzzle purposes
-  * When surrounding a Sheep, it will simulate the physics of the Sheep to allow them to be pushed around
+  * When surrounding a Sheep, it will simulate the physics of the Sheep to allow them to be pushed around  
 
-![ActivatorButtons](https://github.com/user-attachments/assets/c1212400-3ded-44b4-a102-5653ecadee15)
-*A set of buttons that spawn and despawn the cage, also used to count the sheep at the end of level 2*
+![ActivatorButtons](https://github.com/user-attachments/assets/c1212400-3ded-44b4-a102-5653ecadee15)  
+*A set of buttons that spawn and despawn the cage, also used to count the sheep at the end of level 2*  
 
 * Fences
   * Restricts the player until the prerequisites have been met
   * This typically involves the player figuring out the puzzle of the area
-  * Upon completing the puzzle the gate will open
+  * Upon completing the puzzle the gate will open  
 
 * Splines
   * Provided specialised movement to the sheep for its own puzzle in shooing the Kibby away
-  * The sheep reverses when Kibby come near
+  * The sheep reverses when Kibby come near  
     
 
 #### Levels
-The levels were designed around the ideas and mechanics of the animals that were made:
+The levels were designed around the ideas and mechanics of the animals that were made:  
 
 * The 1st has a mix of the Fox and the Kibby, I wanted to try and develop an area around each that demonstrated the basic goals and controls of the game. This was done by having a lower area for the player to mess around with the Fox, before moving to higher ground and moving the Kibby with food. It is simple and showcases the intent of the animals before pushing the player into the action.
-* The 2nd level is designed around the Sheep being this creature you have to work around to be able to bring it back to the main area and finish the game. As such, the level is split into 3 segments that explore different mechanics such as direct moving and scaring away the Kibby. I thought it was best to divide the areas before combining them for the final push.
+* The 2nd level is designed around the Sheep being this creature you have to work around to be able to bring it back to the main area and finish the game. As such, the level is split into 3 segments that explore different mechanics such as direct moving and scaring away the Kibby. I thought it was best to divide the areas before combining them for the final push.  
 
 
 #### Extra Features
-The game features basic saving. Due to time constraints it can only save the player position and whether it can use the fire.
+The game features basic saving. Due to time constraints it can only save the player position and whether it can use the fire.  
 
-The user interface was a big factor of this game, as there was an overlay that displayed keybindings, objectives and current usable items. This allows the player to always be in the know as to their current status.  
+The user interface was a big factor of this game, as there was an overlay that displayed keybindings, objectives and current usable items. This allows the player to always be in the know as to their current status.    
 
 ![MainMenu](https://github.com/user-attachments/assets/dd23bc3c-2e68-4920-8d3e-c53cd090c330)  
-![LevelSelect](https://github.com/user-attachments/assets/12b9ceb2-f2b6-44cd-a5af-5152ee5e0c5d)
-![Settings](https://github.com/user-attachments/assets/d6096aff-7aee-4d12-b505-9e0ac05c548b)
-![PauseMenu](https://github.com/user-attachments/assets/934d0747-fbda-481e-8707-ca643b029565)
+![LevelSelect](https://github.com/user-attachments/assets/12b9ceb2-f2b6-44cd-a5af-5152ee5e0c5d)  
+![Settings](https://github.com/user-attachments/assets/d6096aff-7aee-4d12-b505-9e0ac05c548b)  
+![PauseMenu](https://github.com/user-attachments/assets/934d0747-fbda-481e-8707-ca643b029565)  
 *Main menu, Level select, Settings, Pause Menu*  
 
 
@@ -249,19 +249,19 @@ The user interface was a big factor of this game, as there was an overlay that d
 ![UIExample](https://github.com/user-attachments/assets/3ce53c75-9bf9-43e2-b9fb-e77b605c2869)  
 *The UI overlay changes depending on the players held item/where the are in the game*  
 
-![NotepadUI](https://github.com/user-attachments/assets/43e86d2d-caab-4d6a-956d-a0d920a6b993)
-*NotepadUI that appears in the second level as a way to give information to the player dependant on the level segment*
+![NotepadUI](https://github.com/user-attachments/assets/43e86d2d-caab-4d6a-956d-a0d920a6b993)  
+*NotepadUI that appears in the second level as a way to give information to the player dependant on the level segment*  
 
-#### Polish
+#### Polish  
 For polish on the game itself, the game uses a post-processing volume with associated materials to apply a cell shaded style with black outlines.  
 Free assets fill in the music, sound effects, meshes and animations, with modification to the sound effects by an outside help.  
-That same outside help also designed the UI widget sprites that would be used for the overlay.
+That same outside help also designed the UI widget sprites that would be used for the overlay.  
 
-![ShaderAndOutline](https://github.com/user-attachments/assets/0d6d9a9f-9738-45ed-ad93-9511d532d5dc)
-*The cel-shaded style with the black outline*
+![ShaderAndOutline](https://github.com/user-attachments/assets/0d6d9a9f-9738-45ed-ad93-9511d532d5dc)  
+*The cel-shaded style with the black outline*  
 
 ### New Approach
-New approaches taken to this project include the whole concept behind behaviour trees, as this was a first for me to take on. I took this task towards my AI creatures as it would allow me to truly tackle something new within the realm of UE5 developing, and as a result I've learnt more than I would've had I just researched. This hands-on experience was really useful moving forwards.
+New approaches taken to this project include the whole concept behind behaviour trees, as this was a first for me to take on. I took this task towards my AI creatures as it would allow me to truly tackle something new within the realm of UE5 developing, and as a result I've learnt more than I would've had I just researched. This hands-on experience was really useful moving forwards.  
 
 
 
@@ -271,21 +271,21 @@ Through numerous testing iterations I have been figuring out what works best for
 
 Most people played for around 10 minutes and the responses averaged out to an average playing experience.  
 
-![TestTime](https://github.com/user-attachments/assets/ef7f42f0-61c1-48b7-95eb-7af1412dbca5)
+![TestTime](https://github.com/user-attachments/assets/ef7f42f0-61c1-48b7-95eb-7af1412dbca5)  
 *The time taken, containing an error as I did not set the time to be the right answer type*  
 
 Thankfully, they gave their thoughts on the game for me to improve upon alongside the current bugs present within that build of the game.  
 
-![TestGraph](https://github.com/user-attachments/assets/98756461-4342-433b-93ad-f6ec8885ebba)
-![TestThoughts](https://github.com/user-attachments/assets/55792014-b5c6-4695-9edb-7bf06afb6380)
-![TestBugs](https://github.com/user-attachments/assets/67de650c-511a-48db-a437-28d19aa43b4f)
-*Graphs of user experience folowed up by their thoughts and helpful bug finding*  
+![TestGraph](https://github.com/user-attachments/assets/98756461-4342-433b-93ad-f6ec8885ebba)  
+![TestThoughts](https://github.com/user-attachments/assets/55792014-b5c6-4695-9edb-7bf06afb6380)  
+![TestBugs](https://github.com/user-attachments/assets/67de650c-511a-48db-a437-28d19aa43b4f)  
+*Graphs of user experience folowed up by their thoughts and helpful bug finding*    
 
-The biggest response talked about the game being unplayable due to the gate locking off the later exits, the issue was found quickly due to how differently the default editor viewport and the build handles certain relationships between actors. This error was quickly fixed to allow the level to become complete.
+The biggest response talked about the game being unplayable due to the gate locking off the later exits, the issue was found quickly due to how differently the default editor viewport and the build handles certain relationships between actors. This error was quickly fixed to allow the level to become complete.  
 
 
 
-### Technical Difficulties
+### Technical Difficulties  
 * Git LFS overusing its data quota, preventing me from accessing the project until it gets 
   fixed
   * This was caused by the file structure and setup of Git LFS being incorrect, this was 
@@ -296,14 +296,14 @@ The biggest response talked about the game being unplayable due to the gate lock
     gathering the new files from an older commit where they appeared still.
 * Behaviour tree logic was not corrisponding to the correct actors
   * This caused seperate instances of the same actor to perform tasks they weren't meant  
-    to perform. Solved by having the relationships to the AIController looked at closer
+    to perform. Solved by having the relationships to the AIController looked at closer  
 
 ## Outcomes
 
 ### Source Code/Project Files
-https://github.com/BunEvie04/Hangry-Animals
+https://github.com/BunEvie04/Hangry-Animals  
 
-This is the repository of the project, inlcuding all source files and a readME.
+This is the repository of the project, inlcuding all source files and a readME.  
 
 
 ### Build Link
@@ -348,6 +348,8 @@ ANIMAL VARIETY PACK (s.d.) At: https://www.fab.com/listings/2dd7964c-a601-4264-a
 Capcom (2018) Monster Hunter World. (s.l.): (s.n.).
 
 Cat Animation Pack (s.d.) At: https://www.fab.com/sellers/MotionDezire
+
+Games, E. (s.d.) Behavior Tree Quick Start Guide. At: https://dev.epicgames.com/documentation/en-us/unreal-engine/behavior-tree-in-unreal-engine---quick-start-guide (Accessed  05/12/2024).
 
 Jański, K. (2016) 'Towards a Catagorisation of Animals in Video Games' In: Homo Ludens At: https://www.ptbg.org.pl/wp-content/uploads/2020/05/Krzysztof-JAŃSKI-Towards-a-Categorisation-of-Animals-in-Video-Games.pdf
 
