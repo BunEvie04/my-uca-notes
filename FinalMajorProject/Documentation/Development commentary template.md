@@ -32,19 +32,32 @@ Such examples of this can include each monster having a cycle of activities they
 
 Other parts of the game intrigue me with mechanics that I'd like to include in the final product, that being the hunter's notebook that the player would use to research the locations of the monsters and give hints on how to fight them. I'd like to include such an idea as a helpful guide book as a more diegetic way for the player to receive information on the animals in game.
 
-This is a key point that I want to include within this developing game, that being animals that take have a loop of actions they perform whilst being reflexive around the players actions.
+![MonsterHunterWorldHuntersNotes](https://github.com/user-attachments/assets/ef4e862e-c2c9-493a-a38a-9268f818705c)  
+*Image of the notebook - Displaying the useful information about one of the monsters*
 
+This is a key point that I want to include within this developing game, that being animals that take have a loop of actions they perform whilst being reflexive around the players actions.
 
 #### Captain Toad's Treasure Tracker (Nintendo 2014)
 As part of the Super Mario series developed by Nintendo, this game is developed with the intention to be user friendly with a focus on putting the player first. The game revolves around using manoeuvring around enemies located within small scaled geometric levels alongside solving simple puzzles to collect items and reach the goal.
- 
+
+*Image containing the creatures in the protagonists path*
+
 This game is another of my inspirations during development since I have the decision between the visual and the gameplay elements of the animals. This is something I have previously talked about (and will in the next section) but after looking at this game and performing some self-reflection on my skills as a developer, I have decided that focusing on the gameplay elements of the animals should come first and extra behaviours could come later as extra flourishes.
+![image](https://github.com/user-attachments/assets/39d43fca-db7f-4fc4-839a-f42ed061ced5)
 
 
 #### Nintendogs (Nintendo 2005)
 The third game that struck out to me to research was Nintendogs, as this game, compared to the other two, has the animals as the primary focal point. The dogs behave as close to 1-1 as they would outside the digital space, as this is a virtual pet simulation. The game gives the player methods to interact with the dogs, either through caring for them with bath time and brushing, or through playing and joyful interactions. Perhaps through more personal interactions with the animals will the player truly get a feel for how they behave and give back to the game's world. Alternatively, for the short term, simply using tools that provide feeding and other interactive methods would work all the same.
 
+![20200105_154840](https://github.com/user-attachments/assets/51085f10-6a30-4c5c-a0b8-29e230281c55)
 
+*Image containing a fould beast being cleansed at bathtime*
+
+
+<img src="https://private-user-images.githubusercontent.com/182627985/446984647-317f55c5-3082-4b0d-a1dd-d9c0dbdad8a0.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDc5OTg3NTksIm5iZiI6MTc0Nzk5ODQ1OSwicGF0aCI6Ii8xODI2Mjc5ODUvNDQ2OTg0NjQ3LTMxN2Y1NWM1LTMwODItNGIwZC1hMWRkLWQ5YzBkYmRhZDhhMC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNTIzJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDUyM1QxMTA3MzlaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT02ODUyNGYzOTFkMWMyZWQwMTk0Yjk4MGU0YTc1YjkxMzlkNTRhM2Q3YThkMTgzOTUyZjFjMDUwNDkxNjg5Y2NlJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.c4m1v2l_zj0doQlUVmzCEF_OQu9kd5ca1ncJqD0t9mg">
+![sub-buzz-790-1629336526-6](https://github.com/user-attachments/assets/6d87a73f-13d3-477f-a2db-9663b299f77e)
+
+![Care2](https://github.com/user-attachments/assets/7dc2d6d2-f025-447d-878a-27213be2c9a5)
 
 ### Academic Sources  
 Previously I wrote an essay titled "How would Animal Behaviour translate into game formulas?", where I looked into numerous sources to talk about how animals can be utilised in video games and to what degree are they implemented to real world behaviours. The goal of this was to research into the topic to try and find that middle ground where the player can still become immersed into the animals behaviours and actions but don't take away from player actions/still allows the player to utilise them as game mechanics within the game itself.
@@ -272,7 +285,7 @@ Tyler, T. (2022) Game: Animals, video games, and humanity. Minneapolis, MN: Univ
 
 Unreal University (2023) How To Make An Options Menu - Unreal Engine 5 Tutorial. At: https://www.youtube.com/watch?v=Ff67XtqgSxc
 
-![MonsterHunterWorldHuntersNotes](https://github.com/user-attachments/assets/ef4e862e-c2c9-493a-a38a-9268f818705c)
+
 
 
 
@@ -302,16 +315,15 @@ Deuces - Kevin MacLeod (incompetech.com)
 Airport Lounge Kevin MacLeod (incompetech.com)
 George Street Shuffle Kevin MacLeod (incompetech.com)
 Shades of Spring Kevin MacLeod (incompetech.com)
+* Used for the menus and for the level music
+
+Sound effects
+https://drive.google.com/file/d/1zLpu9vscsQWiEhEZzl0tKs5ZbuElYD_D/view?usp=sharing
+* This is the google drive folder containing all of the sound effects used within the game
+* Contained is the sfx for the Kibby, Foxling, Sheepy, buttons, item placements, fire, and eating sound effects
 
 
 Starter Content
 * Most of the environment and textures
 
 Chat GPT was used for assistance with the cell shading post processing blueprints.
-
-
-![alt text](FoxMesh.png)
-
-<img src="https://raw.githubusercontent.com/" width="75%"/>
-
-<img src="https://raw.githubusercontent.com/BunEvie04/my-uca-notes/FinalMajorProject/Documentation/FoxMesh.png" width="75%"/>
